@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCIÓN</a></li><li><a href="WhatIsSugar">¿QUÉ ES SUGAR?</a></li><li><a href="WhatisanActivity">¿QUÉ ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">¿QUÉ NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACIÓN</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACIÓN DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU CÓDIGO DE LA ACTIVIDAD AL CONTROL DE VERSIÓN</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACIÓN CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACIÓN DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSIÓN CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACIÓN DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACIÓN DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">¿QUÉ SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACIÓN DE UNA ACTIVIDAD</a></li>
+<li class="heading">APÉNDICE</li><li><a href="MoreReading">¿ADÓNDE IR DESDE AQUÍ?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/Glossary' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Glossario
+</h1> <dl> <dt><strong>bug</strong></dt> <dd>defecto, error&nbsp;o&nbsp;fallo&nbsp;en un programa de computador </dd> <dt> <strong>debug</strong></dt> <dd>depurador hacer un debug es depurar un programa, no significa exactamente hallar errores.</dd> </dl>
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

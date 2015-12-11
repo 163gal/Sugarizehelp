@@ -1,0 +1,1152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FunWithTheJournal' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Diversión con el diario
+</h1>
+<h2>Introducción
+</h2>
+<p>Por abandono cada actividad crea y lee una entrada de diario.&nbsp; La mayoría de las Actividades no necesitan hacer más con el diario que eso, y si su actividad es como ésa usted no necesitará la información en este capítulo.&nbsp; Las ocasiones son que usted querrá algún día hacer más que eso, así que si usted guarda el leer.
+</p>
+<p> Primero repasemos cuáles es el diario.&nbsp; El diario es una colección de archivos que cada uno tenga <strong>meta data</strong> (datos sobre datos) asociados a ellos.&nbsp; Los meta datos se almacenan como secuencias de texto e incluyen las cosas tales como el <strong>Title</strong>, <strong>Description</strong>, <strong>Tags</strong>, <strong>MIME Type</strong><strong></strong>, y un tiro de pantalla de la actividad cuando era último usado.
+</p>
+<p>Su actividad no puede leer y escribir estos archivos directamente.&nbsp; En lugar azucare proporciona un API (interfaz de programación de uso) que le da una manera indirecta de agregar, suprimir y modificar entradas en el diario, tan bien como una manera de buscar entradas de diario y de hacer una lista de las entradas que cumplen los criterios de búsqueda.
+</p>
+<p>El API que utilizaremos está en el paquete del <strong>datastore</strong>.&nbsp; Después de la versión .82 del azúcar este API fue reescrito, así que necesitaremos aprender cómo apoyar ambas versiones en la misma actividad.
+</p>
+<p>Si usted ha leído esto lejos usted ha visto varios ejemplos donde azúcar comenzado hacia fuera a hacer una cosa y después cambiado para hacer la misma cosa una mejor manera pero todavía proporcionado una manera de crear las Actividades que trabajarían con el viejo o la nueva manera.&nbsp; Usted puede preguntarse si es normal que un proyecto haga esto.&nbsp; Pues un programador profesional yo puede decirle que hacer trucos como esto para mantener compatibilidad hacia atrás es extremadamente común, y azúcar no hace no más de esto que ninguÌn otro proyecto.&nbsp; Hay decisiones tomadas por Herman Hollerith cuando él tabuló el censo 1890 usando tarjetas perforadas que los informáticos deben vivir con a este día.
+</p>
+<h2>Presentar al Sugar Commander
+</h2>
+<p> Soy un ventilador grande del concepto del diario pero no tanto de la <strong>actividad del diario</strong> que el azúcar utiliza para navegar a través de él y para mantenerlo.&nbsp; Mi queja más grande contra ella es que ella representa el contenido de las impulsiones del pulgar y las tarjetas del SD como si los archivos en éstos fueran también entradas de diario.&nbsp; Mi sensación es que los archivos y los directorios son una cosa y el diario es otro, y el interfaz utilizador debe reconocer eso.
+</p>
+<p>En realidad la actividad del diario es y no es una actividad.&nbsp; Hereda código de la clase de la actividad apenas como cualquier otra actividad, y se escribe en Python y utiliza el mismo datastore API que otras Actividades utilizan.&nbsp; Sin embargo, se funciona de una manera especial que lo dé accione y las capacidades mucho más alla de las de una actividad ordinaria.&nbsp; Particularmente puede hacer dos cosas:
+</p>
+<ul>
+  <li>Puede escribir a los archivos en medios externos como impulsiones del pulgar y tarjetas del SD.</li>
+  <li>Solamente puede ser utilizado para reasumir entradas de diario usando otras Actividades.</li>
+</ul>
+<p>Mientras que quisiera escribir una actividad del diario que hace todo la original hace pero tiene un interfaz utilizador más a mi propio gusto que el modelo de seguridad del azúcar no permitirá eso.&nbsp; Llegué recientemente a la conclusión que una versión más apacible de la actividad del diario pudo ser útil.&nbsp; Apenas pues Kal-EL a veces encuentra más útil para ser Clark Kent que superhombre, mi propia actividad pudo ser una alternativa digna a la actividad incorporada del diario cuando las energías estupendas no son necesarias.
+</p>
+<p> Mi actividad, que llamo <strong>Sugar Commander</strong>, tiene dos lengüetas.&nbsp; Uno representa el diario y parece esto:
+</p>
+<p><img alt="Comandante Journal Tab del azúcar" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/FunWithTheJournal/SCommander2_en.jpg" height="450" width="600" />
+</p>
+<p>Esta lengüeta le deja hojear a través del diario clasificado por Title o tipo de MIME, entradas selectas y ver sus detalles, título de la actualización, descripción o etiquetas, y entradas de la cancelación que usted quiere no más.&nbsp; La otra lengüeta demuestra archivos y carpetas y parece esto:
+</p>
+<p><img alt="Comandante Files Tab del azúcar" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/FunWithTheJournal/SCommander1_en.jpg" height="450" width="600" />
+</p>
+<p>Esta lengüeta le deja hojear a través de los archivos y las carpetas o el sistema de ficheros regular, incluyendo impulsiones del pulgar y tarjetas del SD.&nbsp; Usted puede seleccionar un archivo y hacer una entrada de diario fuera de ella empujando el botón en la parte inferior de la pantalla.
+</p>
+<p>&nbsp;Esta actividad tiene código muy pequeño y todavía lo maneja hacer todo que una actividad ordinaria puede hacer con el diario.&nbsp; Usted puede transferir el depósito de Git usando este comando:
+  <br />
+</p>
+<pre><code>git clone git://git.sugarlabs.org/sugar-commander/mainline.git</code></pre>
+<p>Hay solamente un archivo de fuente, <strong>sugarcommander.py</strong>:
+</p>
+<pre>import logging
+import os
+import gtk
+import pango
+import zipfile
+from sugar import mime
+from sugar.activity import activity
+from sugar.datastore import datastore
+from sugar.graphics.alert import NotifyAlert
+from sugar.graphics import style
+from gettext import gettext as _
+import gobject
+import dbus
+
+COLUMN_TITLE = 0
+COLUMN_MIME = 1
+COLUMN_JOBJECT = 2
+
+DS_DBUS_SERVICE = 'org.laptop.sugar.DataStore'
+DS_DBUS_INTERFACE = 'org.laptop.sugar.DataStore'
+DS_DBUS_PATH = '/org/laptop/sugar/DataStore'
+
+_logger = logging.getLogger('sugar-commander')
+
+class SugarCommander(activity.Activity):
+    def __init__(self, handle, create_jobject=True):
+        "The entry point to the Activity"
+        activity.Activity.__init__(self, handle,  False)
+        self.selected_journal_entry = None
+        self.selected_path = None
+
+        canvas = gtk.Notebook()
+        canvas.props.show_border = True
+        canvas.props.show_tabs = True
+        canvas.show()
+
+        self.ls_journal = gtk.ListStore(gobject.TYPE_STRING,
+                gobject.TYPE_STRING,
+                gobject.TYPE_PYOBJECT)
+        self.tv_journal = gtk.TreeView(self.ls_journal)
+        self.tv_journal.set_rules_hint(True)
+        self.tv_journal.set_search_column(COLUMN_TITLE)
+        self.selection_journal = self.tv_journal.get_selection()
+        self.selection_journal.set_mode(gtk.SELECTION_SINGLE)
+        self.selection_journal.connect("changed", self.selection_journal_cb)
+        renderer = gtk.CellRendererText()
+        renderer.set_property('wrap-mode', gtk.WRAP_WORD)
+        renderer.set_property('wrap-width', 500)
+        renderer.set_property('width', 500)
+        self.col_journal = gtk.TreeViewColumn(_('Title'), renderer,
+                                              text=COLUMN_TITLE)
+        self.col_journal.set_sort_column_id(COLUMN_TITLE)
+        self.tv_journal.append_column(self.col_journal)
+
+        mime_renderer = gtk.CellRendererText()
+        mime_renderer.set_property('width', 500)
+        self.col_mime = gtk.TreeViewColumn(_('MIME'), mime_renderer,
+                                           text=COLUMN_MIME)
+        self.col_mime.set_sort_column_id(COLUMN_MIME)
+        self.tv_journal.append_column(self.col_mime)
+
+        self.list_scroller_journal = gtk.ScrolledWindow(
+                        hadjustment=None, vadjustment=None)
+        self.list_scroller_journal.set_policy(
+                    gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
+        self.list_scroller_journal.add(self.tv_journal)
+
+        label_attributes = pango.AttrList()
+        label_attributes.insert(pango.AttrSize(14000, 0, -1))
+        label_attributes.insert(pango.AttrForeground(65535, 65535, 65535, 0, -1))
+
+        tab1_label = gtk.Label(_("Journal"))
+        tab1_label.set_attributes(label_attributes)
+        tab1_label.show()
+        self.tv_journal.show()
+        self.list_scroller_journal.show()
+
+        column_table = gtk.Table(rows=1,  columns=2,  homogeneous = False)
+
+        image_table = gtk.Table(rows=2,  columns=2,  homogeneous=False)
+        self.image = gtk.Image()
+        image_table.attach(self.image, 0, 2, 0, 1, xoptions=gtk.FILL|gtk.SHRINK,
+                           yoptions=gtk.FILL|gtk.SHRINK, xpadding=10, ypadding=10)
+
+        self.btn_save = gtk.Button(_("Save"))
+        self.btn_save.connect('button_press_event',
+                              self.save_button_press_event_cb)
+        image_table.attach(self.btn_save,  0, 1, 1, 2,  xoptions=gtk.SHRINK,
+                             yoptions=gtk.SHRINK,  xpadding=10,  ypadding=10)
+        self.btn_save.props.sensitive = False
+        self.btn_save.show()
+
+        self.btn_delete = gtk.Button(_("Delete"))
+        self.btn_delete.connect('button_press_event',
+                                self.delete_button_press_event_cb)
+        image_table.attach(self.btn_delete,  1, 2, 1, 2,  xoptions=gtk.SHRINK,
+                            yoptions=gtk.SHRINK,  xpadding=10,  ypadding=10)
+        self.btn_delete.props.sensitive = False
+        self.btn_delete.show()
+
+        column_table.attach(image_table,  0, 1, 0, 1,
+                            xoptions=gtk.FILL|gtk.SHRINK,
+                              yoptions=gtk.SHRINK,  xpadding=10,  ypadding=10)
+
+        entry_table = gtk.Table(rows=3, columns=2,
+                                homogeneous=False)
+
+        title_label = gtk.Label(_("Title"))
+        entry_table.attach(title_label, 0, 1, 0, 1,
+                           xoptions=gtk.SHRINK,
+                           yoptions=gtk.SHRINK,
+                           xpadding=10, ypadding=10)
+        title_label.show()
+
+        self.title_entry = gtk.Entry(max=0)
+        entry_table.attach(self.title_entry, 1, 2, 0, 1,
+                           xoptions=gtk.FILL|gtk.SHRINK,
+                           yoptions=gtk.SHRINK, xpadding=10, ypadding=10)
+        self.title_entry.connect('key_press_event',
+                                 self.key_press_event_cb)
+        self.title_entry.show()
+
+        description_label = gtk.Label(_("Description"))
+        entry_table.attach(description_label, 0, 1, 1, 2,
+                           xoptions=gtk.SHRINK,
+                           yoptions=gtk.SHRINK,
+                           xpadding=10, ypadding=10)
+        description_label.show()
+
+        self.description_textview = gtk.TextView()
+        self.description_textview.set_wrap_mode(gtk.WRAP_WORD)
+        entry_table.attach(self.description_textview, 1, 2, 1, 2,
+                           xoptions=gtk.EXPAND|gtk.FILL|gtk.SHRINK,
+                           yoptions=gtk.EXPAND|gtk.FILL|gtk.SHRINK,
+                           xpadding=10, ypadding=10)
+        self.description_textview.props.accepts_tab = False
+        self.description_textview.connect('key_press_event',
+                                          self.key_press_event_cb)
+        self.description_textview.show()
+
+        tags_label = gtk.Label(_("Tags"))
+        entry_table.attach(tags_label, 0, 1, 2, 3,
+                           xoptions=gtk.SHRINK,
+                           yoptions=gtk.SHRINK,
+                           xpadding=10, ypadding=10)
+        tags_label.show()
+
+        self.tags_textview = gtk.TextView()
+        self.tags_textview.set_wrap_mode(gtk.WRAP_WORD)
+        entry_table.attach(self.tags_textview, 1, 2, 2, 3,
+                           xoptions=gtk.FILL,
+                           yoptions=gtk.EXPAND|gtk.FILL,
+                           xpadding=10, ypadding=10)
+        self.tags_textview.props.accepts_tab = False
+        self.tags_textview.connect('key_press_event',
+                                    self.key_press_event_cb)
+        self.tags_textview.show()
+
+        entry_table.show()
+
+        self.scroller_entry = gtk.ScrolledWindow(
+                              hadjustment=None, vadjustment=None)
+        self.scroller_entry.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
+        self.scroller_entry.add_with_viewport(entry_table)
+        self.scroller_entry.show()
+
+        column_table.attach(self.scroller_entry,  1, 2, 0, 1,
+                            xoptions=gtk.FILL|gtk.EXPAND|gtk.SHRINK,
+                            yoptions=gtk.FILL|gtk.EXPAND|gtk.SHRINK,
+                            xpadding=10,  ypadding=10)
+        image_table.show()
+        column_table.show()
+
+        vbox = gtk.VBox(homogeneous=True,  spacing=5)
+        vbox.pack_start(column_table)
+        vbox.pack_end(self.list_scroller_journal)
+
+        canvas.append_page(vbox,  tab1_label)
+
+        self._filechooser = gtk.FileChooserWidget(
+            action=gtk.FILE_CHOOSER_ACTION_OPEN, backend=None)
+        self._filechooser.set_current_folder("/media")
+        self.copy_button = gtk.Button(_("Copy File To The Journal"))
+        self.copy_button.connect('clicked',  self.create_journal_entry)
+        self.copy_button.show()
+        self._filechooser.set_extra_widget(self.copy_button)
+        preview = gtk.Image()
+        self._filechooser.set_preview_widget(preview)
+        self._filechooser.connect("update-preview",
+                                  self.update_preview_cb, preview)
+        tab2_label = gtk.Label(_("Files"))
+        tab2_label.set_attributes(label_attributes)
+        tab2_label.show()
+        canvas.append_page(self._filechooser,  tab2_label)
+
+        self.set_canvas(canvas)
+        self.show_all()
+
+        toolbox = activity.ActivityToolbox(self)
+        activity_toolbar = toolbox.get_activity_toolbar()
+        activity_toolbar.keep.props.visible = False
+        activity_toolbar.share.props.visible = False
+        self.set_toolbox(toolbox)
+        toolbox.show()
+
+        self.load_journal_table()
+
+        bus = dbus.SessionBus()
+        remote_object = bus.get_object(DS_DBUS_SERVICE, DS_DBUS_PATH)
+        _datastore = dbus.Interface(remote_object, DS_DBUS_INTERFACE)
+        _datastore.connect_to_signal('Created', self.datastore_created_cb)
+        _datastore.connect_to_signal('Updated', self.datastore_updated_cb)
+        _datastore.connect_to_signal('Deleted', self.datastore_deleted_cb)
+
+        self.selected_journal_entry = None
+
+    def update_preview_cb(self, file_chooser, preview):
+        filename = file_chooser.get_preview_filename()
+        try:
+            file_mimetype = mime.get_for_file(filename)
+            if file_mimetype.startswith('image/'):
+                pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(filename,
+                                     style.zoom(320), style.zoom(240))
+                preview.set_from_pixbuf(pixbuf)
+                have_preview = True
+            elif file_mimetype  == 'application/x-cbz':
+                fname = self.extract_image(filename)
+                pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(fname,
+                                     style.zoom(320), style.zoom(240))
+                preview.set_from_pixbuf(pixbuf)
+                have_preview = True
+                os.remove(fname)
+            else:
+                have_preview = False
+        except:
+            have_preview = False
+        file_chooser.set_preview_widget_active(have_preview)
+        return
+
+    def key_press_event_cb(self, entry, event):
+        self.btn_save.props.sensitive = True
+
+    def save_button_press_event_cb(self, entry, event):
+        self.update_entry()
+
+    def delete_button_press_event_cb(self, entry, event):
+        datastore.delete(self.selected_journal_entry.object_id)
+
+    def datastore_created_cb(self, uid):
+        new_jobject = datastore.get(uid)
+        iter = self.ls_journal.append()
+        title = new_jobject.metadata['title']
+        self.ls_journal.set(iter, COLUMN_TITLE, title)
+        mime = new_jobject.metadata['mime_type']
+        self.ls_journal.set(iter, COLUMN_MIME, mime)
+        self.ls_journal.set(iter, COLUMN_JOBJECT, new_jobject)
+
+    def datastore_updated_cb(self,  uid):
+        new_jobject = datastore.get(uid)
+        iter = self.ls_journal.get_iter_first()
+        for row in self.ls_journal:
+            jobject = row[COLUMN_JOBJECT]
+            if jobject.object_id == uid:
+                title = new_jobject.metadata['title']
+                self.ls_journal.set_value(iter, COLUMN_TITLE, title)
+                break
+            iter = self.ls_journal.iter_next(iter)
+        object_id = self.selected_journal_entry.object_id
+        if object_id == uid:
+            self.set_form_fields(new_jobject)
+
+    def datastore_deleted_cb(self,  uid):
+        save_path = self.selected_path
+        iter = self.ls_journal.get_iter_first()
+        for row in self.ls_journal:
+            jobject = row[COLUMN_JOBJECT]
+            if jobject.object_id == uid:
+                self.ls_journal.remove(iter)
+                break
+            iter = self.ls_journal.iter_next(iter)
+
+        try:
+            self.selection_journal.select_path(save_path)
+            self.tv_journal.grab_focus()
+        except:
+            self.title_entry.set_text('')
+            description_textbuffer = self.description_textview.get_buffer()
+            description_textbuffer.set_text('')
+            tags_textbuffer = self.tags_textview.get_buffer()
+            tags_textbuffer.set_text('')
+            self.btn_save.props.sensitive = False
+            self.btn_delete.props.sensitive = False
+            self.image.clear()
+            self.image.show()
+
+    def update_entry(self):
+        needs_update = False
+
+        if self.selected_journal_entry is None:
+            return
+
+        object_id = self.selected_journal_entry.object_id
+        jobject = datastore.get(object_id)
+
+        old_title = jobject.metadata.get('title', None)
+        if old_title != self.title_entry.props.text:
+            jobject.metadata['title'] = self.title_entry.props.text
+            jobject.metadata['title_set_by_user'] = '1'
+            needs_update = True
+
+        old_tags = jobject.metadata.get('tags', None)
+        new_tags = self.tags_textview.props.buffer.props.text
+        if old_tags != new_tags:
+            jobject.metadata['tags'] = new_tags
+            needs_update = True
+
+        old_description = jobject.metadata.get('description', None)
+        new_description = self.description_textview.props.buffer.props.text
+        if old_description != new_description:
+            jobject.metadata['description'] = new_description
+            needs_update = True
+
+        if needs_update:
+            datastore.write(jobject, update_mtime=False,
+                            reply_handler=self.datastore_write_cb,
+                            error_handler=self.datastore_write_error_cb)
+        self.btn_save.props.sensitive = False
+
+    def datastore_write_cb(self):
+        pass
+
+    def datastore_write_error_cb(self, error):
+        logging.error('sugarcommander.datastore_write_error_cb: %r' % error)
+
+    def close(self,  skip_save=False):
+        "Override the close method so we don't try to create a Journal entry."
+        activity.Activity.close(self,  True)
+
+    def selection_journal_cb(self, selection):
+        self.btn_delete.props.sensitive = True
+        tv = selection.get_tree_view()
+        model = tv.get_model()
+        sel = selection.get_selected()
+        if sel:
+            model, iter = sel
+            jobject = model.get_value(iter,COLUMN_JOBJECT)
+            jobject = datastore.get(jobject.object_id)
+            self.selected_journal_entry = jobject
+            self.set_form_fields(jobject)
+            self.selected_path = model.get_path(iter)
+
+    def set_form_fields(self, jobject):
+        self.title_entry.set_text(jobject.metadata['title'])
+        description_textbuffer = self.description_textview.get_buffer()
+        if jobject.metadata.has_key('description'):
+            description_textbuffer.set_text(jobject.metadata['description'])
+        else:
+            description_textbuffer.set_text('')
+        tags_textbuffer = self.tags_textview.get_buffer()
+        if jobject.metadata.has_key('tags'):
+            tags_textbuffer.set_text(jobject.metadata['tags'])
+        else:
+            tags_textbuffer.set_text('')
+        self.create_preview(jobject.object_id)
+
+    def create_preview(self,  object_id):
+        jobject = datastore.get(object_id)
+
+        if jobject.metadata.has_key('preview'):
+            preview = jobject.metadata['preview']
+            if preview is None or preview == '' or preview == 'None':
+                if jobject.metadata['mime_type'] .startswith('image/'):
+                    filename = jobject.get_file_path()
+                    self.show_image(filename)
+                    return
+                if jobject.metadata['mime_type']  == 'application/x-cbz':
+                    filename = jobject.get_file_path()
+                    fname = self.extract_image(filename)
+                    self.show_image(fname)
+                    os.remove(fname)
+                    return
+
+        if jobject.metadata.has_key('preview') and \
+                len(jobject.metadata['preview']) &gt; 4:
+
+            if jobject.metadata['preview'][1:4] == 'PNG':
+                preview_data = jobject.metadata['preview']
+            else:
+                import base64
+                preview_data = base64.b64decode(jobject.metadata['preview'])
+
+            loader = gtk.gdk.PixbufLoader()
+            loader.write(preview_data)
+            scaled_buf = loader.get_pixbuf()
+            loader.close()
+            self.image.set_from_pixbuf(scaled_buf)
+            self.image.show()
+        else:
+            self.image.clear()
+            self.image.show()
+
+    def load_journal_table(self):
+        self.btn_save.props.sensitive = False
+        self.btn_delete.props.sensitive = False
+        ds_mounts = datastore.mounts()
+        mountpoint_id = None
+        if len(ds_mounts) == 1 and ds_mounts[0]['id'] == 1:
+               pass
+        else:
+            for mountpoint in ds_mounts:
+                id = mountpoint['id']
+                uri = mountpoint['uri']
+                if uri.startswith('/home'):
+                    mountpoint_id = id
+
+        query = {}
+        if mountpoint_id is not None:
+            query['mountpoints'] = [ mountpoint_id ]
+        ds_objects, num_objects = datastore.find(query, properties=['uid',
+            'title',  'mime_type'])
+
+        self.ls_journal.clear()
+        for i in xrange (0, num_objects, 1):
+            iter = self.ls_journal.append()
+            title = ds_objects[i].metadata['title']
+            self.ls_journal.set(iter, COLUMN_TITLE, title)
+            mime = ds_objects[i].metadata['mime_type']
+            self.ls_journal.set(iter, COLUMN_MIME, mime)
+            self.ls_journal.set(iter, COLUMN_JOBJECT, ds_objects[i])
+            if not self.selected_journal_entry is None and \
+                self.selected_journal_entry.object_id == ds_objects[i].object_id:
+                self.selection_journal.select_iter(iter)
+
+        self.ls_journal.set_sort_column_id(COLUMN_TITLE,  gtk.SORT_ASCENDING)
+        v_adjustment = self.list_scroller_journal.get_vadjustment()
+        v_adjustment.value = 0
+        return ds_objects[0]
+
+    def create_journal_entry(self,  widget,  data=None):
+        filename = self._filechooser.get_filename()
+        journal_entry = datastore.create()
+        journal_entry.metadata['title'] = self.make_new_filename(filename)
+        journal_entry.metadata['title_set_by_user'] = '1'
+        journal_entry.metadata['keep'] = '0'
+        file_mimetype = mime.get_for_file(filename)
+        if not file_mimetype is None:
+            journal_entry.metadata['mime_type'] = file_mimetype
+        journal_entry.metadata['buddies'] = ''
+        if file_mimetype.startswith('image/'):
+            preview = self.create_preview_metadata(filename)
+        elif file_mimetype  == 'application/x-cbz':
+            fname = self.extract_image(filename)
+            preview = self.create_preview_metadata(fname)
+            os.remove(fname)
+        else:
+            preview = ''
+        if not preview  == '':
+            journal_entry.metadata['preview'] =  dbus.ByteArray(preview)
+        else:
+            journal_entry.metadata['preview'] =  ''
+
+        journal_entry.file_path = filename
+        datastore.write(journal_entry)
+        self.alert(_('Success'),  _('%s added to Journal.')
+                    % self.make_new_filename(filename))
+
+    def alert(self, title, text=None):
+        alert = NotifyAlert(timeout=20)
+        alert.props.title = title
+        alert.props.msg = text
+        self.add_alert(alert)
+        alert.connect('response', self.alert_cancel_cb)
+        alert.show()
+
+    def alert_cancel_cb(self, alert, response_id):
+        self.remove_alert(alert)
+
+    def show_image(self, filename):
+        "display a resized image in a preview"
+        scaled_buf = gtk.gdk.pixbuf_new_from_file_at_size(filename,
+                                  style.zoom(320), style.zoom(240))
+        self.image.set_from_pixbuf(scaled_buf)
+        self.image.show()
+
+    def extract_image(self,  filename):
+        zf = zipfile.ZipFile(filename, 'r')
+        image_files = zf.namelist()
+        image_files.sort()
+        file_to_extract = image_files[0]
+        extract_new_filename = self.make_new_filename(file_to_extract)
+        if extract_new_filename is None or extract_new_filename == '':
+            # skip over directory name if the images are in a subdirectory.
+            file_to_extract = image_files[1]
+            extract_new_filename = self.make_new_filename(file_to_extract)
+
+        if len(image_files) &gt; 0:
+            if self.save_extracted_file(zf, file_to_extract):
+                fname = os.path.join(self.get_activity_root(), 'instance',
+                                     extract_new_filename)
+                return fname
+
+    def save_extracted_file(self, zipfile, filename):
+        "Extract the file to a temp directory for viewing"
+        try:
+            filebytes = zipfile.read(filename)
+        except zipfile.BadZipfile, err:
+            print 'Error opening the zip file: %s' % (err)
+            return False
+        except KeyError,  err:
+            self.alert('Key Error', 'Zipfile key not found: '
+                        + str(filename))
+            return
+        outfn = self.make_new_filename(filename)
+        if (outfn == ''):
+            return False
+        fname = os.path.join(self.get_activity_root(), 'instance',  outfn)
+        f = open(fname, 'w')
+        try:
+            f.write(filebytes)
+        finally:
+            f.close()
+        return True
+
+    def make_new_filename(self, filename):
+        partition_tuple = filename.rpartition('/')
+        return partition_tuple[2]
+
+    def create_preview_metadata(self,  filename):
+
+        file_mimetype = mime.get_for_file(filename)
+        if not file_mimetype.startswith('image/'):
+            return ''
+
+        scaled_pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(filename,
+                                      style.zoom(320), style.zoom(240))
+        preview_data = []
+
+        def save_func(buf, data):
+            data.append(buf)
+
+        scaled_pixbuf.save_to_callback(save_func, 'png',
+                                       user_data=preview_data)
+        preview_data = ''.join(preview_data)
+
+        return preview_data</pre>
+<p>Miremos este método del código uno a la vez.
+  <br />
+</p>
+<h2> Adición de una entrada de diario
+  <br />
+</h2>
+<p>Agregamos una entrada de diario cuando alguien empuja un botón en el gtk.FileChooser.&nbsp; Éste es el código que consigue funcionamiento:
+</p>
+<pre>    def create_journal_entry(self,  widget,  data=None):
+        filename = self._filechooser.get_filename()
+        journal_entry = datastore.create()
+        journal_entry.metadata['title'] = self.make_new_filename(filename)
+        journal_entry.metadata['title_set_by_user'] = '1'
+        journal_entry.metadata['keep'] = '0'
+        file_mimetype = mime.get_for_file(filename)
+        if not file_mimetype is None:
+            journal_entry.metadata['mime_type'] = file_mimetype
+        journal_entry.metadata['buddies'] = ''
+        if file_mimetype.startswith('image/'):
+            preview = self.create_preview_metadata(filename)
+        elif file_mimetype  == 'application/x-cbz':
+            fname = self.extract_image(filename)
+            preview = self.create_preview_metadata(fname)
+            os.remove(fname)
+        else:
+            preview = ''
+        if not preview  == '':
+            journal_entry.metadata['preview'] =  dbus.ByteArray(preview)
+        else:
+            journal_entry.metadata['preview'] =  ''
+        journal_entry.file_path = filename
+        datastore.write(journal_entry)
+</pre>
+<p>La única cosa digno de el comentario encendido aquí es los meta datos.&nbsp; <strong>title</strong> es qué aparece como #3 en el cuadro abajo.&nbsp; <strong>el title_set_by_user</strong> se fija a 1 de modo que la actividad no incite al usuario cambiar el título cuando la actividad se cierra.&nbsp; <strong>keep</strong> refiere a la pequeña estrella que aparece al principio de la entrada de diario (véase #1 en el cuadro abajo).&nbsp; Destaqúela fijando esto a 1, si no fije a 0.&nbsp;&nbsp; <strong>buddies</strong> son una lista de usuarios que colaboraron en la entrada de diario, y en este caso no hay cualquiera (este aparezca como #4 en el cuadro abajo).&nbsp;
+  <br />
+</p><img alt="Meta la leyenda en diario" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/FunWithTheJournal/journal_main_screen_en.png" height="415" width="600" />
+<h2>
+</h2>
+<p><strong>preview</strong> es un archivo de imagen en el formato del png que es un screenshot de la actividad en la acción.&nbsp; Esto es creada por la actividad sí mismo cuando se funciona tan allí no es ninguna necesidad hacer uno cuando usted agrega una entrada de diario.&nbsp; Usted puede utilizar simplemente una secuencia vacía ('') para esta característica.
+</p>
+<p>Porque las inspecciones previoes son mucho más visibles en comandante del azúcar que están en la actividad regular del diario que decidía que el comandante del azúcar debe hacer una imagen de la inspección previo para los archivos y los cómic de imagen tan pronto como se agreguen al diario.&nbsp; Para hacer esto hice un pixbuf de la imagen que cabría dentro de las dimensiones escaladas de los pixeles 320x240 e hizo un <strong>dbus.ByteArray</strong> fuera de él, que es el formato que las aplicaciones del diario de almacenar imágenes de la inspección previo.
+  <br />
+</p>
+<p><strong>el mime_type</strong> describe el formato del archivo y generalmente se asigna basado en el sufijo del nombre de fichero.&nbsp; Por ejemplo, los archivos que terminan en .html tienen un tipo del MIME del “texto/HTML”.&nbsp; El Python tiene un paquete llamado los <strong>mimetypes</strong> que tome un nombre de fichero e imagine lo que debe ser su tipo del MIME, solamente el azúcar proporciona su propio paquete para hacer la misma cosa.&nbsp; Para la mayoría de los archivos cualquiera uno daría la respuesta correcta, pero el azúcar tiene sus propios tipos del MIME para las cosas como paquetes de la actividad, el etc. así que para los mejores resultados usted debe utilizar realmente el paquete del mime del azúcar.&nbsp; Usted puede importarlo tiene gusto de esto:
+</p>
+<pre>from sugar import mime</pre>
+<p>El resto de los meta datos (icono, modificado tiempo) se crea automáticamente.&nbsp;
+  <br />
+</p>
+<h2>Adición de una entrada de diario
+</h2>
+<p>Las Actividades del azúcar por abandono crean una entrada de diario usando <em>el</em> método <em>write_file</em>().&nbsp; Habrá las Actividades que no necesitan hacer esto.&nbsp; Por ejemplo, <strong>consiga los e-</strong>libros de las transferencias directas de los <strong>libros del archivo del Internet al</strong> diario, pero no tiene ninguna necesidad de una entrada de diario sus los propios.&nbsp; La misma cosa es verdad de <strong>Sugar Commander</strong>.&nbsp; Usted puede ser que haga un juego que no pierde de vista altas cuentas.&nbsp; Usted podría mantener esas cuentas una entrada de diario, pero ésa requeriría a jugadores reasumir el juego del diario algo que apenas comenzándolo para arriba del anillo de la actividad.&nbsp; Por esa razón usted puede ser que prefiera almacenar las altas cuentas en un archivo en el directorio de <strong>data</strong> algo que el diario, y no dejar una entrada de diario detrás en absoluto.
+</p>
+<p>El azúcar le da una manera de hacer eso.&nbsp; Primero usted necesita especificar una discusión adicional en el método del <em>__init de</em> su actividad <em>()</em> como esto:
+</p>
+<pre>class SugarCommander(activity.Activity):
+    def __init__(self, handle, create_jobject=True):
+        "The entry point to the Activity"
+        activity.Activity.__init__(self, handle, False)
+</pre>
+<p>En segundo lugar, usted necesita eliminar <em>() el</em> método <em>cercano</em> como esto:
+  <br />
+</p>
+<pre>    def close(self,  skip_save=False):
+        "Override the close method so we don't try to create a Journal entry."
+        activity.Activity.close(self,  True)
+</pre>
+<p>Ése es todo allí está a él.
+</p>
+<h2>Enumerar hacia fuera entradas de diario
+</h2>
+<p>Si usted necesita enumerar hacia fuera entradas de diario usted puede utilizar el método del <em>find() de</em> <strong>datastore</strong>.&nbsp; El método del hallazgo toma una discusión que contiene criterios de búsqueda.&nbsp; Si usted quiere buscar para los archivos de imagen usted puede buscar por el mime-tipo usando una declaración como esto:
+</p>
+<pre>        ds_objects, num_objects = datastore.find({'mime_type':['image/jpeg',
+            'image/gif', 'image/tiff',  'image/png']}, properties=['uid',
+            'title', 'mime_type']))
+</pre>
+<p>Usted puede utilizar cualquier cualidad de los meta datos para buscar encendido.&nbsp; Si usted quiere enumerar hacia fuera todo en el diario usted puede utilizar criterios de una búsqueda vacíos como esto:
+</p>
+<pre>        ds_objects, num_objects = datastore.find({}, properties=['uid',
+            'title', 'mime_type']))
+</pre>
+<p>La discusión de las características especifica qué meta datos a volver para cada objeto en la lista.&nbsp; Usted debe limitar éstos a lo que usted planea utilizar, pero incluye siempre el <strong>uid</strong>.&nbsp; Una cosa que usted debe <em>nunca</em> incluir en una lista es <strong>preview</strong>.&nbsp; Esto es una demostración del archivo de imagen qué la actividad para el objeto del diario parecía cuando era última usada.&nbsp; Si por alguna razón usted necesita esto hay una manera simple de conseguirla para un objeto individual del diario, pero usted nunca quiere incluirlo en una lista porque retrasará su actividad enormemente.
+  <br />
+</p>
+<p>El enumerar hacia fuera cuál está en el diario es complicado debido a la reescritura del datastore hecha para el azúcar .84.&nbsp; Antes de que .84 el método de <em>datastore.find ()</em> enumeraran hacia fuera entradas de diario y los archivos en medios externos como impulsiones del pulgar y las tarjetas del SD y usted necesite imaginar que sea cuál.&nbsp; En .84 y más adelante enumera solamente hacia fuera entradas de diario.&nbsp; Es afortunadamente posible escribir el código que apoya cualquier comportamiento.&nbsp; Aquí está el código en <strong>Sugar Commander</strong> que solamente las entradas de diario de las listas:
+  <br />
+</p>
+<pre>    def load_journal_table(self):
+        self.btn_save.props.sensitive = False
+        self.btn_delete.props.sensitive = False
+        ds_mounts = datastore.mounts()
+        mountpoint_id = None
+        if len(ds_mounts) == 1 and ds_mounts[0]['id'] == 1:
+               pass
+        else:
+            for mountpoint in ds_mounts:
+                id = mountpoint['id']
+                uri = mountpoint['uri']
+                if uri.startswith('/home'):
+                    mountpoint_id = id
+
+        query = {}
+        if mountpoint_id is not None:
+            query['mountpoints'] = [ mountpoint_id ]
+        ds_objects, num_objects = datastore.find(query, properties=['uid',
+            'title',  'mime_type'])
+
+        self.ls_journal.clear()
+        for i in xrange (0, num_objects, 1):
+            iter = self.ls_journal.append()
+            title = ds_objects[i].metadata['title']
+            self.ls_journal.set(iter, COLUMN_TITLE, title)
+            mime = ds_objects[i].metadata['mime_type']
+            self.ls_journal.set(iter, COLUMN_MIME, mime)
+            self.ls_journal.set(iter, COLUMN_JOBJECT, ds_objects[i])
+            if not self.selected_journal_entry is None and \
+                self.selected_journal_entry.object_id == ds_objects[i].object_id:
+                self.selection_journal.select_iter(iter)
+
+        self.ls_journal.set_sort_column_id(COLUMN_TITLE,  gtk.SORT_ASCENDING)
+        v_adjustment = self.list_scroller_journal.get_vadjustment()
+        v_adjustment.value = 0
+        return ds_objects[0]</pre>
+<p>Necesitamos utilizar el método de <em>datastore.mounts()</em> para dos propósitos:
+</p>
+<ul>
+  <li>En el azúcar .82 y debajo de él enumerará hacia fuera todos los puntos de montaje, incluyendo el lugar el diario se monta encendido y los medios externos de los lugares se montan encendido.&nbsp; El mountpoint es un diccionario del Python que contiene una característica del <strong>uri</strong> (que sea la trayectoria al punto de montaje) y una característica de la <strong>id</strong><span style="font-weight: bold;"> </span>(que es un nombre dado al punto de montaje).&nbsp; Cada entrada de diario tiene una cualidad de los meta datos nombrada <strong>mountpoint</strong>.&nbsp; <strong>El uri del</strong> diario será el único que comienza con <strong>/home</strong>, así que si limitamos la búsqueda para meter los objetos en diario donde la <strong>id de</strong> ese mountpoint iguala los meta datos del <strong>mountpoint</strong> en los objetos del diario que podemos enumerar fácilmente solamente objetos del diario.</li>
+  <li>En el azúcar .84 y más adelante el método de <em>datastore.mounts()</em> todavía existe pero no le dice cualquier cosa sobre mountpoints.&nbsp; Sin embargo, usted puede utilizar el código arriba para ver si hay solamente un mountpoint y si su identificación es 1.&nbsp; Si es usted sabe que usted se está ocupando del datastore reescrito de .84 y más adelante.&nbsp; La otra diferencia es que los objetos del diario tienen no más meta datos con una llave del <strong>mountpoint</strong>.&nbsp; Si usted utiliza el código sobre él explicará esta diferencia y trabajo con cualquier versión del azúcar.</li>
+</ul>
+<p>¿Qué si usted quiere el comportamiento del azúcar .82, enumerar entradas de diario y archivos del USB como objetos del diario, en .82 y .84 y para arriba?&nbsp; Quise hacer eso para las <strong>View Slides</strong><span style="font-weight: bold;"> </span>y terminé encima de usar este código:
+</p>
+<pre>    def load_journal_table(self):
+        ds_objects, num_objects = datastore.find({'mime_type':['image/jpeg',
+            'image/gif', 'image/tiff',  'image/png']},
+            properties=['uid', 'title', 'mime_type'])
+        self.ls_right.clear()
+        for i in xrange (0, num_objects, 1):
+            iter = self.ls_right.append()
+            title = ds_objects[i].metadata['title']
+            mime_type = ds_objects[i].metadata['mime_type']
+            if mime_type == 'image/jpeg' and not title.endswith('.jpg')\
+                and not title.endswith('.jpeg')  \
+                and not title.endswith('.JPG')  and not title.endswith('.JPEG') :
+                title = title + '.jpg'
+            if mime_type == 'image/png' and not title.endswith('.png') \
+                and not title.endswith('.PNG'):
+                title = title + '.png'
+            if mime_type == 'image/gif' and not title.endswith('.gif')\
+                and not title.endswith('.GIF'):
+                title = title + '.gif'
+            if mime_type == 'image/tiff' and not title.endswith('.tiff')\
+                and not title.endswith('.TIFF'):
+                title = title + '.tiff'
+            self.ls_right.set(iter, COLUMN_IMAGE, title)
+            jobject_wrapper = JobjectWrapper()
+            jobject_wrapper.set_jobject(ds_objects[i])
+            self.ls_right.set(iter,  COLUMN_PATH,  jobject_wrapper)
+
+        valid_endings = ('.jpg',  '.jpeg', '.JPEG',  '.JPG', '.gif',
+            '.GIF', '.tiff', '.TIFF', '.png', '.PNG')
+        ds_mounts = datastore.mounts()
+        if len(ds_mounts) == 1 and ds_mounts[0]['id'] == 1:
+            # datastore.mounts() is stubbed out, we're running .84 or better
+            for dirname,  dirnames,  filenames in os.walk('/media'):
+                if '.olpc.store' in dirnames:
+                    dirnames.remove('.olpc.store')
+                    # don't visit .olpc.store directories
+                for filename in filenames:
+                    if filename.endswith(valid_endings):
+                        iter = self.ls_right.append()
+                        jobject_wrapper = JobjectWrapper()
+                        jobject_wrapper.set_file_path(os.path.join(dirname,
+                            filename))
+                        self.ls_right.set(iter,  COLUMN_IMAGE,  filename)
+                        self.ls_right.set(iter,  COLUMN_PATH,  jobject_wrapper)
+
+        self.ls_right.set_sort_column_id(COLUMN_IMAGE,  gtk.SORT_ASCENDING)
+</pre>
+<p>En este caso utilizo el método de <em>datastore.mounts()</em> para imaginar qué versión del datastore tengo y entonces si estoy funcionando .84 y más adelante utilizo <em>os.walk()</em> para crear una lista plana de todos los archivos en todos los directorios encontrados bajo directorio <strong>/media</strong> (que es adonde las tarjetas del USB y del SD se montan siempre).&nbsp; No puedo hacer estos archivos en los directorios, pero qué puedo hacer es hacer una clase de la envoltura que pueda contener un objeto del diario o un archivo y utilizar esos objetos donde utilizaría normalmente objetos del diario.&nbsp; La clase de la envoltura parece esto:
+</p>
+<pre>class JobjectWrapper():
+    def __init__(self):
+        self.__jobject = None
+        self.__file_path = None
+
+    def set_jobject(self,  jobject):
+        self.__jobject = jobject
+
+    def set_file_path(self,  file_path):
+        self.__file_path = file_path
+
+    def get_file_path(self):
+        if  self.__jobject != None:
+            return self.__jobject.get_file_path()
+        else:
+            return self.__file_path
+</pre>
+<h2> Usando entradas de diario
+</h2>
+<p>Cuando usted está listo para leer un archivo almacenado en un objeto del diario que usted puede utilizar el método del <em>get_file_path() del</em> objeto del diario para conseguir una trayectoria del archivo y para abrirla para la lectura, como esto:
+  <br />
+</p>
+<pre>        fname = jobject.get_file_path ()
+</pre>
+<p>Una palabra de la precaución: sea consciente que esta trayectoria no existe hasta que usted llame el <em>get_file_path ()</em> y no existirá de largo después.&nbsp; Con el diario usted trabaja con las copias de los archivos en el diario, no las originales.&nbsp; Por esa razón usted no quiere almacenar el valor de vuelta del <em>get_file_path ()</em> para el uso posterior porque más adelante puede no ser válido.&nbsp; En lugar, almacene el objeto sí mismo del diario y llame la derecha del método antes de que usted necesite la trayectoria.
+</p>
+<p>Las entradas de los meta datos para los objetos del diario contienen secuencias y trabajan generalmente la manera que usted esperaría, con una excepción, cuál es la <strong>preview</strong>.
+  <br />
+</p>
+<pre>    def create_preview(self,  object_id):
+        jobject = datastore.get(object_id)
+
+        if jobject.metadata.has_key('preview'):
+            preview = jobject.metadata['preview']
+            if preview is None or preview == '' or preview == 'None':
+                if jobject.metadata['mime_type'] .startswith('image/'):
+                    filename = jobject.get_file_path()
+                    self.show_image(filename)
+                    return
+                if jobject.metadata['mime_type']  == 'application/x-cbz':
+                    filename = jobject.get_file_path()
+                    fname = self.extract_image(filename)
+                    self.show_image(fname)
+                    os.remove(fname)
+                    return
+
+        if jobject.metadata.has_key('preview') and \
+                len(jobject.metadata['preview']) &gt; 4:
+
+            if jobject.metadata['preview'][1:4] == 'PNG':
+                preview_data = jobject.metadata['preview']
+            else:
+                import base64
+                preview_data = base64.b64decode(jobject.metadata['preview'])
+
+            loader = gtk.gdk.PixbufLoader()
+            loader.write(preview_data)
+            scaled_buf = loader.get_pixbuf()
+            loader.close()
+            self.image.set_from_pixbuf(scaled_buf)
+            self.image.show()
+        else:
+            self.image.clear()
+            self.image.show()
+</pre>
+<p> La cualidad de los meta datos de la <strong>preview</strong> es diferente de dos maneras:
+</p>
+<ul>
+  <li>Debemos nunca pedir la <strong>preview<strong></strong></strong> mientras que los meta datos que se volverán en nuestra lista de diario se oponen.&nbsp; Necesitaremos conseguir una copia completa del objeto del diario para conseguirlo.&nbsp; Puesto que tenemos ya un objeto del diario podemos conseguir el completo metemos el objeto en diario consiguiendo su <strong>object id</strong> entonces que piden un nuevo copiamos del datastore usando la identificación</li>
+  <li>La imagen de la inspección previo es un objeto <strong>binario</strong> (<strong>dbus.ByteArray</strong>) pero en las versiones del azúcar más viejas de .82 él serán almacenados como secuencia de texto.&nbsp; Para lograr esto es la <strong>base 64 codificada</strong>.</li>
+</ul>
+<p>El código que usted utilizaría para conseguir una copia completa de los parecer de un objeto del diario esto:
+</p>
+<pre>        object_id = jobject.object_id
+        jobject = datastore.get(object_id)
+</pre>
+<p>Ahora para una explicación de la codificación de la base 64.&nbsp; Usted ha oído probablemente que las computadoras utilizan el sistema de numeración bajo dos, en el cual los únicos dígitos usados son 1 y 0.&nbsp; Una unidad de almacenaje de datos que puede llevar a cabo un cero o el se llama un <strong>bit</strong>.&nbsp; Las computadoras necesitan almacenar la información además de números, así que acomodar esto agrupamos pedacitos en grupos de 8 (generalmente) y llaman estos grupos los <strong>bytes</strong>.&nbsp; Si usted utiliza solamente 7 de los 8 pedacitos en un octeto usted puede almacenar una letra del alfabeto romano, un signo de puntuación, o un solo dígito, cosas más como lengüetas y caracteres de avance de línea.&nbsp; Cualquier archivo que se pueda crear usando solamente 7 pedacitos fuera de los 8 se llama un <strong>archivo de texto</strong>.&nbsp; Todo que necesita los 8 pedacitos de cada octeto hacer, incluyendo programas de computadora, películas, la música, y los cuadros de Jessica Alba es un <strong>binary</strong>.&nbsp; En versiones del azúcar antes de que .82 meta dato del objeto del diario pueda almacenar solamente secuencias de texto.&nbsp; Necesitamos de alguna manera representar bytes de 8 bits en 7 pedacitos.&nbsp; Hacemos esto agrupando los octetos juntos en una colección más grande de pedacitos y entonces partiendo se retiran en los grupos de 7 pedacitos.&nbsp; El Python tiene el paquete <strong>base64</strong> para hacer esto para nosotros.
+</p>
+<p>La codificación de la base 64 es realmente una técnica bastante común.&nbsp; Si usted ha enviado nunca un email con un archivo atado el archivo era la base 64 codificada.
+</p>
+<p>El código antedicho tiene unas par de maneras de crear una imagen de la inspección previo.&nbsp; Si los meta datos de la inspección previo contienen una imagen del png se carga en un pixbuf y se exhibe.&nbsp; Si no hay meta datos de la inspección previo sino el tipo del MIME está para un archivo de imagen o un archivo de cierre relámpago del cómic que creamos la inspección previo de la entrada de diario sí mismo.
+  <br />
+</p>
+<p>Los cheques de código los primeros tres caracteres de los meta datos de la inspección previo para ver si son “png”.&nbsp; Si es así el archivo es una imagen de los <strong>Portable Network Graphics</strong> almacenada como binario y no necesita ser convertido de la codificación de la base 64, si no hace.
+</p>
+<h2>Puesta al día de un objeto del diario
+</h2>
+<p>El código para poner al día un objeto del diario parece esto:
+</p>
+<pre>    def update_entry(self):
+        needs_update = False
+
+        if self.selected_journal_entry is None:
+            return
+
+        object_id = self.selected_journal_entry.object_id
+        jobject = datastore.get(object_id)
+
+        old_title = jobject.metadata.get('title', None)
+        if old_title != self.title_entry.props.text:
+            jobject.metadata['title'] = self.title_entry.props.text
+            jobject.metadata['title_set_by_user'] = '1'
+            needs_update = True
+
+        old_tags = jobject.metadata.get('tags', None)
+        new_tags = self.tags_textview.props.buffer.props.text
+        if old_tags != new_tags:
+            jobject.metadata['tags'] = new_tags
+            needs_update = True
+
+        old_description = jobject.metadata.get('description', None)
+        new_description = self.description_textview.props.buffer.props.text
+        if old_description != new_description:
+            jobject.metadata['description'] = new_description
+            needs_update = True
+
+        if needs_update:
+            datastore.write(jobject, update_mtime=False,
+                            reply_handler=self.datastore_write_cb,
+                            error_handler=self.datastore_write_error_cb)
+        self.btn_save.props.sensitive = False
+
+    def datastore_write_cb(self):
+        pass
+
+    def datastore_write_error_cb(self, error):
+        logging.error('sugarcommander.datastore_write_error_cb: %r' % error)
+</pre>
+<h2>Supresión de una entrada de diario
+</h2>
+<p>El código para suprimir una entrada de diario es éste:
+</p>
+<pre>    def delete_button_press_event_cb(self, entry, event):
+        datastore.delete(self.selected_journal_entry.object_id)
+</pre>
+<h2>Conseguir servicios repetidos del diario usando el D-Bus
+</h2>
+<p>En el capítulo en la <strong>Fabricación las Actividades compartidas</strong> vimos cómo las llamadas del D-Bus enviadas sobre los tubos de la telepatía se podrían utilizar para enviar mensajes de una actividad que funcionaba en una computadora a la misma actividad que funcionaba en una diversa computadora.&nbsp;&nbsp; El D-Bus no se utiliza normalmente que manera; se utiliza típicamente para enviar mensajes entre los programas que funcionan en la misma computadora.&nbsp;
+</p>
+<p>Por ejemplo, si usted está trabajando con el diario usted puede conseguir servicios repetidos siempre que el diario sea actualizado.&nbsp; Usted consigue los servicios repetidos si la actualización fuera hecha por su actividad o a otra parte.&nbsp; Si es importante que su actividad sepa cuándo se ha puesto al día el diario usted querrá conseguir estos servicios repetidos.
+</p>
+<p>La primera cosa que usted necesita hacer es definir algunos constantes e importar el paquete del D-Bus:
+  <br />
+</p>
+<pre>DS_DBUS_SERVICE = “org.laptop.sugar.DataStore”
+DS_DBUS_INTERFACE = “org.laptop.sugar.DataStore”
+DS_DBUS_PATH = “/org/laptop/sugar/DataStore”
+import dbus
+</pre>
+<p>Después, en su código puesto método del __init__() a conectar con las señales y para hacer los servicios repetidos:
+  <br />
+</p>
+<pre>        bus = dbus.SessionBus()
+        remote_object = bus.get_object(DS_DBUS_SERVICE, DS_DBUS_PATH)
+        _datastore = dbus.Interface(remote_object, DS_DBUS_INTERFACE)
+        _datastore.connect_to_signal('Created', self._datastore_created_cb)
+        _datastore.connect_to_signal('Updated', self._datastore_updated_cb)
+        _datastore.connect_to_signal('Deleted', self._datastore_deleted_cb)
+</pre>
+<p>Los métodos que eran funcionados por los servicios repetidos pudieron mirar algo similar:
+</p>
+<pre>    def datastore_created_cb(self, uid):
+        new_jobject = datastore.get(uid)
+        iter = self.ls_journal.append()
+        title = new_jobject.metadata['title']
+        self.ls_journal.set(iter, COLUMN_TITLE, title)
+        mime = new_jobject.metadata['mime_type']
+        self.ls_journal.set(iter, COLUMN_MIME, mime)
+        self.ls_journal.set(iter, COLUMN_JOBJECT, new_jobject)
+
+    def datastore_updated_cb(self,  uid):
+        new_jobject = datastore.get(uid)
+        iter = self.ls_journal.get_iter_first()
+        for row in self.ls_journal:
+            jobject = row[COLUMN_JOBJECT]
+            if jobject.object_id == uid:
+                title = new_jobject.metadata['title']
+                self.ls_journal.set_value(iter, COLUMN_TITLE, title)
+                break
+            iter = self.ls_journal.iter_next(iter)
+        object_id = self.selected_journal_entry.object_id
+        if object_id == uid:
+            self.set_form_fields(new_jobject)
+
+    def datastore_deleted_cb(self,  uid):
+        save_path = self.selected_path
+        iter = self.ls_journal.get_iter_first()
+        for row in self.ls_journal:
+            jobject = row[COLUMN_JOBJECT]
+            if jobject.object_id == uid:
+                self.ls_journal.remove(iter)
+                break
+            iter = self.ls_journal.iter_next(iter)
+
+        try:
+            self.selection_journal.select_path(save_path)
+            self.tv_journal.grab_focus()
+        except:
+            self.title_entry.set_text('')
+            description_textbuffer = self.description_textview.get_buffer()
+            description_textbuffer.set_text('')
+            tags_textbuffer = self.tags_textview.get_buffer()
+            tags_textbuffer.set_text('')
+            self.btn_save.props.sensitive = False
+            self.btn_delete.props.sensitive = False
+            self.image.clear()
+            self.image.show()
+</pre>
+<p><strong>El uid</strong> pasó a cada método de servicio repetido es la <strong>object id</strong> objeto del diario se ha agregado, se ha puesto al día, o se ha suprimido que.&nbsp; Si una entrada se agrega al diario que consigo el objeto del diario del datastore por su uid, después agregúelo al gtk.ListStore para el gtk.TreeModel estoy utilizando para enumerar hacia fuera entradas de diario.&nbsp; Si una entrada es actualizada o suprimido necesito explicar la posibilidad que la entrada de diario yo es visión o el corregir pudo haber sido puesto al día o haber sido quitado.&nbsp;&nbsp;&nbsp; Utilizo el uid para imaginar que que reman en el gtk.ListStore necesita ser quitado o ser modificado colocando a través de las entradas en el gtk.ListStore que busca un fósforo.
+  <br />
+</p> Ahora usted sabe que todo que usted necesitará nunca saber para trabajar con el diario.
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

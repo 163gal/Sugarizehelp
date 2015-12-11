@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/StandalonePythonReadEtexts' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1> Un programa independiente del Python para leer Etexts
+</h1>
+<h2>El programa
+  <br />
+</h2>
+<p>Nuestro programa del ejemplo se basa en la primera Actividad que escribí, que leí Etexts. Esto es un programa para leer los e-libros libres.
+  <br />
+</p>
+<p>La más vieja y mejor fuente de e-libros libres es un Web site llamado Project Gutenberg <a href="http://66.196.80.202/babelfish/translate_url_content?.intl=us&amp;lp=en_es&amp;trurl=http://www.gutenberg.org/wiki/Main_Page).">(</a><a href="http://www.gutenberg.org/wiki/Main_Page" target="_top">http://www.gutenberg.org/wiki/Main_Page)</a>.&nbsp; Crean los libros en formato de texto llano, es decir la clase de archivo que usted podría hacer si usted escribió un libro en Notepad y golpeó "Enter" en el extremo de cada línea. Tienen millares de libros que estén fuera de los derechos reservados, incluyendo algunos qué son el mejor escrito nunca. Antes de que usted lea más, vaya a ese Web site y seleccione un libro que los intereses usted. Compruebe hacia fuera la lista de los “Mejor 100” para ver los libros y a los autores más populares.
+</p>
+<p>El programa que vamos a crear leerá los libros en formato de texto llano solamente.
+</p>
+<p>Hay un depósito de Git que contiene todos los ejemplos del código en este libro. Una vez que usted tiene Git instalado usted puede copiar el depósito a su computadora con este comando:
+</p>
+<pre><code>git clone git://git.sugarlabs.org/myo-sugar-activities-examples/mainline.git</code></pre>
+<p>&nbsp;El código para nuestro programa independiente de Python será encontrado en el directorio <strong>Make_Standalone_Python</strong> en un archivo nombrado <strong>ReadEtexts.py</strong>.&nbsp; Parece esto:
+</p>
+<pre>#! /usr/bin/env python
+import sys
+import os
+import zipfile
+import pygtk
+import gtk
+import getopt
+import pango
+
+page=0
+PAGE_SIZE = 45
+
+class ReadEtexts():
+
+    def keypress_cb(self, widget, event):
+        "Respond when the user presses one of the arrow keys"
+        keyname = gtk.gdk.keyval_name(event.keyval)
+        if keyname == 'plus':
+            self.font_increase()
+            return True
+        if keyname == 'minus':
+            self.font_decrease()
+            return True
+        if keyname == 'Page_Up' :
+            self.page_previous()
+            return True
+        if keyname == 'Page_Down':
+            self.page_next()
+            return True
+        if keyname == 'Up' or keyname == 'KP_Up' \
+                or keyname == 'KP_Left':
+            self.scroll_up()
+            return True
+        if keyname == 'Down' or keyname == 'KP_Down' \
+                or keyname == 'KP_Right':
+            self.scroll_down()
+            return True
+        return False
+
+    def page_previous(self):
+        global page
+        page=page-1
+        if page &lt; 0: page=0
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.upper - v_adjustment.page_size
+
+    def page_next(self):
+        global page
+        page=page+1
+        if page &gt;= len(self.page_index): page=0
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.lower
+
+    def font_decrease(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size - 1
+        if font_size &lt; 1:
+            font_size = 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def font_increase(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size + 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def scroll_down(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.upper - \
+                v_adjustment.page_size:
+            self.page_next()
+            return
+        if v_adjustment.value &lt; v_adjustment.upper - v_adjustment.page_size:
+            new_value = v_adjustment.value + v_adjustment.step_increment
+            if new_value &gt; v_adjustment.upper - v_adjustment.page_size:
+                new_value = v_adjustment.upper - v_adjustment.page_size
+            v_adjustment.value = new_value
+
+    def scroll_up(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.lower:
+            self.page_previous()
+            return
+        if v_adjustment.value &gt; v_adjustment.lower:
+            new_value = v_adjustment.value - \
+                v_adjustment.step_increment
+            if new_value &lt; v_adjustment.lower:
+                new_value = v_adjustment.lower
+            v_adjustment.value = new_value
+
+    def show_page(self, page_number):
+        global PAGE_SIZE, current_word
+        position = self.page_index[page_number]
+        self.etext_file.seek(position)
+        linecount = 0
+        label_text = '\n\n\n'
+        textbuffer = self.textview.get_buffer()
+        while linecount &lt; PAGE_SIZE:
+            line = self.etext_file.readline()
+            label_text = label_text + unicode(line, 'iso-8859-1')
+            linecount = linecount + 1
+        label_text = label_text + '\n\n\n'
+        textbuffer.set_text(label_text)
+        self.textview.set_buffer(textbuffer)
+
+    def save_extracted_file(self, zipfile, filename):
+        "Extract the file to a temp directory for viewing"
+        filebytes = zipfile.read(filename)
+        f = open("/tmp/" + filename, 'w')
+        try:
+            f.write(filebytes)
+        finally:
+            f.close
+
+    def read_file(self, filename):
+        "Read the Etext file"
+        global PAGE_SIZE
+
+        if zipfile.is_zipfile(filename):
+            self.zf = zipfile.ZipFile(filename, 'r')
+            self.book_files = self.zf.namelist()
+            self.save_extracted_file(self.zf, self.book_files[0])
+            currentFileName = "/tmp/" + self.book_files[0]
+        else:
+            currentFileName = filename
+
+        self.etext_file = open(currentFileName,"r")
+        self.page_index = [ 0 ]
+        linecount = 0
+        while self.etext_file:
+            line = self.etext_file.readline()
+            if not line:
+                break
+            linecount = linecount + 1
+            if linecount &gt;= PAGE_SIZE:
+                position = self.etext_file.tell()
+                self.page_index.append(position)
+                linecount = 0
+        if filename.endswith(".zip"):
+            os.remove(currentFileName)
+
+    def destroy_cb(self, widget, data=None):
+        gtk.main_quit()
+
+    def main(self, file_path):
+        self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+        self.window.connect("destroy", self.destroy_cb)
+        self.window.set_title("Read Etexts")
+        self.window.set_size_request(640, 480)
+        self.window.set_border_width(0)
+        self.read_file(file_path)
+        self.scrolled_window = gtk.ScrolledWindow(hadjustment=None, \
+                                                  vadjustment=None)
+        self.textview = gtk.TextView()
+        self.textview.set_editable(False)
+        self.textview.set_left_margin(50)
+        self.textview.set_cursor_visible(False)
+        self.textview.connect("key_press_event", self.keypress_cb)
+        buffer = self.textview.get_buffer()
+        self.font_desc = pango.FontDescription("sans 12")
+        font_size = self.font_desc.get_size()
+        self.textview.modify_font(self.font_desc)
+        self.show_page(0)
+        self.scrolled_window.add(self.textview)
+        self.window.add(self.scrolled_window)
+        self.textview.show()
+        self.scrolled_window.show()
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        self.window.show()
+        gtk.main()
+
+if __name__ == "__main__":
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "")
+        ReadEtexts().main(args[0])
+    except getopt.error, msg:
+        print msg
+        print "This program has no options"
+        sys.exit(2)
+</pre>
+<p>
+</p>
+<h2> Funcionar con el programa
+</h2>
+<p>Para funcionar con el programa usted debe primero hacerlo ejecutable. Usted necesita solamente hacer esto una vez:
+</p>
+<pre>chmod 755 ReadEtexts.py</pre>
+<p>Para este ejemplo, yo transferido el archivo para el <em>orgullo y el prejudicar</em>. El programa trabajará con cualquiera de los formatos de texto llano, que son texto sin comprimir o un archivo de ZIP. El archivo de ZIP se nombra <strong>1342.zip</strong>, y podemos leer el libro funcionando esto de un terminal:
+</p>
+<pre>./ReadEtexts.py 1342.zip</pre>
+<p>Esto es lo que parece el programa en la acción:
+</p>
+<p><img alt="El programa leído independiente de Etexts en la acción." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/StandalonePythonReadEtexts/ReadEtexts_01_1_en.jpg" height="503" width="646" />
+</p>
+<p>Usted puede consumir la <em>página, la página abajo, encima, abajo, de</em> llaves <em>izquierdas</em>, y <em>correctas</em> para navegar a través del libro y “+” y “-” las llaves para ajustar el tamaño de fuente.
+</p>
+<h2>Cómo el programa trabaja
+</h2>
+<p>Este programa lee a través del archivo de texto que contiene el libro y lo divide en las páginas de 45 líneas cada uno.&nbsp; Necesitamos hacer esto porque el componente de <strong>gtk.TextView que</strong> utilizamos para ver el texto necesitaría mucha memoria enrollar a través del libro entero y ése lastimaría funcionamiento.&nbsp; Una segunda razón es que queremos hacer la lectura del e-libro tanto cuanto sea posible como la lectura de un libro regular, y los libros regulares tienen páginas.&nbsp; Si un profesor asigna la lectura de un libro ella puede ser que diga las “páginas leídas 35-50 para la man¢ana”.&nbsp; Finalmente, quisiéramos que este programa recordara qué página usted paró el seguir leyendo y le trae de nuevo a esa página otra vez cuando usted leyó el libro la vez próxima.&nbsp; (El programa que tenemos no hace hasta ahora eso todavía).
+</p>
+<p>Para paginar a través del libro que utilizamos <strong>de acceso aleatorio</strong> para leer el archivo.&nbsp; Para entender lo que consideran los medios de acceso aleatorio a un archivo, una cinta del VHS y un DVD.&nbsp; Para conseguir a cierta escena en un VHS grábele necesidad de pasar con todas las escenas que vinieron antes de ella, en orden.&nbsp; Aunque usted la hace en la velocidad usted todavía tiene que mirar todos para encontrar el lugar que usted quiere comenzar a mirar. Esto es <strong>de acceso secuencial</strong>.&nbsp; Por una parte un DVD tiene paradas del capítulo y posiblemente un menú del capítulo. Usando un menú del capítulo usted puede mirar cualquier escena en la película enseguida, y usted puede saltar alrededor mientras que usted tiene gusto. Esto es de acceso aleatorio, y el menú del capítulo es como un <strong>índice</strong> Por supuesto usted puede tener acceso al material en un DVD secuencialmente también.
+</p>
+<p>Necesitamos de acceso aleatorio saltar a cualquier página tenemos gusto, y necesitamos un índice de modo que sepamos dónde cada página comienza. Hacemos el índice leyendo la línea entera del archivo uno a la vez. Cada 45 líneas anotamos cuántos caracteres en el archivo hemos conseguido y almacenamos esta información en una lista de Python. Entonces volvemos al principio del archivo y exhibimos la primera página. Cuando el usuario del programa va a la página siguiente o anterior entendemos cuál será la nueva página y miramos en la entrada de lista para esa página.&nbsp; Esto nos dice que la página comienza 4.200 caracteres en el archivo.&nbsp; Utilizamos búsqueda () en el archivo para ir a ese carácter y después leemos 45 líneas que comienzan en ese punto y las cargamos en el TextView.
+</p>
+<p>Cuando usted funciona este aviso del programa cómo rápidamente está.&nbsp; Los programas del Python duran para funcionar con una línea de código que una lengua compilada, pero en este programa no importa porque la elevación pesada en el programa es hecha por el TextView, que fue creado en una lengua compilada. Las piezas de Python no hacen que mucha el programa no pasa tan mucha hora que las funciona.
+</p>
+<p>Sugar utiliza Python mucho, no apenas para las Actividades pero para el ambiente sí mismo del Sugar. Usted puede leer en alguna parte eso usando tanto Python es “un desastre” para el funcionamiento. No lo crea.
+</p> No hay lenguajes de programación lentos, solamente programadores lentos
+<p>
+</p>
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

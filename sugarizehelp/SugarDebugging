@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/SugarDebugging' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Actividades del Sugar del depuración
+</h1>
+<h2>Introducción
+</h2>
+<p>No importa que tan cuidadoso sea usted, es probable que su actividad no le trabaje perfectamente al primer intento que intente correrlo.  La depuración de errores de una actividad del Sugar es un tanto diferente a eliminar errores de un programa independiente.  Cuando usted prueba un programa en realidad lo esta ejecutando.  Si hay errores de sintaxis en el código que usted verá los mensajes de error en la consola en ese mismo momento, y si lo esta corriendo sobre <strong>Eric</strong> IDE la línea que contiene el error de código es seleccionado en el redactor así que usted puede corregirlo y continuar.
+</p>
+<p>Con Sugar es un poco diferente.  Es el ambiente de Sugar, no Eric, que funciona con su programa.  Si hay errores de sintaxis en su código usted no los verá enseguida.  En lugar de eso, el el icono de actividad que puede ver cuanto su actividad inicia comenzara a parpadear por algunos minutos, después de eso simplemente se ira y su actividad no podrá iniciar.  La única manera que usted verá que error causó el problema será utilizar los <strong>registros de actividades</strong>.  Si su programa no tiene ninguno n error de sintaxis pero tiene errores de lógica no le sera posible avanzar y depurar usando el depurador para encontrarlos.  En lugar de eso, usted necesitara algún tipo de rastreador de registros para ver que esta sucediendo con su código y como ya fue mencionado, aga uso del "registro de actividades" para ver los registros en los mensajes. Es un buen momento para repetir el consejo que di anteriormente:
+</p>
+<h2>Haga una versión independiente de su programa primero
+</h2>
+<p>Lo que lo hace su actividad, es una buena apuesta que el 80% de él se podrían hacer por un programa independiente que sería mucho menos aburrido de eliminar errores.  Si usted puede pensar en una manera de hacer su actividad runnable como una actividad o un programa independiente del Python entonces por supuesto la hace.
+</p>
+<h2>Utilice PyLint, PyChecker, o PyFlakes
+</h2>
+<p>Una de las ventajas de una lengua compilada como <strong>C</strong> sobre una lengua interpretada como Python es que el recopilador hace un completo verifica del código antes de convertirlo a en lenguaje de máquina.  Si hay errores de sintaxis que el recopilador le da mensajes de error informativos y para la compilación.  Hay una <strong>pelusa</strong> para uso general de la llamada que los programador de lenguaje-c pueden utilizar para hacer cheques aún más cuidadosos que el recopilador haría y encontraría cosas cuestionables el entrar encendido en el código.
+</p>
+<p>El Python no tiene un recopilador sino que tiene varios pelusa-como utilidades que usted puede funcionar con en su código antes de usted la prueba él.  Estas utilidades son <strong>pyflakes</strong>, <strong>pychecker</strong>, y <strong>pylint</strong>.  Cualquier distribución del linux debe tener tres disponibles.
+</p>
+<h3>PyFlakes
+</h3>
+<p>Aquí está un ejemplo de PyFlakes que usa:
+</p>
+<pre><strong>pyflakes minichat.py</strong>
+minichat.py:25: 'COLOR_BUTTON_GREY' imported but unused
+minichat.py:28: 'XoColor' imported but unused
+minichat.py:29: 'Palette' imported but unused
+minichat.py:29: 'CanvasInvoker' imported but unused
+</pre>
+<p>PyFlakes parece hacer la menos comprobación de los tres, pero encuentra que los errores como éstos sobre eso que un ojo humano faltaría.
+</p>
+<h3>PyChecker
+</h3>
+<p>Aquí está PyChecker en la acción:
+  <br />
+</p>
+<pre><strong>pychecker ReadEtextsActivity.py</strong>
+Processing ReadEtextsActivity...
+/usr/lib/python2.5/site-packages/dbus/_dbus.py:251: DeprecationWarning: The dbus_bindings module is not public API and will go away soon.
+
+Most uses of dbus_bindings are applications catching the exception
+dbus.dbus_bindings.DBusException. You should use dbus.DBusException
+instead (this is compatible with all dbus-python versions since 0.40.2).
+
+If you need additional public API, please contact the maintainers via
+<dbus@lists.freedesktop.org>.
+
+  import dbus.dbus_bindings as m
+
+Warnings...
+
+/usr/lib/python2.5/site-packages/sugar/activity/activity.py:847: Parameter (ps) not used
+/usr/lib/python2.5/site-packages/sugar/activity/activity.py:992: Parameter (event) not used
+/usr/lib/python2.5/site-packages/sugar/activity/activity.py:992: Parameter (widget) not used
+/usr/lib/python2.5/site-packages/sugar/activity/activity.py:996: Parameter (widget) not used
+
+/usr/lib/python2.5/site-packages/sugar/graphics/window.py:157: No class attribute (_alert) found
+/usr/lib/python2.5/site-packages/sugar/graphics/window.py:164: Parameter (window) not used
+/usr/lib/python2.5/site-packages/sugar/graphics/window.py:188: Parameter (widget) not used
+/usr/lib/python2.5/site-packages/sugar/graphics/window.py:200: Parameter (event) not used
+/usr/lib/python2.5/site-packages/sugar/graphics/window.py:200: Parameter (widget) not used
+
+ReadEtextsActivity.py:62: Parameter (widget) not used
+
+4 errors suppressed, use -#/--limit to increase the number of errors displayed
+</dbus@lists.freedesktop.org></pre>
+<p>PyChecker no sólo comprueba su código, él comprueba el código que usted importa, incluyendo código del azúcar.
+  <br />
+</p>
+<h3>PyLint
+</h3>
+<p> Aquí está PyLint, el más cuidadoso de los tres:
+</p>
+<pre><strong>pylint ReadEtextsActivity.py</strong>
+No config file found, using default configuration
+************* Module ReadEtextsActivity
+C:177: Line too long (96/80)
+C:  1: Missing docstring
+C: 27: Operator not preceded by a space
+page=0
+    ^
+C: 27: Invalid name "page" (should match (([A-Z_][A-Z0-9_]*)|(__.*__))$)
+C: 30:ReadEtextsActivity: Missing docstring
+C:174:ReadEtextsActivity.read_file: Invalid name "zf" (should match [a-z_][a-z0-9_]{2,30}$)
+W: 30:ReadEtextsActivity: Method 'write_file' is abstract in class 'Activity' but is not overridden
+R: 30:ReadEtextsActivity: Too many ancestors (12/7)
+W: 33:ReadEtextsActivity.__init__: Using the global statement
+R: 62:ReadEtextsActivity.keypress_cb: Too many return statements (7/6)
+C: 88:ReadEtextsActivity.page_previous: Missing docstring
+W: 89:ReadEtextsActivity.page_previous: Using the global statement
+C: 90:ReadEtextsActivity.page_previous: Operator not preceded by a space
+        page=page-1
+            ^
+C: 91:ReadEtextsActivity.page_previous: Operator not preceded by a space
+        if page < 0: page=0
+                         ^
+C: 91:ReadEtextsActivity.page_previous: More than one statement on a single line
+C: 96:ReadEtextsActivity.page_next: Missing docstring
+W: 97:ReadEtextsActivity.page_next: Using the global statement
+C: 98:ReadEtextsActivity.page_next: Operator not preceded by a space
+        page=page+1
+            ^
+C: 99:ReadEtextsActivity.page_next: More than one statement on a single line
+C:104:ReadEtextsActivity.font_decrease: Missing docstring
+C:112:ReadEtextsActivity.font_increase: Missing docstring
+C:118:ReadEtextsActivity.scroll_down: Missing docstring
+C:130:ReadEtextsActivity.scroll_up: Missing docstring
+C:142:ReadEtextsActivity.show_page: Missing docstring
+W:143:ReadEtextsActivity.show_page: Using global for 'PAGE_SIZE' but no assigment is done
+W:143:ReadEtextsActivity.show_page: Using global for 'current_word' but no assigment is done
+W:157:ReadEtextsActivity.save_extracted_file: Redefining name 'zipfile' from outer scope (line 21)
+C:163:ReadEtextsActivity.save_extracted_file: Invalid name "f" (should match [a-z_][a-z0-9_]{2,30}$)
+W:171:ReadEtextsActivity.read_file: Using global for 'PAGE_SIZE' but no assigment is done
+C:177:ReadEtextsActivity.read_file: Invalid name "currentFileName" (should match [a-z_][a-z0-9_]{2,30}$)
+C:179:ReadEtextsActivity.read_file: Invalid name "currentFileName" (should match [a-z_][a-z0-9_]{2,30}$)
+C:197:ReadEtextsActivity.make_new_filename: Missing docstring
+R:197:ReadEtextsActivity.make_new_filename: Method could be a function
+R: 30:ReadEtextsActivity: Too many public methods (350/20)
+W:174:ReadEtextsActivity.read_file: Attribute 'zf' defined outside __init__
+W:181:ReadEtextsActivity.read_file: Attribute 'etext_file' defined outside __init__
+W:175:ReadEtextsActivity.read_file: Attribute 'book_files' defined outside __init__
+W:182:ReadEtextsActivity.read_file: Attribute 'page_index' defined outside __init__
+
+<em>... A bunch of tables appear here ...</em>
+
+Global evaluation
+-----------------
+Your code has been rated at 7.52/10 (previous run: 7.52/10)
+</pre>
+<p>PyLint es el más resistente en su código y su ego.  No sólo le dice de errores de sintaxis, le habla que todo alguien pudo encontrar la avería con en su código.  Esto incluye las ediciones del estilo que no afectarán a cómo su código funciona pero afectarán a cómo es legible están a otros programadores.
+  <br />
+</p>
+<h2>La actividad del registro
+</h2>
+<p>Cuando usted comienza a probar sus Actividades la actividad del registro será como su segunda casa.  Exhibe una lista de ficheros de diario en el cristal izquierdo y cuando usted selecciona uno exhibirá el contenido del archivo en el cristal derecho.  Cada vez que usted funciona con su actividad un nuevo fichero de diario se crea para él, así que usted puede comparar el registro que usted consiguió este vez con lo que usted consiguió en funcionamientos anteriores.  La barra de herramientas del <strong>corregir</strong> es especialmente útil.  Contiene un botón para demostrar el fichero de diario con las líneas envueltas (cuál no se gira por abandono pero probablemente debe estar).  Tiene otro botón para copiar selecciones del registro al sujetapapeles, que será práctico si usted quiere demostrar mensajes de registro a otros reveladores.
+</p>
+<p>La barra de herramientas de las <strong>herramientas</strong> tiene un botón para suprimir ficheros de diario.  Nunca he encontrado una razón para utilizarla.  Los ficheros de diario van lejos en sus los propios cuando usted cierra el azúcar-emulador.
+  <br />
+</p>
+<p> <img alt="logactivity1_en.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SugarDebugging/logactivity1_en.jpg" height="450" width="600" />
+</p>
+<p>
+</p>
+<p>Aquí es lo que parece la actividad del registro demostrar un error de sintaxis en su código: 
+</p>
+<p>
+</p>
+<p> <img alt="La actividad del registro que exhibe un error de sintaxis adentro habla." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SugarDebugging/logactivity2_en.jpg" height="450" width="600" />
+</p>
+<h2>Registración
+</h2>
+<p>Sin una duda que hay la más vieja técnica del depuración sería la declaración simple de la impresión.  Si usted tiene un programa corriente que comportarse mal debido a errores de lógica y usted no puede caminar con el código en una depuración para imaginar que qué está sucediendo usted puede ser que imprima declaraciones en su código.  Por ejemplo, si usted no está seguro que un método está consiguiendo nunca ejecutado usted puede ser que ponga una declaración como esto como la primera línea del método:
+</p>
+<pre>    def my_method():
+        <strong>print 'my_method() begins'</strong>
+</pre>
+<p>Usted puede incluir datos en sus declaraciones de la impresión también.  Supóngale necesitar saber cuántas veces se funciona con un lazo.  Usted podría hacer esto:
+</p>
+<pre>        while linecount < PAGE_SIZE:
+            line = self.etext_file.readline()
+            label_text = label_text + unicode(line, 'iso-8859-1')
+            linecount = linecount + 1
+            <strong>print 'linecount=', linecount </strong>
+</pre>
+<p>La salida de estas declaraciones de la impresión se puede considerar en la actividad del registro.  Cuando le acaban que elimina errores de su programa usted quitaría estas declaraciones.
+</p>
+<p> Un libro programado viejo que leí una vez hecho el caso para dejar las declaraciones en el programa acabado. ⁞ Los autores sentían que usar estas declaraciones para el depuración y ellos que los quitan es un poco como usar un paracaídas cuando el plano está en la tierra y tomarla de cuando es aerotransportado.  Si el programa está hacia fuera en el mundo y tiene problemas que usted puede ser que desee bien que usted tuviera esas declaraciones en el código así que usted podría ayudar al usuario y usted mismo a imaginar qué se está encendiendo.  Por una parte, las declaraciones de la impresión no están libres.  Tardan tiempo para funcionar y llenan los ficheros de diario de desperdicios.  Qué necesitamos son las declaraciones de la impresión que usted puede girarse apagado.
+</p>
+<p>La manera que usted puede hacer esto está con la registración estándar del Python.  En la forma usada por la mayoría de las Actividades parece esto:
+</p>
+<pre>        self._logger = logging.getLogger('read-etexts-activity')
+</pre>
+<p>Estas declaraciones entrarían en el método del <em>__init() de</em> su actividad.  Cada vez que usted quiere hacer una declaración de la impresión () usted haría esto en lugar de otro:
+</p>
+<pre>    def _shared_cb(self, activity):
+        <strong>self._logger.debug('My activity was shared')</strong>
+        self.initiating = True
+        self._sharing_setup()
+
+        <strong>self._logger.debug('This is my activity: making a tube...')</strong>
+        id = self.tubes_chan[telepathy.CHANNEL_TYPE_TUBES].OfferDBusTube(
+            SERVICE, {})
+
+    def _sharing_setup(self):
+        if self._shared_activity is None:
+            <strong>self._logger.error('Failed to share or join activity')</strong>
+            return
+</pre>
+<p>Note que hay dos clases de registración que se encienden aquí: <strong>elimine errores</strong> y <strong>error</strong>.   Éstos son niveles de error.  Cada declaración tiene uno, y controlan se funcionan que registran declaraciones y se no hacen caso que.  Hay varios niveles de registro de errores, de la severidad más baja lo más arriba posible:
+</p>
+<p>
+</p>
+<pre><code>    self._logger.debug("debug message")
+    self._logger.info("info message")
+    self._logger.warn("warn message")
+    self._logger.error("error message")
+    self._logger.critical("critical message")
+</code><code></code></pre>
+<p>Cuando usted fija el nivel de error en su programa a uno de estos valores usted consigue mensajes con ese nivel y más arriba.  Usted puede fijar el nivel en su código del programa como esto:
+</p>
+<p>
+</p>
+<pre><code>    self._logger.setLevel(logging.DEBUG)
+</code></pre>
+<p>Usted puede también fijar el nivel de registración fuera de su código del programa usando una <strong>variable de entorno</strong>.  Por ejemplo, en el azúcar .82 y bájele puede comenzar el azúcar-emulador como esto:
+</p>
+<pre>SUGAR_LOGGER_LEVEL=debug sugar-emulator
+</pre>
+<p> La manera usted logra la misma cosa en el azúcar .84 y mayor es corregir el archivo <strong>~/.sugar/debug</strong> y el uncomment la línea que fija el SUGAR_LOGGER_LEVEL.
+  <br />
+</p>
+<h2>La actividad del analizar
+</h2>
+<p>Otra actividad que usted puede encontrarse que que usa en un cierto punto es <strong>analiza</strong>.  Esto es más probable ser utilizada para eliminar errores del azúcar sí mismo que eliminar errores de su actividad.  Si, por ejemplo, su ambiente de prueba de la colaboración no parece trabajar esta actividad pudo ayudar le o algún otro a imaginar por qué.
+</p>
+<p>No tengo mucho decir sobre esta actividad aquí, pero usted debe ser consciente que existe.
+  <br />
+</p> <img alt="La actividad del analizar" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SugarDebugging/analyzeactivity_1_en.jpg" height="450" width="600" />
+<p />
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

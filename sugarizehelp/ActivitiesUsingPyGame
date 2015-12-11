@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/ActivitiesUsingPyGame' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Creación de Actividades usando PyGame
+</h1>
+<h2>Introducción
+</h2>
+<p><strong>PyGame</strong> y <strong>PyGTK</strong> son dos maneras diferentes de hacer programas en Python con un interfaz gráfico.&nbsp; Normalmente usted no utilizaría ambos en el mismo programa.&nbsp; Cada uno de ellos tiene su propia manera de crear una ventana y cada uno tiene su propia manera de manejar eventos.
+</p>
+<p>La clase base Actividad que hemos estado usando es una extensión de la clase Windows (Ventana) de PyGTK y utiliza el manejador de eventos de PyGTK.&nbsp; Las barras de herramientas que todas las Actividades usan son componentes de PyGTK.&nbsp; En fin, cualquier Actividad escrita en Python debe utilizar PyGTK. &nbsp; Poner un programa de PyGame en el medio de un programa de PyGTK es un poco como poner un barco a escala en una botella.&nbsp; Afortunadamente hay cierto código de Python llamado <strong>SugarGame</strong> que permita hacer eso.
+</p>
+<p>Antes de que imaginemos cómo lograremos entrar en la botella, vamos a echar una una mirada a nuestro barco.
+</p>
+<h2>Creación de un juego independiente usando PyGame
+</h2>
+<p>Como usted puede esperar, es una buena idea hacer un juego de Python independiente usando PyGame antes de que usted haga una Actividad con él.&nbsp; No soy un desarrollador experto en Python, pero usando el tutorial <em>Desarrollo Rápido de Juegos usando Pytohn </em><span style="font-style: italic;"></span>de Richard Jones en este URL:
+</p>
+<p><a href="http://richard.cgpublisher.com/product/pub.84/prod.11">http://richard.cgpublisher.com/product/pub.84/prod.11</a>
+  <br />
+</p>
+<p>pude armar un juego modesto en alrededor de un día.&nbsp; Habría sido más pronto pero los ejemplos del tutorial tenían bugs y tuve que invertir un tiempo considerable usando <strong>The GIMP</strong> para crear los archivos de imagen para los personajes del juego.&nbsp;
+</p>
+<p><strong>Los Sprites</strong> son las pequeñas imágenes, animadas a menudo, que representan objetos en un juego.&nbsp; Tienen generalmente un fondo transparente así que pueden ser dibujados encima de una imagen de fondo.&nbsp; Utilicé el formato del <strong>png</strong> para mis archivos del sprite porque soportan un <strong>canal alfa</strong> (otro término que indica que la parte de la imagen es transparente).
+</p>
+<p>PyGame tiene código para mostrar las imágenes de fondo, para crear sprites y para moverlos en frente del fondo, y para detectar cuando chocan los sprites el uno con el otro y hacer algo cuando esto sucede.&nbsp; Ésta es la base para hacer muchos juegos en 2D.&nbsp; Hay muchos juegos escritos con PyGame que se podrían adaptar fácilmente para ser Actividades de Sugar.
+  <br />
+</p>
+<p>Mi juego es similar al juego del coche del tutorial, pero en vez de un coche tengo un aeroplano.&nbsp; El aeroplano es el <em>Demoiselle</em> creado por Alberto Santos-Dumont en 1909.&nbsp; En vez de tener “cojines” para chocar, tengo cuatro estudiantes de Otto Lilienthal sobrevolando inmóviles en sus planeadores.&nbsp; Los planeadores caen hacia abajo cuando Santos-Dumont choca con ellos.&nbsp; Los controles usados para el juego también han sido modificados.&nbsp; Utilizo las teclas Más y Menos en el teclado principal y el teclado numérico, más las teclas 9 y 3 del teclado numérico, para abrir y para cerrar la válvula reguladora y las teclas hacia arriba y hacia abajo en el teclado principal y el teclado numérico para mover la palanca de mando hacia adelante y hacia atrás.&nbsp; Usar las teclas del teclado numérico es útil por un par de razones.&nbsp; Primero, algunas versiones del <strong>sugar-emulator</strong> (emulador de Sugar) no reconocen las teclas de flecha en el teclado principal.&nbsp; En segundo lugar, las teclas de flecha en el teclado numérico corresponden al controlador de juegos en el ordenador portátil XO, y las teclas que no son flechas en el telclado numérico corresponden con los otros botones en la pantalla del ordenador portátil XO.&nbsp; Estos botones se pueden utilizar para jugar al juego cuando el XO está en modo de la tableta.
+</p>
+<p>Como simulador de vuelo no es mucho, pero si puede demostrar por lo menos algunas de las cosas que PyGame puede hacer.&nbsp; Aquí está el código para el juego, que estoy llamando <strong>Demoiselle</strong>:
+</p>
+<pre>#! /usr/bin/env python
+import pygame
+import math
+import sys
+
+class Demoiselle:
+    "This is a simple demonstration of using PyGame \
+    sprites and collision detection."
+    def __init__(self):
+        self.background = pygame.image.load('sky.jpg')
+        self.screen = pygame.display.get_surface()
+        self.screen.blit(self.background, (0, 0))
+        self.clock = pygame.time.Clock()
+        self.running = True
+
+        gliders = [
+            GliderSprite((200, 200)),
+            GliderSprite((800, 200)),
+            GliderSprite((200, 600)),
+            GliderSprite((800, 600)),
+        ]
+        self. glider_group = pygame.sprite.RenderPlain(gliders)
+
+    def run(self):
+        "This method processes PyGame messages"
+        rect = self.screen.get_rect()
+        airplane = AirplaneSprite('demoiselle.png', rect.center)
+        airplane_sprite = pygame.sprite.RenderPlain(airplane)
+
+        while self.running:
+            self.clock.tick(30)
+
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    self.running = False
+                    return
+                elif event.type == pygame.VIDEORESIZE:
+                    pygame.display.set_mode(event.size,  pygame.RESIZABLE)
+                    self.screen.blit(self.background, (0, 0))
+
+                if not hasattr(event, 'key'):
+                    continue
+                down = event.type == pygame.KEYDOWN
+                if event.key == pygame.K_DOWN or \
+                    event.key == pygame.K_KP2:
+                    airplane.joystick_back = down * 5
+                elif event.key == pygame.K_UP or \
+                    event.key == pygame.K_KP8:
+                    airplane.joystick_forward = down * -5
+                elif event.key == pygame.K_EQUALS or \
+                    event.key == pygame.K_KP_PLUS or \
+                    event.key == pygame.K_KP9:
+                    airplane.throttle_up = down * 2
+                elif event.key == pygame.K_MINUS or \
+                    event.key == pygame.K_KP_MINUS or \
+                    event.key == pygame.K_KP3:
+                    airplane.throttle_down = down * -2
+
+            self.glider_group.clear(self.screen, self.background)
+            airplane_sprite.clear(self.screen, self.background)
+            collisions = pygame.sprite.spritecollide(airplane, \
+                self.glider_group,  False)
+            self.glider_group.update(collisions)
+            self.glider_group.draw(self.screen)
+            airplane_sprite.update()
+            airplane_sprite.draw(self.screen)
+            pygame.display.flip()
+
+class AirplaneSprite(pygame.sprite.Sprite):
+    "This class represents an airplane, the Demoiselle \
+    created by Alberto Santos-Dumont"
+    MAX_FORWARD_SPEED = 10
+    MIN_FORWARD_SPEED = 1
+    ACCELERATION = 2
+    TURN_SPEED = 5
+    def __init__(self, image, position):
+        pygame.sprite.Sprite.__init__(self)
+        self.src_image = pygame.image.load(image)
+        self.rect = pygame.Rect(self.src_image.get_rect())
+        self.position = position
+        self.rect.center = self.position
+        self.speed = 1
+        self.direction = 0
+        self.joystick_back = self.joystick_forward = \
+            self.throttle_down = self.throttle_up = 0
+
+    def update(self):
+        "This method redraws the airplane in response\
+        to events."
+        self.speed += (self.throttle_up + self.throttle_down)
+        if self.speed &gt; self.MAX_FORWARD_SPEED:
+            self.speed = self.MAX_FORWARD_SPEED
+        if self.speed &lt; self.MIN_FORWARD_SPEED:
+            self.speed = self.MIN_FORWARD_SPEED
+        self.direction += (self.joystick_forward + self.joystick_back)
+        x_coord, y_coord = self.position
+        rad = self.direction * math.pi / 180
+        x_coord += -self.speed * math.cos(rad)
+        y_coord += -self.speed * math.sin(rad)
+        screen = pygame.display.get_surface()
+        if y_coord &lt; 0:
+            y_coord = screen.get_height()
+
+        if x_coord &lt; 0:
+            x_coord = screen.get_width()
+
+        if x_coord &gt; screen.get_width():
+            x_coord = 0
+
+        if y_coord &gt; screen.get_height():
+            y_coord = 0
+        self.position = (x_coord, y_coord)
+        self.image = pygame.transform.rotate(self.src_image, -self.direction)
+        self.rect = self.image.get_rect()
+        self.rect.center = self.position
+
+class GliderSprite(pygame.sprite.Sprite):
+    "This class represents an individual hang glider as developed\
+    by Otto Lilienthal."
+    def __init__(self, position):
+        pygame.sprite.Sprite.__init__(self)
+        self.normal = pygame.image.load('glider_normal.png')
+        self.rect = pygame.Rect(self.normal.get_rect())
+        self.rect.center = position
+        self.image = self.normal
+        self.hit = pygame.image.load('glider_hit.png')
+    def update(self, hit_list):
+        "This method redraws the glider when it collides\
+        with the airplane and when it is no longer \
+        colliding with the airplane."
+        if self in hit_list:
+            self.image = self.hit
+        else:
+            self.image = self.normal
+
+def main():
+    "This function is called when the game is run from the command line"
+    pygame.init()
+    pygame.display.set_mode((0, 0), pygame.RESIZABLE)
+    game = Demoiselle()
+    game.run()
+    sys.exit(0)
+
+if __name__ == '__main__':
+    main()
+</pre>
+<p>Y aquí está el juego en acción:
+</p>
+<p><img alt="El juego independiente del Demoiselle." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/ActivitiesUsingPyGame/demoiselle1_en.jpg" height="454" width="600" />
+</p>
+<p>Usted encontrará el código para este juego en el archivo <strong>demoiselle.py</strong> en el proyecto de los ejemplos del libro en Git.
+</p>
+<h2>Introducción de SugarGame
+</h2>
+<p><strong>SugarGame</strong> no es parte de azúcar apropiada.&nbsp; Si usted quiere utilizarlo usted necesitará incluir el código del Python para SugarGame dentro de su paquete de la actividad.&nbsp; He incluido la versión de SugarGame que estoy utilizando en el proyecto de los ejemplos del libro en el directorio del <strong>sugargame</strong>, pero cuando usted hace sus propios juegos usted querré estar seguro y conseguir el último código para incluir.&nbsp; Usted puede hacer eso transfiriendo el proyecto de Gitorious usando estos comandos:
+</p>
+<pre><code>mkdir sugargame
+cd sugargame
+git clone git://git.sugarlabs.org/sugargame/mainline.git</code></pre>
+<p>Usted verá dos sub-directórios en este proyecto: <strong>sugargame</strong> y <strong>test</strong>, más un archivo de <strong>README.txt</strong> que contiene la información sobre usar el sugargame en sus propias Actividades.&nbsp; El directorio de la prueba contiene un programa simple de PyGame que pueda ser independiente funcionado o como actividad.&nbsp; El programa independiente está en el archivo nombrado <strong>TestGame.py</strong>.&nbsp; La actividad, que es una clase de envoltura alrededor de la versión independiente, está en el archivo <strong>TestActivity.py</strong>.
+  <br />
+</p>
+<p>Si usted funciona <strong>TestGame.py de la</strong> línea de comando usted verá que exhibe una bola que despide en un fondo blanco.&nbsp; Para intentar funcionar con la versión de la actividad que usted necesitará funcionar con
+</p>
+<pre>./setup.py dev</pre>
+<p>de la línea de comando primero.&nbsp; No podía conseguir la actividad para trabajar debajo de azúcar-emulador hasta que realizara dos cambios a él:
+</p>
+<ul>
+  <li>Hice una copia del directorio del <strong>sugargame</strong> dentro del directorio de la <strong>test</strong>.</li>
+  <li>Quité la línea lectura “<strong>sys.path.append(<span class="String"><span class="String">“. .")</span> <span class="Comment"><span class="Comment"># </span></span></span></strong><span class="Comment"><strong>Import sugargame package from top directory.</strong></span><strong><span class="String"><span class="Comment"><span class="Comment"> </span></span></span></strong><span class="String"><span class="Comment"><span class="Comment">“de <strong>TestActivity.py</strong>.&nbsp; Esta línea se supone obviamente para ayudar al programa a encontrar el directorio del <strong>sugargame</strong> en el proyecto pero no trabajó en Fedora 10.&nbsp; Su propia experiencia puede ser diferente.</span>
+  <br /></span></span></li>
+</ul>
+<p><span class="Comment">La actividad parece esto:</span>
+</p>
+<p><span class="Comment"><img alt="La actividad de la versión parcial de programa de SugarGame" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/ActivitiesUsingPyGame/sugargame_1_en.jpg" height="453" width="600" /></span>
+</p>
+<p><span class="Comment">La barra de herramientas de <strong>PyGame</strong> tiene un solo botón que le deje hacer que la bola que despide se detiene brevemente y reasume el despedir.</span>
+</p>
+<h2><span class="Comment">Fabricación de una actividad del Sugar fuera de un programa de PyGame</span>
+</h2>
+<p><span class="Comment">Ahora es hora de poner nuestra nave en esa botella.&nbsp; La primera cosa que necesitamos hacer es hacer una copia del directorio del <strong>sugargame del</strong> proyecto de SugarGame en el directorio del mainline de nuestro propio proyecto.</span>
+</p>
+<p><span class="Comment">El archivo de <strong>README.txt</strong> en el proyecto de SugarGame vale el leer.&nbsp; Nos dice hacer una actividad basada en el ejemplo de <strong>TestActivity.py</strong> en el proyecto de SugarGame.&nbsp; Ésta será nuestra botella.&nbsp; Aquí está el código para el mío, que se nombra <strong>DemoiselleActivity.py</strong>:</span>
+</p>
+<pre># DemoiselleActivity.py
+
+# Copyright (C) 2010  James D. Simmons
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#
+
+from gettext import gettext as _
+
+import gtk
+import pygame
+from sugar.activity import activity
+from sugar.graphics.toolbutton import ToolButton
+import gobject
+import sugargame.canvas
+import demoiselle2
+
+class DemoiselleActivity(activity.Activity):
+    def __init__(self, handle):
+        super(DemoiselleActivity, self).__init__(handle)
+
+        # Build the activity toolbar.
+        self.build_toolbar()
+
+        # Create the game instance.
+        self.game = demoiselle2.Demoiselle()
+
+        # Build the Pygame canvas.
+        self._pygamecanvas = sugargame.canvas.PygameCanvas(self)
+        # Note that set_canvas implicitly calls read_file when
+        # resuming from the Journal.
+        self.set_canvas(self._pygamecanvas)
+        self.score = ''
+
+        # Start the game running.
+        self._pygamecanvas.run_pygame(self.game.run)
+
+    def build_toolbar(self):
+        toolbox = activity.ActivityToolbox(self)
+        activity_toolbar = toolbox.get_activity_toolbar()
+        activity_toolbar.keep.props.visible = False
+        activity_toolbar.share.props.visible = False
+
+        self.view_toolbar = ViewToolbar()
+        toolbox.add_toolbar(_('View'), self.view_toolbar)
+        self.view_toolbar.connect('go-fullscreen',
+                self.view_toolbar_go_fullscreen_cb)
+        self.view_toolbar.show()
+
+        toolbox.show()
+        self.set_toolbox(toolbox)
+
+    def view_toolbar_go_fullscreen_cb(self, view_toolbar):
+        self.fullscreen()
+
+    def read_file(self, file_path):
+        score_file = open(file_path, "r")
+        while score_file:
+            self.score = score_file.readline()
+            self.game.set_score(int(self.score))
+        score_file.close()
+
+    def write_file(self, file_path):
+        score = self.game.get_score()
+        f = open(file_path, 'wb')
+        try:
+            f.write(str(score))
+        finally:
+            f.close
+
+class ViewToolbar(gtk.Toolbar):
+    __gtype_name__ = 'ViewToolbar'
+
+    __gsignals__ = {
+        'needs-update-size': (gobject.SIGNAL_RUN_FIRST,
+                              gobject.TYPE_NONE,
+                              ([])),
+        'go-fullscreen': (gobject.SIGNAL_RUN_FIRST,
+                          gobject.TYPE_NONE,
+                          ([]))
+    }
+
+    def __init__(self):
+        gtk.Toolbar.__init__(self)
+        self.fullscreen = ToolButton('view-fullscreen')
+        self.fullscreen.set_tooltip(_('Fullscreen'))
+        self.fullscreen.connect('clicked', self.fullscreen_cb)
+        self.insert(self.fullscreen, -1)
+        self.fullscreen.show()
+
+    def fullscreen_cb(self, button):
+        self.emit('go-fullscreen')
+</pre>
+<p><span class="Comment">Esto es un fancier del pedacito que <strong>TestActivity.py</strong>.&nbsp; Decidía que mi juego no necesitó realmente ser detenido brevemente y ser reasumido, así que substituí la barra de herramientas de <strong>PyGame</strong> por una barra de herramientas de la <strong>visión</strong> que deja al usuario ocultar la barra de herramientas cuando no es necesaria.&nbsp; Utilizo <em>() los</em> métodos <em>read_file ()</em> y <em>write_file</em> para ahorrar y para restaurar la cuenta de juego.&nbsp; (Esto se falsifica realmente, porque nunca pongo en cualquier lógica que anota en el juego).&nbsp; También oculto los controles de la <strong>subsistencia</strong> y de la <strong>parte</strong> en la barra de herramientas principal.</span>
+</p>
+<p><span class="Comment">Pues usted esperaría, conseguir una nave en una botella requiere la nave ser modificada.&nbsp; Aquí está <strong>demoiselle2.py</strong>, que tiene las modificaciones:</span>
+</p>
+<pre>#! /usr/bin/env python
+import pygame
+import gtk
+import math
+import sys
+
+class Demoiselle:
+    "This is a simple demonstration of using PyGame \
+    sprites and collision detection."
+    def __init__(self):
+        self.clock = pygame.time.Clock()
+        self.running = True
+        self.background = pygame.image.load('sky.jpg')
+
+    def get_score(self):
+        return '99'
+
+    def run(self):
+        "This method processes PyGame messages"
+
+        screen = pygame.display.get_surface()
+        screen.blit(self.background, (0, 0))
+
+        gliders = [
+            GliderSprite((200, 200)),
+            GliderSprite((800, 200)),
+            GliderSprite((200, 600)),
+            GliderSprite((800, 600)),
+        ]
+        glider_group = pygame.sprite.RenderPlain(gliders)
+
+        rect = screen.get_rect()
+        airplane = AirplaneSprite('demoiselle.png', rect.center)
+        airplane_sprite = pygame.sprite.RenderPlain(airplane)
+
+        while self.running:
+            self.clock.tick(30)
+
+            # Pump GTK messages.
+            while gtk.events_pending():
+                gtk.main_iteration()
+
+            # Pump PyGame messages.
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    self.running = False
+                    return
+                elif event.type == pygame.VIDEORESIZE:
+                    pygame.display.set_mode(event.size,  pygame.RESIZABLE)
+                    screen.blit(self.background, (0, 0))
+
+                if not hasattr(event, 'key'):
+                    continue
+                down = event.type == pygame.KEYDOWN
+                if event.key == pygame.K_DOWN or \
+                    event.key == pygame.K_KP2:
+                    airplane.joystick_back = down * 5
+                elif event.key == pygame.K_UP or \
+                    event.key == pygame.K_KP8:
+                    airplane.joystick_forward = down * -5
+                elif event.key == pygame.K_EQUALS or \
+                    event.key == pygame.K_KP_PLUS or \
+                    event.key == pygame.K_KP9:
+                    airplane.throttle_up = down * 2
+                elif event.key == pygame.K_MINUS or \
+                    event.key == pygame.K_KP_MINUS or \
+                    event.key == pygame.K_KP3:
+                    airplane.throttle_down = down * -2
+
+            glider_group.clear(screen, self.background)
+            airplane_sprite.clear(screen, self.background)
+            collisions = pygame.sprite.spritecollide(airplane, \
+                                                     glider_group,  False)
+            glider_group.update(collisions)
+            glider_group.draw(screen)
+            airplane_sprite.update()
+            airplane_sprite.draw(screen)
+            pygame.display.flip()
+
+class AirplaneSprite(pygame.sprite.Sprite):
+    "This class represents an airplane, the Demoiselle \
+    created by Alberto Santos-Dumont"
+    MAX_FORWARD_SPEED = 10
+    MIN_FORWARD_SPEED = 1
+    ACCELERATION = 2
+    TURN_SPEED = 5
+    def __init__(self, image, position):
+        pygame.sprite.Sprite.__init__(self)
+        self.src_image = pygame.image.load(image)
+        self.rect = pygame.Rect(self.src_image.get_rect())
+        self.position = position
+        self.rect.center = self.position
+        self.speed = 1
+        self.direction = 0
+        self.joystick_back = self.joystick_forward = \
+            self.throttle_down = self.throttle_up = 0
+
+    def update(self):
+        "This method redraws the airplane in response\
+        to events."
+        self.speed += (self.throttle_up + self.throttle_down)
+        if self.speed &gt; self.MAX_FORWARD_SPEED:
+            self.speed = self.MAX_FORWARD_SPEED
+        if self.speed &lt; self.MIN_FORWARD_SPEED:
+            self.speed = self.MIN_FORWARD_SPEED
+        self.direction += (self.joystick_forward + self.joystick_back)
+        x_coord, y_coord = self.position
+        rad = self.direction * math.pi / 180
+        x_coord += -self.speed * math.cos(rad)
+        y_coord += -self.speed * math.sin(rad)
+        screen = pygame.display.get_surface()
+        if y_coord &lt; 0:
+            y_coord = screen.get_height()
+
+        if x_coord &lt; 0:
+            x_coord = screen.get_width()
+
+        if x_coord &gt; screen.get_width():
+            x_coord = 0
+
+        if y_coord &gt; screen.get_height():
+            y_coord = 0
+        self.position = (x_coord, y_coord)
+        self.image = pygame.transform.rotate(self.src_image, -self.direction)
+        self.rect = self.image.get_rect()
+        self.rect.center = self.position
+
+class GliderSprite(pygame.sprite.Sprite):
+    "This class represents an individual hang glider as developed\
+    by Otto Lilienthal."
+    def __init__(self, position):
+        pygame.sprite.Sprite.__init__(self)
+        self.normal = pygame.image.load('glider_normal.png')
+        self.rect = pygame.Rect(self.normal.get_rect())
+        self.rect.center = position
+        self.image = self.normal
+        self.hit = pygame.image.load('glider_hit.png')
+    def update(self, hit_list):
+        "This method redraws the glider when it collides\
+        with the airplane and when it is no longer \
+        colliding with the airplane."
+        if self in hit_list:
+            self.image = self.hit
+        else:
+            self.image = self.normal
+
+def main():
+    "This function is called when the game is run from the command line"
+    pygame.init()
+    pygame.display.set_mode((0, 0), pygame.RESIZABLE)
+    game = Demoiselle()
+    game.run()
+    sys.exit(0)
+
+if __name__ == '__main__':
+    main()
+</pre>
+<p>¿<span class="Comment">Por qué no cargue <strong>demoiselle.py</strong> y <strong>demoiselle2.py</strong> en Eric y tarde algunos minutos para ver si usted puede imaginar qué cambió entre las dos versiones?</span>
+</p>
+<p><span class="Comment">Asombrosamente poco es diferente.&nbsp; Agregué un cierto código al lazo principal de PyGame para comprobar para saber si hay acontecimientos de PyGTK y para ocuparme de ellos:</span>
+</p>
+<pre>        while self.running:
+            self.clock.tick(30)
+
+            <strong># Pump GTK messages.
+            while gtk.events_pending():
+                gtk.main_iteration()</strong>
+
+            # Pump PyGame messages.
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    self.running = False
+                    return
+                elif event.type == pygame.VIDEORESIZE:
+                    pygame.display.set_mode(event.size,  pygame.RESIZABLE)
+                    screen.blit(self.background, (0, 0))
+
+                if not hasattr(event, 'key'):
+                    continue
+                down = event.type == pygame.KEYDOWN
+                if event.key == pygame.K_DOWN or \
+
+<em>… continúe ocupándose de los acontecimientos de PyGame…</em>
+</pre>
+<p><span class="Comment">Esto tiene el efecto de hacer PyGame y la toma de PyGTK da vuelta a manejar acontecimientos.&nbsp; Si este código no fuera actuales acontecimientos de GTK fuera no hecho caso y usted no tendría ninguna manera de cerrar la actividad, oculta la barra de herramientas, el etc.&nbsp; Usted necesita agregar el <strong>gtk de la importación</strong> en la tapa del archivo así que estos métodos pueden ser encontrados.</span>
+</p>
+<p><span class="Comment">Por supuesto también agregué los métodos para fijar y para volver cuentas:</span>
+</p>
+<pre>&nbsp;    def get_score(self):
+        return self.score
+
+     def set_score(self, score):
+        self.score = score
+</pre>
+<p><span class="Comment">El cambio más grande está en el método del <em>__init () de la</em> clase del <strong>Demoiselle</strong>.&nbsp; Tenía originalmente código para exhibir la imagen de fondo en la pantalla:</span>
+</p>
+<pre>    def __init__(self):
+        self.background = pygame.image.load('sky.jpg')
+        self.screen = pygame.display.get_surface()
+        self.screen.blit(self.background, (0, 0))
+</pre>
+<p><span class="Comment">El problema con esto es que el sugargame va a crear un objeto especial de la lona de PyGTK para substituir la exhibición de PyGame y el código de DemoiselleActivity no ha hecho eso todavía, así que <strong>self.screen</strong> tendrá un valor de ningunos.&nbsp; La única manera de conseguir alrededor de eso es mover cualquier código que refiera a la <strong>exhibición</strong> fuera del método del <em>__init__() de la</em> clase y en el principio del método que contiene el lazo del acontecimiento.&nbsp; Esto puede dejarle con un método del <em>__init__()</em> que no haga poco o nada.&nbsp; Sobre la única cosa que usted querrá es código para crear variables de caso.</span>
+</p>
+<p><span class="Comment">Nada que hemos hecho a <strong>demoiselle2.py</strong> evitará que sea funcionado como programa independiente del Python.</span>
+</p>Para probar el <span class="Comment"><strong>revelador de ./setup.py del</strong> funcionamiento del</span> juego <span class="Comment">dentro del directorio de <strong>Making_Activities_Using_PyGame</strong>.&nbsp; Cuando usted prueba la actividad debe parecer esto:</span>
+<p>
+</p> <span class="Comment"><img alt="La actividad del Demoiselle." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/ActivitiesUsingPyGame/demoiselle2_1_en.jpg" height="448" width="600" /> </span>
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

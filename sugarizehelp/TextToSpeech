@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/TextToSpeech' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Adición del texto al discurso
+</h1>
+<h2>Introducción
+</h2>
+<p>Ciertamente uno de las Actividades más populares disponibles es <strong>Hablar</strong>, que toma las palabras que usted mecanografía adentro y las habla hacia fuera ruidosamente, al mismo tiempo exhibiendo una cara de la historieta que parezca hablar las palabras.&nbsp; Usted puede ser que sea sorprendido aprender cómo poco del código en esa Actividad se utiliza para conseguir las palabras habladas.&nbsp;&nbsp; Si su actividad podría beneficiarse de hacer palabras hablar hacia fuera ruidosamente (las posibilidades de Actividades educativas y de juegos son definitivamente allí) este capítulo le enseñarán a cómo hacer que sucede.
+</p>
+<h2><img alt="SpeakActivity.png" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/TextToSpeech/SpeakActivity_en.png" height="450" width="600" />
+</h2>
+<h2>Tenemos maneras de hacerle charla
+</h2>
+<p>Unas par de maneras, realmente, y ni unas ni otras una son ésa dolorosa.&nbsp; Son:
+</p>
+<ul>
+  <li>Funcionando con el programa del <strong>espeak</strong> directamente</li>
+  <li>Usando el <strong>espeak del gstreamer enchufable</strong></li>
+</ul>
+<p>Ambos acercamientos tienen sus ventajas.&nbsp; Primer es el que está usado cerca habla.&nbsp; (Técnico, hable las aplicaciones que el gstreamer enchufable si está disponible, y de otra manera ejecuta el espeak directamente.&nbsp; Para qué hablan está haciendo usando el gstreamer enchufable no es realmente necesario).&nbsp; La ejecución del espeak es definitivamente el método más simple, y puede ser conveniente para su propia actividad.&nbsp; Su ventaja grande es que usted no necesita tener el enchufable del gstreamer instalado.&nbsp; Si su actividad necesita funcionar en algo con excepción de la última versión del azúcar éste será algo considerar.
+  <br />
+</p>
+<p>El gstreamer enchufable es qué es utilizada por <strong>Read Etexts</strong> para hacer el texto al discurso con destacar.&nbsp; Para este uso necesitamos poder hacer las cosas que no son posibles apenas funcionando el <strong>espeak</strong>.&nbsp; Por ejemplo:
+</p>
+<ul>
+  <li>Necesitamos poder detenerse brevemente y reasumir discurso, porque la actividad necesita hablar un valor entero de la página del texto, no apenas las frases simples.</li>
+  <li>Necesitamos destacar las palabras que eran habladas mientras que se hablan.</li>
+</ul>
+<p>Usted puede ser que piense que usted podría alcanzar estos objetivos funcionando el espeak en una palabra a la vez.&nbsp; Si usted hace, no se sienta mal porque pensé eso también.&nbsp; En una computadora rápida suena realmente tremendo, como HAL 9000 que desarrolla un tartamudeo hacia el final de la desactivación.&nbsp; En XO ningunos los sonidos salieron en absoluto.
+</p>
+<p> Lea originalmente al <span style="font-weight: bold;">speech-dispatcher</span><strong></strong> usado Etexts para hacer lo que lo hace el gstreamer enchufable.&nbsp; Los reveladores de ese programa eran muy provechosos en conseguir destacar en el funcionamiento leído de Etexts, pero el discurso-despachador necesitó ser configurado antes de que usted podría utilizarlo cuál era una edición para nosotros.&nbsp; (Hay más que uno bueno del texto con el software del discurso disponible y el discurso-despachador los apoya la mayor parte de.&nbsp; Esto hace archivos de configuración inevitables).&nbsp; Aleksey Lim de los laboratorios del azúcar subió con la idea de usar un gstreamer enchufable y era la persona que lo escribió.&nbsp; Él también reescribió mucho de <strong>Read Etexts</strong> así que utilizaría al discurso-despachador enchufable si estuviera disponible, del uso si no, y no apoyaría discurso si ni uno ni otro estaba disponible.
+</p>
+<h2> espeak corriente directamente
+</h2>
+<p>Usted puede funcionar con el programa del <strong>espeak del</strong> terminal para probar sus opciones.&nbsp; Para verle qué opciones están disponibles para el espeak puede utilizar el comando del <strong>man</strong>:
+</p>
+<pre>man espeak</pre>
+<p>Esto le dará una página manual que describe cómo funcionar con el programa y qué opciones están disponibles.&nbsp; Las partes de la página de hombre que nos son las más interesantes son éstas:
+</p>
+<pre><strong>NAME</strong>
+       espeak - A multi-lingual software speech synthesizer.
+
+<strong>SYNOPSIS</strong>
+       espeak [options] [<words>]
+
+<strong>DESCRIPTION</strong>
+       espeak is a software speech synthesizer for English, and some other languages.
+
+<strong>OPTIONS</strong>
+       -p <integer>
+              Pitch adjustment, 0 to 99, default is 50
+
+       -s <integer>
+              Speed in words per minute, default is 160
+
+       -v <voice>
+              Use voice file of this name from espeak-data/voices
+
+       --voices[=<language>]
+               Lists the available voices. If =<language> is present then only those voices which are suitable for that language are listed.
+</language></language></voice></integer></integer></words></pre>
+<p>Probemos algunas de estas opciones. Primero déjenos consiguen una lista de <strong>voices</strong>:
+</p>
+<pre><strong>espeak --voices</strong>
+Pty Language Age/Gender VoiceName       File        Other Langs
+ 5  af             M  afrikaans         af
+ 5  bs             M  bosnian           bs
+ 5  ca             M  catalan           ca
+ 5  cs             M  czech             cs
+ 5  cy             M  welsh-test        cy
+ 5  de             M  german            de
+ 5  el             M  greek             el
+ 5  en             M  default           default
+ 5  en-sc          M  en-scottish       en/en-sc    (en 4)
+ 2  en-uk          M  english           en/en       (en 2)
+<em>... and many more ...</em>
+</pre>
+<p>Ahora que sabemos que cuáles son los nombres de las voces podemos probarlas. ¿Cómo sobre inglés con un acento francés?
+</p>
+<pre>espeak "Your mother was a hamster and your father smelled of elderberries." -v fr
+</pre>
+<p>Intentemos experimentar con tarifa y echemos:
+</p>
+<pre>espeak "I'm sorry, Dave. I'm afraid I can't do that." -s 120 -p 30
+</pre>
+<p>La cosa siguiente a hacer es escribir un cierto código del Python al espeak funcionado.&nbsp; Aquí está un programa corto adaptado del código adentro <strong>Hablar</strong>:
+</p>
+<pre>import re
+import subprocess
+
+PITCH_MAX = 99
+RATE_MAX = 99
+PITCH_DEFAULT = PITCH_MAX/2
+RATE_DEFAULT = RATE_MAX/3
+
+def speak(text,  rate=RATE_DEFAULT,  pitch=PITCH_DEFAULT,  voice="default"):
+
+    # espeak uses 80 to 370
+    rate = 80 + (370-80) * int(rate) / 100
+
+    subprocess.call(["espeak", "-p", str(pitch),
+            "-s", str(rate), "-v", voice,  text],
+            stdout=subprocess.PIPE)
+
+def voices():
+    out = []
+    result = subprocess.Popen(["espeak", "--voices"], stdout=subprocess.PIPE) \
+            .communicate()[0]
+
+    for line in result.split('\n'):
+        m = re.match(r'\s*\d+\s+([\w-]+)\s+([MF])\s+([\w_-]+)\s+(.+)', line)
+        if not m:
+            continue
+        language, gender, name, stuff = m.groups()
+        if stuff.startswith('mb/') or \
+                name in ('en-rhotic','english_rp','english_wmids'):
+            # these voices don't produce sound
+            continue
+        out.append((language, name))
+
+    return out
+
+def main():
+    print voices()
+    speak("I'm afraid I can't do that, Dave.")
+    speak("Your mother was a hamster, and your father smelled of elderberries!",  30,  60,  "fr")
+
+if __name__ == "__main__":
+    main()
+</pre>
+<p>En el depósito de Git en el directorio <strong>Adding_TTS</strong> este archivo se nombra <strong>espeak.py</strong>.&nbsp; Cargue este archivo en <strong>Eric</strong> y <strong>funcione con la escritura del</strong> menú del comienzo para funcionarlo.&nbsp; Además de discurso de la audiencia usted debe ver este texto:
+</p>
+<p><em>[('af', 'afrikaans'), ('bs', 'bosnian'), ('ca', 'catalan'), ('cs', 'czech'), ('cy', 'welsh-test'), ('de', 'german'), ('el', 'greek'), ('en', 'default'), ('en-sc', 'en-scottish'), ('en-uk', 'english'), ('en-uk-north', 'lancashire'), ('en-us', 'english-us'), ('en-wi', 'en-westindies'), ('eo', 'esperanto'), ('es', 'spanish'), ('es-la', 'spanish-latin-american'), ('fi', 'finnish'), ('fr', 'french'), ('fr-be', 'french'), ('grc', 'greek-ancient'), ('hi', 'hindi-test'), ('hr', 'croatian'), ('hu', 'hungarian'), ('hy', 'armenian'), ('hy', 'armenian-west'), ('id', 'indonesian-test'), ('is', 'icelandic-test'), ('it', 'italian'), ('ku', 'kurdish'), ('la', 'latin'), ('lv', 'latvian'), ('mk', 'macedonian-test'), ('nl', 'dutch-test'), ('no', 'norwegian-test'), ('pl', 'polish'), ('pt', 'brazil'), ('pt-pt', 'portugal'), ('ro', 'romanian'), ('ru', 'russian_test'), ('sk', 'slovak'), ('sq', 'albanian'), ('sr', 'serbian'), ('sv', 'swedish'), ('sw', 'swahihi-test'), ('ta', 'tamil'), ('tr', 'turkish'), ('vi', 'vietnam-test'), ('zh', 'Mandarin'), ('zh-yue', 'cantonese-test')] </em>
+</p>
+<p>La función de las <em>voces ()</em> devuelve una lista de voces como un tuple por voz, y elimina voces de la lista que el espeak no puede presentar en sus la propia.&nbsp; Esta lista de tuples se puede utilizar para poblar un lista de persiana.
+  <br />
+</p>
+<p>La función del <em>voices()</em> ajusta el valor de la <strong>tarifa</strong> así que usted puede entrar un valor entre 0 y 99 algo que entre 80 a 370. <em>hablan ()</em> es más complejos en la actividad del discurso que qué tenemos aquí porque en esa actividad supervisa el audio hablado y genera los movimientos de la boca basados en la amplitud de la voz.&nbsp; Haciendo la cara muévase es la mayor parte de lo que hace la actividad del discurso, y puesto que no estamos haciendo que necesitamos código muy pequeño hacer que nuestra actividad habla.
+</p>
+<p>Usted puede utilizar el <strong>import espeak</strong> para incluir este archivo en sus propias Actividades.
+</p>
+<h2>Usando el espeak del gstreamer enchufable
+</h2>
+<p>El espeak del gstreamer enchufable se puede instalar en <strong>Fedora 10</strong> o más adelante usando <strong>Add/Remove Software</strong>.
+</p>
+<p><img alt="Instalación del enchufable." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/TextToSpeech/espeak_en.jpg" height="363" width="600" />
+</p>
+<p> Cuando usted hace esto hacer usted debe poder transferir la actividad <strong>Read Etexts</strong> (la verdadera, no la versión simplificada que estamos utilizando para el libro) de TAMBIÉN y probar el <strong>Speech</strong> cuadro.&nbsp; Usted debe ahora hacer eso.&nbsp; Mirará algo similar:
+</p>
+<p><img alt="espeak2_1.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/TextToSpeech/espeak2_1_en.jpg" height="415" width="600" />
+  <br />
+</p>
+<p>El libro usado en los screenshots anteriores de este manual era <em>orgullo y prejudicar de</em> Jane Austen.&nbsp; Para balancear cosas hacia fuera el resto de los screenshots utilizará a los <em>Innocents al exterior</em> por Mark Twain.
+</p>
+<p><strong>Gstreamer</strong> es un marco para las multimedias.&nbsp; Si usted ha mirado los vídeos en la tela usted es familiar con el concepto de fluir medios.&nbsp; En vez de transferir una canción entera o un clip entero de la película y después de jugarlo, el fluir significa que la transferencia y el jugar suceden al mismo tiempo, con la transferencia apenas un pedacito detrás de fluir.&nbsp; Hay muchas diversas clases de archivos de medios: MP3, DivX, WMV, medios verdaderos, y así sucesivamente.&nbsp; Para cada clase de archivo de medios Gstreamer tiene un enchufable.
+</p>
+<p>Gstreamer hace uso de un concepto llamado <strong>pipelining</strong>.&nbsp; La idea es que el resultado de un programa puede convertirse en la entrada a otro.&nbsp; Una forma a dirigir que la situación es poner el resultado del primer programa en un fichero temporal y hacer que el segundo programa lo lea.&nbsp; Esto significaría que el primer programa tendría que acabar de funcionar antes de que segundo podría comenzar.&nbsp; ¿Qué si usted podría hacer ambos programas funcionar con al mismo tiempo y tenga el segundo programa leyeron los datos mientras que primer lo escribió?&nbsp; Es posible, y el mecanismo para conseguir datos a partir de un programa al otro se llama una <strong>pipe</strong>.&nbsp; Una colección de programas unidos juntos de esta manera se llama una <strong>pipeline</strong>.&nbsp; El programa que alimenta datos en una pipa se llama una <strong>source</strong>, y los datos que sacan los datos de la pipa se llama un <strong>sink</strong>.
+  <br />
+</p>
+<p>Las aplicaciones enchufables del espeak del gstreamer una pipa simple: el texto entra espeak en un extremo y el sonido sale el otro y se envía a su carta de sonido.&nbsp; Usted puede ser que piense que no suena mucho diferente antes de lo que hacíamos, pero es.&nbsp; Cuando usted apenas funciona el espeak el programa tiene que cargarse en memoria, habla el texto que usted lo da en la tarjeta de sonidos, después se descarga.&nbsp; Éste es una de las razones que usted no puede apenas utilizar el espeak una palabra a la vez para alcanzar discurso con palabras destacadas.&nbsp; Hay un retraso corto mientras que el programa está cargando.&nbsp; No es que sensible si usted da a espeak una frase o una oración completa para hablar, pero si sucede para cada palabra es <em>muy</em> sensible.&nbsp; Usando el gstreamer enchufable podemos tener espeak cargado en memoria todo el tiempo, apenas esperándonos para enviar algunas palabras en su pipa de la entrada.&nbsp; Las hablará y después esperará la hornada siguiente.
+</p>
+<p>Puesto que podemos controlarlo qué entra la pipa somos posibles detenerse brevemente y reasumir discurso.
+</p>
+<p> El ejemplo que utilizaremos aquí es una versión de <strong>Read Etexts</strong> otra vez, pero en vez de la actividad vamos a modificar la versión independiente.&nbsp; No hay nada especial sobre el gstreamer enchufable que le hace solamente el trabajo con Actividades.&nbsp; Cualquier programa del Python puede utilizarlo.&nbsp; Estoy incluyendo solamente el texto al discurso como asunto en este manual porque cada instalación del azúcar incluye el espeak y muchas Actividades podrían encontrarlo útil.
+</p>
+<p>Hay a en nuestro depósito de Git nombrado <strong>speech.py</strong> que parezca esto:
+</p>
+<pre>import gst
+
+voice = 'default'
+pitch = 0
+
+rate = -20
+highlight_cb = None
+
+def _create_pipe():
+    pipeline = 'espeak name=source ! autoaudiosink'
+    pipe = gst.parse_launch(pipeline)
+
+    def stop_cb(bus, message):
+        pipe.set_state(gst.STATE_NULL)
+
+    def mark_cb(bus, message):
+        if message.structure.get_name() == 'espeak-mark':
+            mark = message.structure['mark']
+            highlight_cb(int(mark))
+
+    bus = pipe.get_bus()
+    bus.add_signal_watch()
+    bus.connect('message::eos', stop_cb)
+    bus.connect('message::error', stop_cb)
+    bus.connect('message::element', mark_cb)
+
+    return (pipe.get_by_name('source'), pipe)
+
+def _speech(source, pipe, words):
+    source.props.pitch = pitch
+    source.props.rate = rate
+    source.props.voice = voice
+    source.props.text = words;
+    pipe.set_state(gst.STATE_PLAYING)
+
+info_source, info_pipe = _create_pipe()
+play_source, play_pipe = _create_pipe()
+
+# track for marks
+play_source.props.track = 2
+
+def voices():
+    return info_source.props.voices
+
+def say(words):
+    _speech(info_source, info_pipe, words)
+    print words
+
+def play(words):
+    _speech(play_source, play_pipe, words)
+
+def is_stopped():
+    for i in play_pipe.get_state():
+        if isinstance(i, gst.State) and i == gst.STATE_NULL:
+             return True
+    return False
+
+def stop():
+    play_pipe.set_state(gst.STATE_NULL)
+
+def is_paused():
+    for i in play_pipe.get_state():
+        if isinstance(i, gst.State) and i == gst.STATE_PAUSED:
+             return True
+    return False
+
+def pause():
+    play_pipe.set_state(gst.STATE_PAUSED)
+
+def rate_up():
+    global rate
+    rate = min(99, rate + 10)
+
+def rate_down():
+    global rate
+    rate = max(-99, rate - 10)
+
+def pitch_up():
+    global pitch
+    pitch = min(99, pitch + 10)
+
+def pitch_down():
+    global pitch
+    pitch = max(-99, pitch - 10)
+
+def prepare_highlighting(label_text):
+    i = 0
+    j = 0
+    word_begin = 0
+    word_end = 0
+    current_word = 0
+    word_tuples = []
+    omitted = [' ', '\n', u'\r', '_', '[', '{', ']', '}', '|', '&lt;',\
+        '&gt;', '*', '+', '/', '\\' ]
+    omitted_chars = set(omitted)
+    while i &lt; len(label_text):
+        if label_text[i] not in omitted_chars:
+            word_begin = i
+            j = i
+            while j &lt; len(label_text) and label_text[j] not in omitted_chars:
+                 j = j + 1
+                 word_end = j
+                 i = j
+            word_t = (word_begin, word_end, label_text[word_begin: word_end].strip())
+            if word_t[2] != u'\r':
+                 word_tuples.append(word_t)
+        i = i + 1
+    return word_tuples
+
+def add_word_marks(word_tuples):
+    "Adds a mark between each word of text."
+    i = 0
+    marked_up_text = '<speak> '
+    while i &lt; len(word_tuples):
+        word_t = word_tuples[i]
+        marked_up_text = marked_up_text + '<mark name="' + str(i) + '">' + word_t[2]
+        i = i + 1
+    return marked_up_text + '</mark>'</speak></pre>
+<p>Hay otro archivo nombrado <strong>ReadEtextsTTS.py</strong> que parezca esto:
+  <br />
+</p>
+<pre>import sys
+import os
+import zipfile
+import pygtk
+import gtk
+import getopt
+import pango
+import gobject
+import time
+import speech
+
+speech_supported = True
+
+try:
+    import gst
+    gst.element_factory_make('espeak')
+    print 'speech supported!'
+except Exception, e:
+    speech_supported = False
+    print 'speech not supported!'
+
+page=0
+PAGE_SIZE = 45
+
+class ReadEtextsActivity():
+    def __init__(self):
+        "The entry point to the Activity"
+        speech.highlight_cb = self.highlight_next_word
+        # print speech.voices()
+
+    def highlight_next_word(self, word_count):
+        if word_count &lt; len(self.word_tuples):
+            word_tuple = self.word_tuples[word_count]
+            textbuffer = self.textview.get_buffer()
+            tag = textbuffer.create_tag()
+            tag.set_property('weight', pango.WEIGHT_BOLD)
+            tag.set_property( 'foreground', "white")
+            tag.set_property( 'background', "black")
+            iterStart = textbuffer.get_iter_at_offset(word_tuple[0])
+            iterEnd = textbuffer.get_iter_at_offset(word_tuple[1])
+            bounds = textbuffer.get_bounds()
+            textbuffer.remove_all_tags(bounds[0], bounds[1])
+            textbuffer.apply_tag(tag, iterStart, iterEnd)
+            v_adjustment = self.scrolled_window.get_vadjustment()
+            max = v_adjustment.upper - v_adjustment.page_size
+            max = max * word_count
+            max = max / len(self.word_tuples)
+            v_adjustment.value = max
+        return True
+
+    def keypress_cb(self, widget, event):
+        "Respond when the user presses one of the arrow keys"
+        global done
+        global speech_supported
+        keyname = gtk.gdk.keyval_name(event.keyval)
+        if keyname == 'KP_End' and speech_supported:
+            if speech.is_paused() or speech.is_stopped():
+                speech.play(self.words_on_page)
+            else:
+                speech.pause()
+            return True
+        if keyname == 'plus':
+            self.font_increase()
+            return True
+        if keyname == 'minus':
+            self.font_decrease()
+            return True
+        if speech_supported and speech.is_stopped() == False and\
+            speech.is_paused == False:
+            # If speech is in progress, ignore other keys.
+            return True
+        if keyname == '7':
+            speech.pitch_down()
+            speech.say('Pitch Adjusted')
+            return True
+        if keyname == '8':
+            speech.pitch_up()
+            speech.say('Pitch Adjusted')
+            return True
+        if keyname == '9':
+            speech.rate_down()
+            speech.say('Rate Adjusted')
+            return True
+        if keyname == '0':
+            speech.rate_up()
+            speech.say('Rate Adjusted')
+            return True
+        if keyname == 'KP_Right':
+            self.page_next()
+            return True
+        if keyname == 'Page_Up' or keyname == 'KP_Up':
+            self.page_previous()
+            return True
+        if keyname == 'KP_Left':
+            self.page_previous()
+            return True
+        if keyname == 'Page_Down' or keyname == 'KP_Down':
+            self.page_next()
+            return True
+        if keyname == 'Up':
+            self.scroll_up()
+            return True
+        if keyname == 'Down':
+            self.scroll_down()
+            return True
+        return False
+
+    def page_previous(self):
+        global page
+        page=page-1
+        if page &lt;⁞ 0: page=0
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.upper - v_adjustment.page_size
+
+    def page_next(self):
+        global page
+        page=page+1
+        if page &gt;= len(self.page_index): page=0
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.lower
+
+    def font_decrease(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size - 1
+        if font_size &lt; 1:
+            font_size = 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def font_increase(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size + 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def scroll_down(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.upper - v_adjustment.page_size:
+            self.page_next()
+            return
+        if v_adjustment.value &lt; v_adjustment.upper - v_adjustment.page_size:
+            new_value = v_adjustment.value + v_adjustment.step_increment
+            if new_value &gt; v_adjustment.upper - v_adjustment.page_size:
+                new_value = v_adjustment.upper - v_adjustment.page_size
+            v_adjustment.value = new_value
+
+    def scroll_up(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.lower:
+            self.page_previous()
+            return
+        if v_adjustment.value &gt; v_adjustment.lower:
+            new_value = v_adjustment.value - v_adjustment.step_increment
+            if new_value &lt; v_adjustment.lower:
+                new_value = v_adjustment.lower
+            v_adjustment.value = new_value
+
+    def show_page(self, page_number):
+        global PAGE_SIZE, current_word
+        position = self.page_index[page_number]
+        self.etext_file.seek(position)
+        linecount = 0
+        label_text = ''
+        textbuffer = self.textview.get_buffer()
+        while linecount &lt; PAGE_SIZE:
+            line = self.etext_file.readline()
+            label_text = label_text + unicode(line, 'iso-8859-1')
+            linecount = linecount + 1
+        textbuffer.set_text(label_text)
+        self.textview.set_buffer(textbuffer)
+        self.word_tuples = speech.prepare_highlighting(label_text)
+        self.words_on_page = speech.add_word_marks(self.word_tuples)
+
+    def save_extracted_file(self, zipfile, filename):
+        "Extract the file to a temp directory for viewing"
+        filebytes = zipfile.read(filename)
+        f = open("/tmp/" + filename, 'w')
+        try:
+            f.write(filebytes)
+        finally:
+            f.close()
+
+    def read_file(self, filename):
+        "Read the Etext file"
+        global PAGE_SIZE
+
+        if zipfile.is_zipfile(filename):
+            self.zf = zipfile.ZipFile(filename, 'r')
+            self.book_files = self.zf.namelist()
+            self.save_extracted_file(self.zf, self.book_files[0])
+            currentFileName = "/tmp/" + self.book_files[0]
+        else:
+            currentFileName = filename
+
+        self.etext_file = open(currentFileName,"r")
+        self.page_index = [ 0 ]
+        linecount = 0
+        while self.etext_file:
+            line = self.etext_file.readline()
+            if not line:
+                break
+            linecount = linecount + 1
+            if linecount &gt;= PAGE_SIZE:
+                position = self.etext_file.tell()
+                self.page_index.append(position)
+                linecount = 0
+        if filename.endswith(".zip"):
+            os.remove(currentFileName)
+
+    def delete_cb(self, widget, event, data=None):
+        speech.stop()
+        return False
+
+    def destroy_cb(self, widget, data=None):
+        speech.stop()
+        gtk.main_quit()
+
+    def main(self, file_path):
+        self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+        self.window.connect("delete_event", self.delete_cb)
+        self.window.connect("destroy", self.destroy_cb)
+        self.window.set_title("Read Etexts Activity")
+        self.window.set_size_request(800, 600)
+        self.window.set_border_width(0)
+        self.read_file(file_path)
+        self.scrolled_window = gtk.ScrolledWindow(hadjustment=None, vadjustment=None)
+        self.textview = gtk.TextView()
+        self.textview.set_editable(False)
+        self.textview.set_left_margin(50)
+        self.textview.set_cursor_visible(False)
+        self.textview.connect("key_press_event", self.keypress_cb)
+        self.font_desc = pango.FontDescription("sans 12")
+        self.textview.modify_font(self.font_desc)
+        self.show_page(0)
+        self.scrolled_window.add(self.textview)
+        self.window.add(self.scrolled_window)
+        self.textview.show()
+        self.scrolled_window.show()
+        self.window.show()
+        gtk.main()
+
+if __name__ == "__main__":
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "")
+        ReadEtextsActivity().main(args[0])
+    except getopt.error, msg:
+        print msg
+        print "This program has no options"
+        sys.exit(2)
+</pre>
+<p>El programa <strong>ReadEtextsTTS</strong> tiene solamente algunos cambios para hacerlo permitido para el discurso. Primer comprueba para saber si hay la existencia del gstreamer enchufable:
+</p>
+<pre>speech_supported = True
+
+try:
+    import gst
+    gst.element_factory_make('espeak')
+    print 'speech supported!'
+except Exception, e:
+    speech_supported = False
+    print 'speech not supported!'
+</pre>
+<p> Este código detecta si el enchufable es instalado intentando importar para el Python que la biblioteca asociada a él nombró el “gst”. Si los fall de la importación él lanzan una <strong>E</strong><strong>xception</strong> y cogemos esa excepción y la utilizamos para fijar una variable nombrada <strong>speech_supported a<strong> </strong>False</strong>.&nbsp; Podemos comprobar el valor de esta variable en otros lugares en el programa para hacer un programa que trabaje con el texto al discurso si está disponible y sin él si no es.&nbsp; Haciendo un trabajo del programa en diversos ambientes haciendo estas clases de cheques se llama <em>degradación agraciado</em>.&nbsp; La cogida de excepciones en las importaciones es una técnica común en el Python para alcanzar esto.&nbsp; Si usted quisiera que su actividad funcionara en más viejas versiones del azúcar usted puede encontrarse el usar de ella.
+</p>
+<p>El pedacito siguiente del código vamos a mirar puntos culminantes una palabra en el textview y las volutas el textview para mantener la palabra destacada visible.
+</p>
+<pre>class ReadEtextsActivity():
+    def __init__(self):
+        "The entry point to the Activity"
+        speech.highlight_cb = self.highlight_next_word
+        # print speech.voices()
+
+    def highlight_next_word(self, word_count):
+        if word_count &lt; len(self.word_tuples):
+            word_tuple = self.word_tuples[word_count]
+            textbuffer = self.textview.get_buffer()
+            tag = textbuffer.create_tag()
+            tag.set_property('weight', pango.WEIGHT_BOLD)
+            tag.set_property( 'foreground', "white")
+            tag.set_property( 'background', "black")
+            iterStart = textbuffer.get_iter_at_offset(word_tuple[0])
+            iterEnd = textbuffer.get_iter_at_offset(word_tuple[1])
+            bounds = textbuffer.get_bounds()
+            textbuffer.remove_all_tags(bounds[0], bounds[1])
+            textbuffer.apply_tag(tag, iterStart, iterEnd)
+            v_adjustment = self.scrolled_window.get_vadjustment()
+            max = v_adjustment.upper - v_adjustment.page_size
+            max = max * word_count
+            max = max / len(self.word_tuples)
+            v_adjustment.value = max
+        return True
+</pre>
+<p>En el método del <em>__init ()</em> asignamos un <em>highlight_cb</em> llamado variable en <strong>speech.py</strong> con un método llamado <em>highlight_next_word ()</em>.&nbsp; Esto da a <strong>speech.py una</strong> manera de llamar ese método cada vez que una nueva palabra en el textview necesita ser destacada.
+</p>
+<p>La línea siguiente imprimirá la lista de tuples que contienen nombres de la voz al terminal si usted uncomment él.&nbsp; No estamos dejando al usuario cambiar voces en este uso pero no sería difícil agregar esa característica.
+  <br />
+</p>
+<p>El código para el método que destaca las palabras sigue.&nbsp; Qué lo hace es mirada en una lista de tuples que contengan las compensaciones que comienzan y de terminaciones de cada palabra en el almacenador intermediario del texto de los textarea.&nbsp; El llamador de este método pasa en un número de la palabra (por ejemplo la primera palabra en el almacenador intermediario es la palabra 0, la segunda es la palabra 1, y así sucesivamente).&nbsp; El método mira para arriba esa entrada en la lista, consigue su comenzar y la terminación de compensaciones, quita destacar anterior, después destaca el nuevo texto.&nbsp; Además de eso imagina qué fracción del número total de palabras debe y enrolla la palabra actual el textviewer bastante cerciorarse de que la palabra es visible.
+</p>
+<p>Por supuesto este método trabaja mejor en las páginas sin muchas líneas en blanco, que es afortunadamente la mayoría de las páginas.&nbsp; No trabaja tan bien en las páginas de título.&nbsp; Un programador experimentado podía subir probablemente con una manera más elegante y más confiable de hacer este movimiento en sentido vertical.&nbsp; Déjeme saber con lo que usted sube.
+</p>
+<p>Foméntenos abajo ven que el código que consigue los golpes de teclado el usuario incorpora y que hace cosas discurso-relacionadas con ellas:
+</p>
+<pre>    def keypress_cb(self, widget, event):
+        "Respond when the user presses one of the arrow keys"
+        global done
+        global speech_supported
+        keyname = gtk.gdk.keyval_name(event.keyval)
+        if keyname == 'KP_End' and speech_supported:
+            if speech.is_paused() or speech.is_stopped():
+                speech.play(self.words_on_page)
+            else:
+                speech.pause()
+            return True
+        if speech_supported and speech.is_stopped() == False and \
+            speech.is_paused == False:
+            # If speech is in progress, ignore other keys.
+            return True
+        if keyname == '7':
+            speech.pitch_down()
+            speech.say('Pitch Adjusted')
+            return True
+        if keyname == '8':
+            speech.pitch_up()
+            speech.say('Pitch Adjusted')
+            return True
+        if keyname == '9':
+            speech.rate_down()
+            speech.say('Rate Adjusted')
+            return True
+        if keyname == '0':
+            speech.rate_up()
+            speech.say('Rate Adjusted')
+            return True
+</pre>
+<p>Como usted puede ver, las funciones que estamos llamando están todas en el archivo <strong>speech.py</strong> que importamos.&nbsp; Usted no tiene que completamente entender cómo estas funciones trabajan para hacer uso de ellas en sus propias Actividades.&nbsp; Note que el código según lo escrito previene al usuario de echada o de tarifa cambiante mientras que el discurso está en curso.&nbsp; Note también que hay dos diversos métodos en speech.py para hacer discurso.&nbsp; <strong>el juego ()</strong> es el método para hacer el texto al discurso con destacar de la palabra.&nbsp; <strong>diga que ()</strong> está para decir las frases cortas producidas por el interfaz utilizador, en este caso “eche ajustado” y “tarifa ajustado”.&nbsp; Por supuesto si usted pusiera código como esto en su actividad usted utilizaría la función del _ () así que estas frases se podrían traducir a otras idiomas.
+</p>
+<p>Hay un más pedacito de código que necesitamos hacer el texto al discurso con destacar: necesitamos preparar las palabras para ser hablado para ser destacado en el textviewer.
+</p>
+<pre>    def show_page(self, page_number):
+        global PAGE_SIZE, current_word
+        position = self.page_index[page_number]
+        self.etext_file.seek(position)
+        linecount = 0
+        label_text = ''
+        textbuffer = self.textview.get_buffer()
+        while linecount &lt; PAGE_SIZE:
+            line = self.etext_file.readline()
+            label_text = label_text + unicode(line, 'iso-8859-1')
+            linecount = linecount + 1
+        textbuffer.set_text(label_text)
+        self.textview.set_buffer(textbuffer)
+        self.word_tuples = speech.prepare_highlighting(label_text)
+        self.words_on_page = speech.add_word_marks(self.word_tuples)
+</pre>
+<p>El principio de este método lee el valor de una página del texto en una secuencia llamada label_text y lo pone en el almacenador intermediario de los textview.&nbsp; Los dos pasados alinea fracturas el texto en palabras, yéndose en la puntuación, y pone cada palabra y su principio y conclusión compensa en un tuple.&nbsp; Los tuples se agregan a una lista.
+</p>
+<p> <strong>speech.add_word_marks ()</strong> convierte las palabras en la lista a un documento en formato de <em>SSML</em> (<em>lengua de margen de beneficio de la síntesis de discurso</em>).&nbsp; SSML es un estándar para agregar las etiquetas (clase como de las etiquetas usadas para hacer Web pages) al texto para decir a software del discurso cuál hacer con el texto.&nbsp; Apenas estamos utilizando una parte muy pequeña de este estándar para producir marcado encima del documento con una marca entre cada palabra, como esto:
+</p>
+<pre><speak>
+    <mark name="0">The<mark name="1">quick<mark>brown<mark name="3">
+    fox<mark name="4">jumps
+</mark></mark></mark></mark></mark></speak></pre>
+<p>Cuando el espeak lee este archivo hará un <em>servicio repetido</em> en nuestro programa que lee cada vez una de las etiquetas de la marca.&nbsp; El servicio repetido contendrá el número de la palabra en la lista de los <strong>word_tuples</strong> que conseguirá de la cualidad <strong>conocida de la</strong> etiqueta de la <strong>marca</strong>.&nbsp; De esta manera el método que es llamado sabrá qué palabra a destacar.&nbsp; La ventaja de usar el nombre de la marca algo que apenas destacando la palabra siguiente en el textviewer es que si el espeak no puede hacer uno de los servicios repetidos el destacar no será lanzado de la sinc.&nbsp; Esto era un problema con el discurso-despachador.
+</p>
+<p>Un servicio repetido es apenas como lo que suena.&nbsp; Cuando un programa llama otro programa puede pasar en una función o un método sus los propios que quisiera que el segundo programa llamara cuando sucede algo.
+  <br />
+</p>
+<p>Para probar el nuevo funcionamiento del programa
+</p>
+<pre>./ReadEtextsTTS.py <em>bookfile</em></pre>
+<p>del terminal.&nbsp; Usted puede ajustar la echada y la tarifa arriba y abajo de usar las llaves <strong>7, 8, 9</strong>, y <strong>0</strong> en la fila superior del teclado.&nbsp; Debe decir la “echada ajustada” o la “tarifa ajustada” cuando usted hace eso.&nbsp; Usted puede comenzar, detenerse brevemente, y reasumir discurso con destacar usando la llave de <strong>final</strong> en el telclado numérico.&nbsp; (En el ordenador portátil de XO las llaves del “juego” se trazan a cuál es el telclado numérico numérico en un teclado normal.&nbsp; Esto hace estas llaves prácticas para el uso cuando el XO se dobla en modo de la tableta y el teclado no está disponible).&nbsp; Usted no puede cambiar la echada o clasificar mientras que el discurso está en curso.&nbsp; Tentativas de hacer que serán no hechas caso.&nbsp; El programa en la acción parece esto:
+</p>
+<p><img alt="espeak3.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/TextToSpeech/espeak3_en.jpg" height="465" width="600" />
+</p> Eso nos trae al final del asunto del texto al discurso.&nbsp; Si usted debe como ver más, el depósito de Git para este libro tiene algunos más programas de muestra que utilicen el espeak del gstreamer enchufable.&nbsp; Estos ejemplos fueron creados por el autor del enchufable y demuestran algunas otras maneras que usted puede utilizarlo.&nbsp; Hay incluso un “choir” programa que demuestra las voces múltiples que hablan al mismo tiempo.
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

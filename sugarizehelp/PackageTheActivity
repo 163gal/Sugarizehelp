@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/PackageTheActivity' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Empaquete la actividad
+</h1>
+<h2>Agregue setup.py
+</h2>
+<p> Usted necesitará agregar un programa del Python llamado <strong>setup.py al</strong> mismo directorio que usted programa de actividad está adentro.&nbsp; Cada setup.py es exactamente igual que cada otro setup.py.&nbsp; Las copias en nuestro depósito de Git parecen esto:
+</p>
+<pre>#!/usr/bin/env python
+
+# Copyright (C) 2006, Red Hat, Inc.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+from sugar.activity import bundlebuilder
+
+bundlebuilder.start()</pre>
+<p>Esté seguro y copie el texto entero arriba, incluyendo los comentarios.
+  <br />
+</p>
+<p>El programa de setup.py es utilizado por el azúcar para un número de propósitos.&nbsp;⁞ Si usted funciona setup.py de la línea de comando que usted verá las opciones que se utilizan con él y qué lo hacen.
+  <br />
+</p>
+<pre>[jim@simmons bookexamples]$ ./setup.py
+/usr/lib/python2.6/site-packages/sugar/util.py:25: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import sha
+Available commands:
+
+build                Build generated files
+dev                  Setup for development
+dist_xo              Create a xo bundle package
+dist_source          Create a tar source package
+fix_manifest         Add missing files to the manifest
+genpot               Generate the gettext pot file
+install              Install the activity in the system
+
+(Type "./setup.py <command> --help" for help about a particular command's options.</command></pre>
+<p>Funcionaremos con algunos de estos comandos después.&nbsp; No se trate sobre el mensaje de <strong>DeprecationWarning</strong>.&nbsp; Ésa es apenas manera del Python que nosotros dice de que tiene una nueva manera de hacer algo que es mejor solamente la vieja manera que todavía estamos utilizando trabajos.&nbsp; El error está viniendo del código en azúcar sí mismo y se debe fijar en un cierto lanzamiento futuro del azúcar.
+  <br />
+</p>
+<h2>Cree activity.info
+</h2>
+<p> Después cree un directorio dentro de el que su progam está adentro y nómbrelo <strong>activity</strong>.&nbsp; Cree un archivo nombrado <strong>activity.info</strong> dentro de ese directorio e incorpore las líneas abajo en él.&nbsp; Aquí está el que está para nuestra primera actividad:
+  <br />
+</p>
+<pre>[Activity]
+name = Read ETexts II
+service_name = net.flossmanuals.ReadEtextsActivity
+icon = read-etexts
+exec = sugar-activity ReadEtextsActivity.ReadEtextsActivity
+show_launcher = no
+activity_version = 1
+mime_types = text/plain;application/zip
+license = GPLv2+</pre>
+<p>Este archivo dice a azúcar cómo funcionar con su actividad.&nbsp; Las características necesarias en este archivo son:
+</p>
+<p>
+  <table style="width: 100%;" border="0" cellpadding="4" cellspacing="0"><tbody>
+    <tr>
+      <td style="width: 25%;">&nbsp;<strong>name</strong></td>
+      <td style="width: 75%;">El nombre de su actividad pues aparecerá al usuario.
+      <br /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<strong>service_name</strong></td>
+      <td>Un nombre único que el azúcar utilizará para referir a su actividad.&nbsp; Cualquier entrada de diario creada por su actividad tendrá este nombre almacenado en sus meta datos, de modo que cuando alguien reasume el azúcar de la entrada de diario sepa para utilizar el programa que lo creó para leerlo.
+      <br /></td>
+    </tr>
+    <tr>
+      <td><strong>icon</strong>
+      <br /></td>
+      <td>El nombre del archivo del icono que usted ha creado para la actividad.&nbsp; Puesto que los iconos están siempre .svg archiva el archivo del icono en el ejemplo se nombra read-etexts.svg.
+      <br /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<strong>exec</strong></td>
+      <td>Esto dice a azúcar cómo poner en marcha su actividad.&nbsp; Qué dice es crear un caso de la clase <strong>ReadEtextsActivity</strong> que encontrará en el archivo <strong>ReadEtextsActivity.py</strong>.
+      <br /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<strong>show_launcher</strong></td>
+      <td>Hay dos maneras de poner en marcha una actividad.&nbsp; El primer es chascar encendido el icono en la opinión de la actividad.&nbsp; El segundo es reasumir una entrada en el diario. Las Actividades que no crean entradas de diario se pueden reasumir solamente del diario, tan allí no son ninguÌn punto en poner un icono en el anillo de la actividad para ellas.&nbsp; Lea Etexts es una actividad como eso.
+      <br /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<strong>activity_version</strong></td>
+      <td>Un número entero que representa el número de versión de su programa.&nbsp;El que la primera versión es 1, el siguiente es 2, y así sucesivamente.
+      <br /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<strong>mime_types</strong></td>
+      <td>Generalmente cuando usted reasume una entrada de diario pone en marcha la actividad que lo creó.&nbsp; En el caso de un e-libro no fue creado por ninguna actividad, así que necesitamos otra manera de decir al diario qué actividad puede utilizar.&nbsp; Un tipo del MIME es el nombre de un formato de archivo común.&nbsp; Algunos ejemplos son texto/llanos, el texto/HTML, uso/cierre relámpago y el uso/pdf.&nbsp; En esta entrada somos diciendo al diario que nuestro programa puede manejar cualquier archivos de texto llano o relampagar ficheros de archivo.
+      <br /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<strong>licence</strong></td>
+      <td>La posesión de un programa de computadora no es como la compra de un coche.&nbsp; Con un coche, usted es el dueño y usted puede hacer de lo que usted tiene gusto con él.&nbsp; Usted puede venderlo, lo alquila, lo hace en una barra caliente, lo que.&nbsp; Con un programa de computadora hay siempre una licencia que dice a la persona que recibe el programa qué a le se permite hacer con él.&nbsp; GPLv2+ es una licencia estándar popular que se puede utilizar para las Actividades, y puesto que éste es <em>mi</em> programa que es qué va aquí.&nbsp; Cuando usted está listo para distribuir una de <em>sus</em> Actividades tendré más a decir sobre licencias.
+      <br /></td>
+    </tr></tbody>
+  </table>
+</p>
+<h2>Cree un icono
+</h2>
+<p> Necesitamos después crear un icono nombrado <strong>read-etexts.svg</strong> y ponerlo en el sub-directório de la <strong>activity</strong>.&nbsp; Vamos a utilizar Inkscape para crear el icono.&nbsp; <strong>Del nuevo</strong> menú en Inkscape seleccione <strong>icon_48x48</strong>.&nbsp; Esto creará un área de dibujo que sea un buen tamaño.
+</p>
+<p>Usted no necesita ser un experto en Inkscape para crear un icono.&nbsp; De hecho menos la suposición su icono es la mejor.&nbsp; Al dibujar su icono recuerde los puntos siguientes:
+</p>
+<ul>
+  <li>Su icono necesita parecer bueno de tamaños que se extienden de realmente, realmente pequeño a grande.</li>
+  <li>Necesita ser recognizeable cuando su realmente, realmente pequeño.</li>
+  <li>Usted consigue solamente utilizar dos colores: un color del movimiento y un color del terraplén.&nbsp; No importa cuáles usted elige porque el azúcar necesitará eliminar sus opciones de todos modos, tan apenas utiliza movimientos negros en un fondo blanco.</li>
+  <li>Un color del terraplén se aplica solamente a un área que se contenga dentro de un movimiento intacto.&nbsp; Si usted dibuja una caja y una de las esquinas no conecta absolutamente el interior del área que la caja no será llenada.&nbsp; El dibujo de la carta blanca está solamente para el talentoso.&nbsp; Los círculos, las cajas, y los arcos son fáciles de dibujar con Inkscape así que utilícelos cuando usted puede.</li>
+  <li>Inkscape también dibujará las cajas 3D usando perspectiva de dos puntos.&nbsp; No las utilice.&nbsp; Los iconos deben ser imágenes planas.&nbsp; 3D apenas no parece bueno en un icono.</li>
+  <li>El subir con las buenas ideas para los iconos es resistente.&nbsp; I subió una vez con un cuadro algo agradable de un cajón de catálogo de tarjeta de biblioteca para <em>consigue los libros del archivo del Internet</em>.&nbsp; El problema es, ninguÌn niño bajo edad de cuarenta ha visto nunca un catálogo de tarjeta y menos aún así entender su propósito.</li>
+</ul>
+<p>Cuando le hacen que hace su icono usted necesita modificarlo así que puede trabajar con el azúcar.&nbsp; Específicamente, usted necesita hacerlo que el azúcar de la demostración puede utilizar su propia opción del color del movimiento y llenar color.&nbsp; El formato de archivo de SVG se basa en XML, que los medios él son un archivo de texto con algunas etiquetas especiales en él.&nbsp; Esto significa que una vez que hemos acabado de corregirlo en Inkscape podemos cargar el archivo en Eric y corregirlo como archivo de texto.
+</p>
+<p>No voy a poner el archivo entero en este capítulo porque la mayor parte de él que usted apenas dejar solo.&nbsp; La primera parte que usted necesita modificarse está al principio.
+</p>
+<p>Antes:
+  <br />
+</p>
+<pre><!-- Created with Inkscape (http://www.inkscape.org/) -->
+&lt;?xml version="1.0" encoding="UTF-8" standalone="no"?&gt;
+&lt;!-- Created with Inkscape (http://www.inkscape.org/) --&gt;
+&lt;svg
+<svg></svg></pre>
+<p> Después:
+</p>
+<pre><!--ENTITY stroke_color "#000000"-->&lt;?xml version="1.0" ?&gt;&lt;!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+	&lt;!ENTITY stroke_color "#000000"&gt;
+	&lt;!ENTITY fill_color "#FFFFFF"&gt;
+]&gt;&lt;svg
+<svg></svg></pre>
+<p> Ahora en el cuerpo del documento usted encontrará referencias <em>para llenar</em> y <em>para frotar ligeramente</em> como parte de una cualidad llamada <em>style</em>.&nbsp; Cada línea o le forma que el drenaje tendrá éstos, como esto:
+</p>
+<pre>    &lt;rect
+       style="fill:#ffffff;stroke:#000000;stroke-opacity:1"
+       id="rect904"
+       width="36.142857"
+       height="32.142857"
+       x="4.1428571"
+       y="7.1428571" /&gt;
+</pre>
+<p>Usted necesita cambiar cada uno al parecer esto:
+</p>
+<pre>    &lt;rect
+       style="fill:&amp;fill_color;;stroke:&amp;stroke_color;;stroke-opacity:1"
+       id="rect904"
+       width="36.142857"
+       height="32.142857"
+       x="4.1428571"
+       y="7.1428571" /&gt;<rect style="stroke-opacity: 1;" id="rect904" width="36.142857" height="32.142857" x="4.1428571" y="7.1428571"></rect></pre>
+<p>Observe ese <em>&amp;stroke_color;</em> y <em>&amp;fill_color;</em> ambo extremo con puntos y comas (;), y los puntos y comas también se utilizan para separar las características para el estilo.&nbsp; Debido a esto es error de un principiante extremadamente común a irse del punto y coma que se arrastra porque dos puntos y comas en una fila no parecen correctos.&nbsp; ¡Sea confiado que los dos puntos y comas en una fila son intencionales y absolutamente necesarios!
+</p>
+<h2>Haga un archivo MANIFEST
+</h2>
+<p> Usted debe recordar que setup.py tiene una opción para poner al día un manifesto.&nbsp; Intentémoslo:
+</p>
+<pre>./setup.py fix_manifest
+/usr/lib/python2.6/site-packages/sugar/util.py:25: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import sha
+WARNING:root:Missing po/ dir, cannot build_locale
+WARNING:root:Activity directory lacks a MANIFEST file.
+</pre>
+<p>Esto construirá realmente un archivo MANIFEST que contiene todo en el directorio y sus sub-directórios.&nbsp; El directorio de /po que se está quejando alrededor se utiliza para traducir Actividades a diversas idiomas.&nbsp; Podemos no hacer caso de eso para ahora.
+</p>
+<p> El archivo MANIFEST que crea contendrá un poco de materia adicional, así que necesitamos librarnos de las líneas adicionales usando Eric.&nbsp; El MANIFEST corregida debe parecer esto:
+</p>
+<pre>setup.py
+ReadEtextsActivity.py
+activity/read-etexts.svg
+activity/activity.info</pre>
+<h2>Instale la actividad
+</h2>
+<p> Hay apenas una más cosa a hacer antes de que poder probar nuestra actividad debajo del emulador del azúcar.&nbsp; Necesitamos instalarlo, que en este caso los medios que nos hacen un acoplamiento simbólico entre el directorio están utilizando para nuestro código en el directorio de ~/Activities/.&nbsp; El ~ del símbolo refiere al directorio “casero” del usuario que estamos funcionando con el azúcar debajo, y un acoplamiento simbólico es una manera de hacer que un archivo o un directorio aparece ser situado en más de un lugar sin el copiado de él.&nbsp; Hacemos este acoplamiento simbólico funcionando setup.py otra vez:
+  <br />
+</p>
+<pre>./setup.py dev
+</pre>
+<h2>Funcionar con nuestra actividad
+</h2>
+<p>Ahora al final podemos funcionar con nuestra actividad debajo del azúcar.&nbsp; Para hacer que necesitamos aprender cómo funcionar el <strong>sugar-</strong><strong>emulator</strong>.
+</p>
+<p>Fedora no hace una opción del menú para el emulador del azúcar, sino que es fácil agregar uno usted mismo.&nbsp; El comando de funcionar está simplemente
+</p>
+<pre>sugar-emulator</pre>
+<p>Si su resolución de la pantalla es más pequeña que los funcionamientos del azúcar-emulador del tamaño del defecto en ella funcionarán de plena pantalla.&nbsp; Esto no es conveniente para la prueba, así que usted puede querer especificar su propio tamaño:
+</p>
+<pre>sugar-emulator -i 800x600</pre>
+<p>Observe que esta opción existe solamente en Fedora 11 y más adelante.
+</p>
+<p>Cuando usted funciona el azúcar-emulador que una ventana abre y el ambiente del azúcar empieza para arriba y funciona dentro de él.&nbsp; Parece esto:
+</p>
+<p><img alt="ReadEtexts_02.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/PackageTheActivity/ReadEtexts_02_en.jpg" height="480" width="640" />
+</p>
+<p>Cuando es corriente azúcar-emulador usted puede encontrar que algunas llaves no parecen trabajar en el ambiente del azúcar.&nbsp; Esto es causada por los insectos en el software de <strong>Xephyr</strong> que crea la ventana que el azúcar rueda.&nbsp; Tiene a veces dificultad el identificar de su teclado y consecuentemente de algunas llaves para conseguir malinterpretada.&nbsp; En Fedora 11 noté que mis llaves de funcionamiento no trabajaron, y mis llaves de flecha regulares no trabajaron tampoco aunque lo hicieran mis llaves de flecha del telclado numérico.&nbsp; Podía conseguir mis llaves de funcionamiento que trabajaban otra vez poniendo esta línea en <em>~/.sugar/debug</em>:
+</p>
+<pre>run setxkbmap <em><keymap></keymap></em></pre>
+<p>Esto necesita más explicación.&nbsp; Primero, el símbolo “~” refiere a su directorio casero.&nbsp; En segundo lugar, cualquier archivo nombrado el comenzar con un período se considera ocultado en linux, así que usted necesitará utilizar la opción para demostrar archivos ocultados y directorios en el hojeador del directorio del GNOMO para navegar a él.&nbsp; Finalmente, el nombre del keymap es un código de país de dos caracteres: nosotros para los Estados Unidos, franco para Francia, de para Alemania, etc.
+  <br />
+</p>
+<p>Para probar nuestra actividad vamos a necesitar tener un libro en el diario, así que utilice la actividad de la <strong>ojeada</strong> para visitar el proyecto Gutenberg otra vez y para transferir el libro de su opción.&nbsp; Esta vez es importante transferir el libro en formato del cierre relámpago, porque hojee no puede transferir un archivo de texto llano al diario.&nbsp; En lugar, abre el archivo para la visión como si fuera un Web page.&nbsp; Si usted intenta la misma cosa con el archivo de cierre relámpago creará una entrada en el diario.
+</p>
+<p>No podemos apenas abrir el archivo con un tecleo en el diario porque nuestro programa no creó la entrada de diario y hay varias Actividades que apoyan el tipo del MIME de la entrada de diario.&nbsp; Necesitamos utilizar el comienzo con la opción del menú como esto:
+</p>
+<p><img alt="ReadEtexts_03.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/PackageTheActivity/ReadEtexts_03_en.jpg" height="480" width="640" />
+</p>
+<p>Cuando abrimos la entrada de diario esto es lo que vemos:
+</p>
+<p><img alt="ReadEtexts_04.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/PackageTheActivity/ReadEtexts_04_en.jpg" height="480" width="640" />
+</p>
+<p>Técnico, ésta es la primera <strong>iteración de</strong> nuestra actividad.&nbsp; (La iteración es un significado sumamente útil de la palabra algo que usted lo hace más de una vez.&nbsp; En este libro estamos construyendo nuestra actividad un pedacito a la vez así que puedo demostrar principios de la escritura de la actividad, pero realmente la construcción de un programa en pedazos, la prueba de él, conseguir la regeneración, y la construcción un poco más pueden ser una manera altamente productiva de crear software.&nbsp; Usando la iteración de la palabra describir cada paso en el proceso hace el sonido de proceso más formal que está realmente).
+</p> Mientras que esta actividad pudo ser bastante buena demostrar a su propia madre, debemos mejorarla realmente un pedacito antes de que hagamos eso.&nbsp; Esa parte viene después.
+<p>
+</p>
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

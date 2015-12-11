@@ -1,0 +1,1229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/NewStyleToolbars' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Fabricación de nuevas barras de herramientas del estilo
+</h1>
+<h2>Introducción
+</h2>
+<p>Dicen que “no hay barra de herramientas como una barra de herramientas vieja” y si sus usuarios no están usanando  la versión muy última de Sugar ellos tienen razón.  Las Actividades necesitarán usar las barras de herramientas originales del estilo durante un tiempo.  Sin embargo, es posible hacer una actividad que apoye ambos y que sea lo que vamos a hacer en este capítulo. 
+</p>
+<p>Las nuevas barras de herramientas ocurrieron porque estaban problemas con las barras de herramientas viejas.  Los usuarios de una Actividad tenían dificultades porque no sabían cómo parar una Actividad porque el botón <strong>Close</strong> está solamente en la barra de herramientas de la Actividad.  Si la Actividad comienza en una barra de herramientas diferente, como muchas hacen, no es obvia que usted necesita cambiar a la barra de herramientas de la Actividad para parar la Actividad.  El otro tema traído encima de era que las lengüetas para las barras de herramientas tomaron espacio de la pantalla que se podrían utilizar mejor a otra parte.  Comparemos las barras de herramientas para las Actividades similares.  Primero, la barra de herramientas del viejo estilo para <strong>Read Etexts</strong>::
+</p>
+<p><img alt="La barra de herramientas del viejo estilo, leyó Etexts" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/NewStyleToolbars/oldtoolbar_en.jpg" height="80" width="600" />
+</p>
+<p>Ahora compárela con la nueva barra de herramientas del estilo para la actividad <strong>leída</strong>:
+</p>
+<p><img alt="Nueva barra de herramientas del estilo, cerrada." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/NewStyleToolbars/newtoolbar1_1_en.jpg" height="48" width="600" />
+</p>
+<p>Esto es más fino que la más vieja versión y el botón <strong>cercano</strong> es siempre visibles.  Algunas funciones están en la barra de herramientas principal y otras se atan a las barras de herramientas que caen abajo cuando usted chasca encendido su icono.  Primero, la nueva actividad cae abajo la barra de herramientas:
+</p>
+<p><img alt="La actividad el menú de persiana." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/NewStyleToolbars/newtoolbar2_en.jpg" height="87" width="600" />
+</p>
+<p>Después la barra de herramientas del <strong>corregir</strong>:
+</p>
+<p><img alt="Nuevo corrija la barra de herramientas" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/NewStyleToolbars/newtoolbar3_en.jpg" height="90" width="598" />
+</p>
+<p>Finalmente, la barra de herramientas de la <strong>visión</strong>:
+</p>
+<p><img alt="La nueva barra de herramientas de la visión." src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/NewStyleToolbars/newtoolbar4_en.jpg" height="100" width="600" />
+</p>
+<h2> Adición de nuevas barras de herramientas del estilo para Read Etexts II
+</h2>
+<p>Al trabajar en la original <strong>lea la</strong> actividad de <strong>Etexts que</strong> pedí prestado mucho código del interfaz utilizador de la original <strong>leo</strong> actividad y no veo ninguna razón para parar el hacer de eso ahora.  Una complicación a hacer esto es que <strong>leído</strong> tiene algunas dependencias que eviten que la última versión de <strong>leído</strong> trabaje con más viejas versiones del azúcar, y que no es ninguna necesidad el ser el caso allí en absoluto de leído para apoyar barras de herramientas viejas y nuevas.  <strong>Read Etexts IV</strong> no será tan afortunado; necesitará imaginar en el tiempo de pasada lo que un poco se apoya la barra de herramientas y uso eso.
+</p>
+<p>Puedo probar la actividad con las barras de herramientas viejas y nuevas del estilo en la misma caja porque estoy funcionando Fedora 11, que tiene un ambiente instalado del azúcar que apoye las barras de herramientas viejas, más que he transferido y que funciono con el <strong>sugar-jhbuild</strong>, que apoya las nuevas barras de herramientas en su versión del Sugar.
+</p>
+<p>Aquí está el código para <strong>ReadEtextsActivity4.py</strong>:
+</p>
+<pre>import os
+import re
+import logging
+import time
+import zipfile
+import gtk
+import pango
+import dbus
+import gobject
+import telepathy
+from sugar.activity import activity
+
+from sugar.graphics.toolbutton import ToolButton
+
+_NEW_TOOLBAR_SUPPORT = True
+try:
+    from sugar.graphics.toolbarbox import ToolbarBox
+    from sugar.graphics.toolbarbox import ToolbarButton
+    from sugar.activity.widgets import StopButton
+    from toolbar import ViewToolbar
+    from mybutton import MyActivityToolbarButton
+except:
+    _NEW_TOOLBAR_SUPPORT = False
+    from toolbar import ReadToolbar,  ViewToolbar
+
+from sugar.graphics.toggletoolbutton import ToggleToolButton
+from sugar.graphics.menuitem import MenuItem
+
+from sugar.graphics import style
+from sugar import network
+from sugar.datastore import datastore
+from sugar.graphics.alert import NotifyAlert
+from gettext import gettext as _
+
+page=0
+PAGE_SIZE = 45
+TOOLBAR_READ = 2
+
+logger = logging.getLogger('read-etexts2-activity')
+
+class ReadHTTPRequestHandler(network.ChunkedGlibHTTPRequestHandler):
+    """HTTP Request Handler for transferring document while collaborating.
+
+    RequestHandler class that integrates with Glib mainloop. It writes
+    the specified file to the client in chunks, returning control to the
+    mainloop between chunks.
+
+    """
+    def translate_path(self, path):
+        """Return the filepath to the shared document."""
+        return self.server.filepath
+
+
+class ReadHTTPServer(network.GlibTCPServer):
+    """HTTP Server for transferring document while collaborating."""
+    def __init__(self, server_address, filepath):
+        """Set up the GlibTCPServer with the ReadHTTPRequestHandler.
+
+        filepath -- path to shared document to be served.
+        """
+        self.filepath = filepath
+        network.GlibTCPServer.__init__(self, server_address,
+                                       ReadHTTPRequestHandler)
+
+
+class ReadURLDownloader(network.GlibURLDownloader):
+    """URLDownloader that provides content-length and content-type."""
+
+    def get_content_length(self):
+        """Return the content-length of the download."""
+        if self._info is not None:
+            return int(self._info.headers.get('Content-Length'))
+
+    def get_content_type(self):
+        """Return the content-type of the download."""
+        if self._info is not None:
+            return self._info.headers.get('Content-type')
+        return None
+
+READ_STREAM_SERVICE = 'read-etexts-activity-http'
+
+class ReadEtextsActivity(activity.Activity):
+    def __init__(self, handle):
+        "The entry point to the Activity"
+        global page
+        activity.Activity.__init__(self, handle)
+
+        self.fileserver = None
+        self.object_id = handle.object_id
+
+        if _NEW_TOOLBAR_SUPPORT:
+            self.create_new_toolbar()
+        else:
+            self.create_old_toolbar()
+
+        self.scrolled_window = gtk.ScrolledWindow()
+        self.scrolled_window.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
+        self.scrolled_window.props.shadow_type = gtk.SHADOW_NONE
+
+        self.textview = gtk.TextView()
+        self.textview.set_editable(False)
+        self.textview.set_cursor_visible(False)
+        self.textview.set_left_margin(50)
+        self.textview.connect("key_press_event", self.keypress_cb)
+
+        self.progressbar = gtk.ProgressBar()
+        self.progressbar.set_orientation(gtk.PROGRESS_LEFT_TO_RIGHT)
+        self.progressbar.set_fraction(0.0)
+
+        self.scrolled_window.add(self.textview)
+        self.textview.show()
+        self.scrolled_window.show()
+
+        vbox = gtk.VBox()
+        vbox.pack_start(self.progressbar,  False,  False,  10)
+        vbox.pack_start(self.scrolled_window)
+        self.set_canvas(vbox)
+        vbox.show()
+
+        page = 0
+        self.clipboard = gtk.Clipboard(display=gtk.gdk.display_get_default(), \
+                                       selection="CLIPBOARD")
+        self.textview.grab_focus()
+        self.font_desc = pango.FontDescription("sans %d" % style.zoom(10))
+        self.textview.modify_font(self.font_desc)
+
+        buffer = self.textview.get_buffer()
+        self.markset_id = buffer.connect("mark-set", self.mark_set_cb)
+
+        self.unused_download_tubes = set()
+        self.want_document = True
+        self.download_content_length = 0
+        self.download_content_type = None
+        # Status of temp file used for write_file:
+        self.tempfile = None
+        self.close_requested = False
+        self.connect("shared", self.shared_cb)
+
+        self.is_received_document = False
+
+        if self._shared_activity and handle.object_id == None:
+            # We're joining, and we don't already have the document.
+            if self.get_shared():
+                # Already joined for some reason, just get the document
+                self.joined_cb(self)
+            else:
+                # Wait for a successful join before trying to get the document
+                self.connect("joined", self.joined_cb)
+
+    def create_old_toolbar(self):
+        toolbox = activity.ActivityToolbox(self)
+        activity_toolbar = toolbox.get_activity_toolbar()
+        activity_toolbar.keep.props.visible = False
+
+        self.edit_toolbar = activity.EditToolbar()
+        self.edit_toolbar.undo.props.visible = False
+        self.edit_toolbar.redo.props.visible = False
+        self.edit_toolbar.separator.props.visible = False
+        self.edit_toolbar.copy.set_sensitive(False)
+        self.edit_toolbar.copy.connect('clicked', self.edit_toolbar_copy_cb)
+        self.edit_toolbar.paste.props.visible = False
+        toolbox.add_toolbar(_('Edit'), self.edit_toolbar)
+        self.edit_toolbar.show()
+
+        self.read_toolbar = ReadToolbar()
+        toolbox.add_toolbar(_('Read'), self.read_toolbar)
+        self.read_toolbar.back.connect('clicked', self.go_back_cb)
+        self.read_toolbar.forward.connect('clicked', self.go_forward_cb)
+        self.read_toolbar.num_page_entry.connect('activate',  \
+            self.num_page_entry_activate_cb)
+        self.read_toolbar.show()
+
+        self.view_toolbar = ViewToolbar()
+        toolbox.add_toolbar(_('View'), self.view_toolbar)
+        self.view_toolbar.connect('go-fullscreen', \
+            self.view_toolbar_go_fullscreen_cb)
+        self.view_toolbar.zoom_in.connect('clicked', self.zoom_in_cb)
+        self.view_toolbar.zoom_out.connect('clicked', self.zoom_out_cb)
+        self.view_toolbar.show()
+
+        self.set_toolbox(toolbox)
+        toolbox.show()
+        self.toolbox.set_current_toolbar(TOOLBAR_READ)
+
+    def create_new_toolbar(self):
+        toolbar_box = ToolbarBox()
+
+        activity_button = MyActivityToolbarButton(self)
+        toolbar_box.toolbar.insert(activity_button, 0)
+        activity_button.show()
+
+        self.edit_toolbar = activity.EditToolbar()
+        self.edit_toolbar.undo.props.visible = False
+        self.edit_toolbar.redo.props.visible = False
+        self.edit_toolbar.separator.props.visible = False
+        self.edit_toolbar.copy.set_sensitive(False)
+        self.edit_toolbar.copy.connect('clicked', self.edit_toolbar_copy_cb)
+        self.edit_toolbar.paste.props.visible = False
+
+        edit_toolbar_button = ToolbarButton(
+            page=self.edit_toolbar,
+            icon_name='toolbar-edit')
+        self.edit_toolbar.show()
+        toolbar_box.toolbar.insert(edit_toolbar_button, -1)
+        edit_toolbar_button.show()
+
+        self.view_toolbar = ViewToolbar()
+        self.view_toolbar.connect('go-fullscreen', \
+            self.view_toolbar_go_fullscreen_cb)
+        self.view_toolbar.zoom_in.connect('clicked', self.zoom_in_cb)
+        self.view_toolbar.zoom_out.connect('clicked', self.zoom_out_cb)
+        self.view_toolbar.show()
+        view_toolbar_button = ToolbarButton(
+            page=self.view_toolbar,
+            icon_name='toolbar-view')
+        toolbar_box.toolbar.insert(view_toolbar_button, -1)
+        view_toolbar_button.show()
+
+        self.back = ToolButton('go-previous')
+        self.back.set_tooltip(_('Back'))
+        self.back.props.sensitive = False
+        self.back.connect('clicked', self.go_back_cb)
+        toolbar_box.toolbar.insert(self.back, -1)
+        self.back.show()
+
+        self.forward = ToolButton('go-next')
+        self.forward.set_tooltip(_('Forward'))
+        self.forward.props.sensitive = False
+        self.forward.connect('clicked', self.go_forward_cb)
+        toolbar_box.toolbar.insert(self.forward, -1)
+        self.forward.show()
+
+        num_page_item = gtk.ToolItem()
+        self.num_page_entry = gtk.Entry()
+        self.num_page_entry.set_text('0')
+        self.num_page_entry.set_alignment(1)
+        self.num_page_entry.connect('insert-text',
+                               self.__new_num_page_entry_insert_text_cb)
+        self.num_page_entry.connect('activate',
+                               self.__new_num_page_entry_activate_cb)
+        self.num_page_entry.set_width_chars(4)
+        num_page_item.add(self.num_page_entry)
+        self.num_page_entry.show()
+        toolbar_box.toolbar.insert(num_page_item, -1)
+        num_page_item.show()
+
+        total_page_item = gtk.ToolItem()
+        self.total_page_label = gtk.Label()
+
+        label_attributes = pango.AttrList()
+        label_attributes.insert(pango.AttrSize(14000, 0, -1))
+        label_attributes.insert(pango.AttrForeground(65535, 65535,
+                                                     65535, 0, -1))
+        self.total_page_label.set_attributes(label_attributes)
+
+        self.total_page_label.set_text(' / 0')
+        total_page_item.add(self.total_page_label)
+        self.total_page_label.show()
+        toolbar_box.toolbar.insert(total_page_item, -1)
+        total_page_item.show()
+
+        separator = gtk.SeparatorToolItem()
+        separator.props.draw = False
+        separator.set_expand(True)
+        toolbar_box.toolbar.insert(separator, -1)
+        separator.show()
+
+        stop_button = StopButton(self)
+        stop_button.props.accelerator = '<ctrl><shift>Q'
+        toolbar_box.toolbar.insert(stop_button, -1)
+        stop_button.show()
+
+        self.set_toolbar_box(toolbar_box)
+        toolbar_box.show()
+
+    def __new_num_page_entry_insert_text_cb(self, entry, text, length, position):
+        if not re.match('[0-9]', text):
+            entry.emit_stop_by_name('insert-text')
+            return True
+        return False
+
+    def __new_num_page_entry_activate_cb(self, entry):
+        global page
+        if entry.props.text:
+            new_page = int(entry.props.text) - 1
+        else:
+            new_page = 0
+
+        if new_page >= self.total_pages:
+            new_page = self.total_pages - 1
+        elif new_page < 0:
+            new_page = 0
+
+        self.current_page = new_page
+        self.set_current_page(new_page)
+        self.show_page(new_page)
+        entry.props.text = str(new_page + 1)
+        self.update_nav_buttons()
+        page = new_page
+
+    def update_nav_buttons(self):
+        current_page = self.current_page
+        self.back.props.sensitive = current_page > 0
+        self.forward.props.sensitive = \
+            current_page < self.total_pages - 1
+
+        self.num_page_entry.props.text = str(current_page + 1)
+        self.total_page_label.props.label = \
+            ' / ' + str(self.total_pages)
+
+    def set_total_pages(self, pages):
+        self.total_pages = pages
+
+    def set_current_page(self, page):
+        self.current_page = page
+        self.update_nav_buttons()
+
+    def keypress_cb(self, widget, event):
+        "Respond when the user presses one of the arrow keys"
+        keyname = gtk.gdk.keyval_name(event.keyval)
+        print keyname
+        if keyname == 'plus':
+            self.font_increase()
+            return True
+        if keyname == 'minus':
+            self.font_decrease()
+            return True
+        if keyname == 'Page_Up' :
+            self.page_previous()
+            return True
+        if keyname == 'Page_Down':
+            self.page_next()
+            return True
+        if keyname == 'Up' or keyname == 'KP_Up' \
+                or keyname == 'KP_Left':
+            self.scroll_up()
+            return True
+        if keyname == 'Down' or keyname == 'KP_Down' \
+                or keyname == 'KP_Right':
+            self.scroll_down()
+            return True
+        return False
+
+    def num_page_entry_activate_cb(self, entry):
+        global page
+        if entry.props.text:
+            new_page = int(entry.props.text) - 1
+        else:
+            new_page = 0
+
+        if new_page >= self.read_toolbar.total_pages:
+            new_page = self.read_toolbar.total_pages - 1
+        elif new_page < 0:
+            new_page = 0
+
+        self.read_toolbar.current_page = new_page
+        self.read_toolbar.set_current_page(new_page)
+        self.show_page(new_page)
+        entry.props.text = str(new_page + 1)
+        self.read_toolbar.update_nav_buttons()
+        page = new_page
+
+    def go_back_cb(self, button):
+        self.page_previous()
+
+    def go_forward_cb(self, button):
+        self.page_next()
+
+    def page_previous(self):
+        global page
+        page=page-1
+        if page < 0: page=0
+        if _NEW_TOOLBAR_SUPPORT:
+            self.set_current_page(page)
+        else:
+            self.read_toolbar.set_current_page(page)
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.upper - v_adjustment.page_size
+
+    def page_next(self):
+        global page
+        page=page+1
+        if page >= len(self.page_index): page=0
+        if _NEW_TOOLBAR_SUPPORT:
+            self.set_current_page(page)
+        else:
+            self.read_toolbar.set_current_page(page)
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.lower
+
+    def zoom_in_cb(self,  button):
+        self.font_increase()
+
+    def zoom_out_cb(self,  button):
+        self.font_decrease()
+
+    def font_decrease(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size - 1
+        if font_size < 1:
+            font_size = 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def font_increase(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size + 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def mark_set_cb(self, textbuffer, iter, textmark):
+
+        if textbuffer.get_has_selection():
+            begin, end = textbuffer.get_selection_bounds()
+            self.edit_toolbar.copy.set_sensitive(True)
+        else:
+            self.edit_toolbar.copy.set_sensitive(False)
+
+    def edit_toolbar_copy_cb(self, button):
+        textbuffer = self.textview.get_buffer()
+        begin, end = textbuffer.get_selection_bounds()
+        copy_text = textbuffer.get_text(begin, end)
+        self.clipboard.set_text(copy_text)
+
+    def view_toolbar_go_fullscreen_cb(self, view_toolbar):
+        self.fullscreen()
+
+    def scroll_down(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.upper - \
+                v_adjustment.page_size:
+            self.page_next()
+            return
+        if v_adjustment.value < v_adjustment.upper - \
+                v_adjustment.page_size:
+            new_value = v_adjustment.value + v_adjustment.step_increment
+            if new_value > v_adjustment.upper - v_adjustment.page_size:
+                new_value = v_adjustment.upper - v_adjustment.page_size
+            v_adjustment.value = new_value
+
+    def scroll_up(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.lower:
+            self.page_previous()
+            return
+        if v_adjustment.value > v_adjustment.lower:
+            new_value = v_adjustment.value - \
+                v_adjustment.step_increment
+            if new_value < v_adjustment.lower:
+                new_value = v_adjustment.lower
+            v_adjustment.value = new_value
+
+    def show_page(self, page_number):
+        global PAGE_SIZE, current_word
+        position = self.page_index[page_number]
+        self.etext_file.seek(position)
+        linecount = 0
+        label_text = '\n\n\n'
+        textbuffer = self.textview.get_buffer()
+        while linecount < PAGE_SIZE:
+            line = self.etext_file.readline()
+            label_text = label_text + unicode(line, 'iso-8859-1')
+            linecount = linecount + 1
+        label_text = label_text + '\n\n\n'
+        textbuffer.set_text(label_text)
+        self.textview.set_buffer(textbuffer)
+
+    def save_extracted_file(self, zipfile, filename):
+        "Extract the file to a temp directory for viewing"
+        filebytes = zipfile.read(filename)
+        outfn = self.make_new_filename(filename)
+        if (outfn == ''):
+            return False
+        f = open(os.path.join(self.get_activity_root(), 'tmp',  outfn),  'w')
+        try:
+            f.write(filebytes)
+        finally:
+            f.close()
+
+    def get_saved_page_number(self):
+        global page
+        title = self.metadata.get('title', '')
+        if title == ''  or not title[len(title)- 1].isdigit():
+            page = 0
+        else:
+            i = len(title) - 1
+            newPage = ''
+            while (title[i].isdigit() and i > 0):
+                newPage = title[i] + newPage
+                i = i - 1
+            if title[i] == 'P':
+                page = int(newPage) - 1
+            else:
+                # not a page number; maybe a volume number.
+                page = 0
+
+    def save_page_number(self):
+        global page
+        title = self.metadata.get('title', '')
+        if title == ''  or not title[len(title)- 1].isdigit():
+            title = title + ' P' +  str(page + 1)
+        else:
+            i = len(title) - 1
+            while (title[i].isdigit() and i > 0):
+                i = i - 1
+            if title[i] == 'P':
+                title = title[0:i] + 'P' + str(page + 1)
+            else:
+                title = title + ' P' + str(page + 1)
+        self.metadata['title'] = title
+
+    def read_file(self, filename):
+        "Read the Etext file"
+        global PAGE_SIZE,  page
+
+        tempfile = os.path.join(self.get_activity_root(),  'instance', \
+                'tmp%i' % time.time())
+        os.link(filename,  tempfile)
+        self.tempfile = tempfile
+
+        if zipfile.is_zipfile(filename):
+            self.zf = zipfile.ZipFile(filename, 'r')
+            self.book_files = self.zf.namelist()
+            self.save_extracted_file(self.zf, self.book_files[0])
+            currentFileName = os.path.join(self.get_activity_root(), \
+                    'tmp',  self.book_files[0])
+        else:
+            currentFileName = filename
+
+        self.etext_file = open(currentFileName,"r")
+        self.page_index = [ 0 ]
+        pagecount = 0
+        linecount = 0
+        while self.etext_file:
+            line = self.etext_file.readline()
+            if not line:
+                break
+            linecount = linecount + 1
+            if linecount >= PAGE_SIZE:
+                position = self.etext_file.tell()
+                self.page_index.append(position)
+                linecount = 0
+                pagecount = pagecount + 1
+        if filename.endswith(".zip"):
+            os.remove(currentFileName)
+        self.get_saved_page_number()
+        self.show_page(page)
+        if _NEW_TOOLBAR_SUPPORT:
+            self.set_total_pages(pagecount + 1)
+            self.set_current_page(page)
+        else:
+            self.read_toolbar.set_total_pages(pagecount + 1)
+            self.read_toolbar.set_current_page(page)
+
+        # We've got the document, so if we're a shared activity, offer it
+        if self.get_shared():
+            self.watch_for_tubes()
+            self.share_document()
+
+    def make_new_filename(self, filename):
+        partition_tuple = filename.rpartition('/')
+        return partition_tuple[2]
+
+    def write_file(self, filename):
+        "Save meta data for the file."
+        if self.is_received_document:
+            # This document was given to us by someone, so we have
+            # to save it to the Journal.
+            self.etext_file.seek(0)
+            filebytes = self.etext_file.read()
+            print 'saving shared document'
+            f = open(filename, 'wb')
+            try:
+                f.write(filebytes)
+            finally:
+                f.close()
+        elif self.tempfile:
+            if self.close_requested:
+                os.link(self.tempfile,  filename)
+                logger.debug("Removing temp file %s because we will close", \
+                             self.tempfile)
+                os.unlink(self.tempfile)
+                self.tempfile = None
+        else:
+            # skip saving empty file
+            raise NotImplementedError
+
+        self.metadata['activity'] = self.get_bundle_id()
+        self.save_page_number()
+
+    def can_close(self):
+        self.close_requested = True
+        return True
+
+    def joined_cb(self, also_self):
+        """Callback for when a shared activity is joined.
+
+        Get the shared document from another participant.
+        """
+        self.watch_for_tubes()
+        gobject.idle_add(self.get_document)
+
+    def get_document(self):
+        if not self.want_document:
+            return False
+
+        # Assign a file path to download if one doesn't exist yet
+        if not self._jobject.file_path:
+            path = os.path.join(self.get_activity_root(), 'instance',
+                                'tmp%i' % time.time())
+        else:
+            path = self._jobject.file_path
+
+        # Pick an arbitrary tube we can try to download the document from
+        try:
+            tube_id = self.unused_download_tubes.pop()
+        except (ValueError, KeyError), e:
+            logger.debug('No tubes to get the document from right now: %s',
+                          e)
+            return False
+
+        # Avoid trying to download the document multiple times at once
+        self.want_document = False
+        gobject.idle_add(self.download_document, tube_id, path)
+        return False
+
+    def download_document(self, tube_id, path):
+        chan = self._shared_activity.telepathy_tubes_chan
+        iface = chan[telepathy.CHANNEL_TYPE_TUBES]
+        addr = iface.AcceptStreamTube(tube_id,
+                telepathy.SOCKET_ADDRESS_TYPE_IPV4,
+                telepathy.SOCKET_ACCESS_CONTROL_LOCALHOST, 0,
+                utf8_strings=True)
+        logger.debug('Accepted stream tube: listening address is %r', \
+                     addr)
+        assert isinstance(addr, dbus.Struct)
+        assert len(addr) == 2
+        assert isinstance(addr[0], str)
+        assert isinstance(addr[1], (int, long))
+        assert addr[1] > 0 and addr[1] < 65536
+        port = int(addr[1])
+
+        self.progressbar.show()
+        getter = ReadURLDownloader("http://%s:%d/document"
+                                           % (addr[0], port))
+        getter.connect("finished", self.download_result_cb, tube_id)
+        getter.connect("progress", self.download_progress_cb, tube_id)
+        getter.connect("error", self.download_error_cb, tube_id)
+        logger.debug("Starting download to %s...", path)
+        getter.start(path)
+        self.download_content_length = getter.get_content_length()
+        self.download_content_type = getter.get_content_type()
+        return False
+
+    def download_progress_cb(self, getter, bytes_downloaded, tube_id):
+        if self.download_content_length > 0:
+            logger.debug("Downloaded %u of %u bytes from tube %u...",
+                          bytes_downloaded, self.download_content_length,
+                          tube_id)
+        else:
+            logger.debug("Downloaded %u bytes from tube %u...",
+                          bytes_downloaded, tube_id)
+        total = self.download_content_length
+        self.set_downloaded_bytes(bytes_downloaded,  total)
+        gtk.gdk.threads_enter()
+        while gtk.events_pending():
+            gtk.main_iteration()
+        gtk.gdk.threads_leave()
+
+    def set_downloaded_bytes(self, bytes,  total):
+        fraction = float(bytes) / float(total)
+        self.progressbar.set_fraction(fraction)
+        logger.debug("Downloaded percent",  fraction)
+
+    def clear_downloaded_bytes(self):
+        self.progressbar.set_fraction(0.0)
+        logger.debug("Cleared download bytes")
+
+    def download_error_cb(self, getter, err, tube_id):
+        self.progressbar.hide()
+        logger.debug("Error getting document from tube %u: %s",
+                      tube_id, err)
+        self.alert(_('Failure'), _('Error getting document from tube'))
+        self.want_document = True
+        self.download_content_length = 0
+        self.download_content_type = None
+        gobject.idle_add(self.get_document)
+
+    def download_result_cb(self, getter, tempfile, suggested_name, tube_id):
+        if self.download_content_type.startswith('text/html'):
+            # got an error page instead
+            self.download_error_cb(getter, 'HTTP Error', tube_id)
+            return
+
+        del self.unused_download_tubes
+
+        self.tempfile = tempfile
+        file_path = os.path.join(self.get_activity_root(), 'instance',
+                                    '%i' % time.time())
+        logger.debug("Saving file %s to datastore...", file_path)
+        os.link(tempfile, file_path)
+        self._jobject.file_path = file_path
+        datastore.write(self._jobject, transfer_ownership=True)
+
+        logger.debug("Got document %s (%s) from tube %u",
+                      tempfile, suggested_name, tube_id)
+        self.is_received_document = True
+        self.read_file(tempfile)
+        self.save()
+        self.progressbar.hide()
+
+    def shared_cb(self, activityid):
+        """Callback when activity shared.
+
+        Set up to share the document.
+
+        """
+        # We initiated this activity and have now shared it, so by
+        # definition we have the file.
+        logger.debug('Activity became shared')
+        self.watch_for_tubes()
+        self.share_document()
+
+    def share_document(self):
+        """Share the document."""
+        h = hash(self._activity_id)
+        port = 1024 + (h % 64511)
+        logger.debug('Starting HTTP server on port %d', port)
+        self.fileserver = ReadHTTPServer(("", port),
+            self.tempfile)
+
+        # Make a tube for it
+        chan = self._shared_activity.telepathy_tubes_chan
+        iface = chan[telepathy.CHANNEL_TYPE_TUBES]
+        self.fileserver_tube_id = iface.OfferStreamTube(READ_STREAM_SERVICE,
+                {},
+                telepathy.SOCKET_ADDRESS_TYPE_IPV4,
+                ('127.0.0.1', dbus.UInt16(port)),
+                telepathy.SOCKET_ACCESS_CONTROL_LOCALHOST, 0)
+
+    def watch_for_tubes(self):
+        """Watch for new tubes."""
+        tubes_chan = self._shared_activity.telepathy_tubes_chan
+
+        tubes_chan[telepathy.CHANNEL_TYPE_TUBES].connect_to_signal('NewTube',
+            self.new_tube_cb)
+        tubes_chan[telepathy.CHANNEL_TYPE_TUBES].ListTubes(
+            reply_handler=self.list_tubes_reply_cb,
+            error_handler=self.list_tubes_error_cb)
+
+    def new_tube_cb(self, tube_id, initiator, tube_type, service, params,
+                     state):
+        """Callback when a new tube becomes available."""
+        logger.debug('New tube: ID=%d initator=%d type=%d service=%s '
+                      'params=%r state=%d', tube_id, initiator, tube_type,
+                      service, params, state)
+        if service == READ_STREAM_SERVICE:
+            logger.debug('I could download from that tube')
+            self.unused_download_tubes.add(tube_id)
+            # if no download is in progress, let's fetch the document
+            if self.want_document:
+                gobject.idle_add(self.get_document)
+
+    def list_tubes_reply_cb(self, tubes):
+        """Callback when new tubes are available."""
+        for tube_info in tubes:
+            self.new_tube_cb(*tube_info)
+
+    def list_tubes_error_cb(self, e):
+        """Handle ListTubes error by logging."""
+        logger.error('ListTubes() failed: %s', e)
+
+    def alert(self, title, text=None):
+        alert = NotifyAlert(timeout=20)
+        alert.props.title = title
+        alert.props.msg = text
+        self.add_alert(alert)
+        alert.connect('response', self.alert_cancel_cb)
+        alert.show()
+
+    def alert_cancel_cb(self, alert, response_id):
+        self.remove_alert(alert)
+        self.textview.grab_focus()
+</shift></ctrl></pre>
+<p>Aquí es lo que parece el funcionamiento debajo del <strong>sugar-jhbuild</strong>:
+</p>
+<p><img alt="Read Etexts II, nueva barra de herramientas" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/NewStyleToolbars/newtoolbar5_en.jpg" height="450" width="600" />
+</p>
+<p>Tengamos una mirada en cómo trabaja.  Si usted ha prestado la atención a otros capítulos cuando he hablado de la idea de la “degradación agraciado” las importaciones en este código estarán sobre lo que usted esperaría:
+</p>
+<pre>_NEW_TOOLBAR_SUPPORT = True
+try:
+    from sugar.graphics.toolbarbox import ToolbarBox
+    from sugar.graphics.toolbarbox import ToolbarButton
+    from sugar.activity.widgets import StopButton
+    from toolbar import ViewToolbar
+    from mybutton import MyActivityToolbarButton
+except:
+    _NEW_TOOLBAR_SUPPORT = False
+    from toolbar import ReadToolbar,  ViewToolbar
+</pre>
+<p>Aquí intentamos importar un manojo de materia que exista solamente en las versiones del azúcar que apoyan las nuevas barras de herramientas.  Si tenemos éxito, después el _NEW_TOOLBAR_SUPPORT seguirá siendo sistema a verdad.  Si las importaciones unas de los fallan entonces la variable se fija a falso.  Observe que unas par de importaciones que deben tener éxito siempre están puestas después de que los tres que pudieron fallar.  Si es un de los primeros tres me fallan no quisieran que estas importaciones fueran hechas.
+</p>
+<p>Este pedacito siguiente del código en el método del <em>__init ()</em> no debe ser asombrosamente:
+</p>
+<pre>        if _NEW_TOOLBAR_SUPPORT:
+            self.create_new_toolbar()
+        else:
+            self.create_old_toolbar()
+</pre>
+<p>Me moví creando las barras de herramientas en sus propios métodos para hacerlo más fácil comparar cómo se crean las dos diversas barras de herramientas.  El viejo código de la barra de herramientas es sin cambios.  Aquí está el nuevo código de la barra de herramientas:
+</p>
+<pre>    def create_new_toolbar(self):
+        toolbar_box = ToolbarBox()
+
+        activity_button = MyActivityToolbarButton(self)
+        toolbar_box.toolbar.insert(activity_button, 0)
+        activity_button.show()
+
+        self.edit_toolbar = activity.EditToolbar()
+        self.edit_toolbar.undo.props.visible = False
+        self.edit_toolbar.redo.props.visible = False
+        self.edit_toolbar.separator.props.visible = False
+        self.edit_toolbar.copy.set_sensitive(False)
+        self.edit_toolbar.copy.connect('clicked', self.edit_toolbar_copy_cb)
+        self.edit_toolbar.paste.props.visible = False
+
+        edit_toolbar_button = ToolbarButton(
+            page=self.edit_toolbar,
+            icon_name='toolbar-edit')
+        self.edit_toolbar.show()
+        toolbar_box.toolbar.insert(edit_toolbar_button, -1)
+        edit_toolbar_button.show()
+
+        self.view_toolbar = ViewToolbar()
+        self.view_toolbar.connect('go-fullscreen', \
+            self.view_toolbar_go_fullscreen_cb)
+        self.view_toolbar.zoom_in.connect('clicked', self.zoom_in_cb)
+        self.view_toolbar.zoom_out.connect('clicked', self.zoom_out_cb)
+        self.view_toolbar.show()
+        view_toolbar_button = ToolbarButton(
+            page=self.view_toolbar,
+            icon_name='toolbar-view')
+        toolbar_box.toolbar.insert(view_toolbar_button, -1)
+        view_toolbar_button.show()
+
+        self.back = ToolButton('go-previous')
+        self.back.set_tooltip(_('Back'))
+        self.back.props.sensitive = False
+        self.back.connect('clicked', self.go_back_cb)
+        toolbar_box.toolbar.insert(self.back, -1)
+        self.back.show()
+
+        self.forward = ToolButton('go-next')
+        self.forward.set_tooltip(_('Forward'))
+        self.forward.props.sensitive = False
+        self.forward.connect('clicked', self.go_forward_cb)
+        toolbar_box.toolbar.insert(self.forward, -1)
+        self.forward.show()
+
+        num_page_item = gtk.ToolItem()
+        self.num_page_entry = gtk.Entry()
+        self.num_page_entry.set_text('0')
+        self.num_page_entry.set_alignment(1)
+        self.num_page_entry.connect('insert-text',
+                               self.__new_num_page_entry_insert_text_cb)
+        self.num_page_entry.connect('activate',
+                               self.__new_num_page_entry_activate_cb)
+        self.num_page_entry.set_width_chars(4)
+        num_page_item.add(self.num_page_entry)
+        self.num_page_entry.show()
+        toolbar_box.toolbar.insert(num_page_item, -1)
+        num_page_item.show()
+
+        total_page_item = gtk.ToolItem()
+        self.total_page_label = gtk.Label()
+
+        label_attributes = pango.AttrList()
+        label_attributes.insert(pango.AttrSize(14000, 0, -1))
+        label_attributes.insert(pango.AttrForeground(65535, 65535,
+                                                     65535, 0, -1))
+        self.total_page_label.set_attributes(label_attributes)
+
+        self.total_page_label.set_text(' / 0')
+        total_page_item.add(self.total_page_label)
+        self.total_page_label.show()
+        toolbar_box.toolbar.insert(total_page_item, -1)
+        total_page_item.show()
+
+        separator = gtk.SeparatorToolItem()
+        separator.props.draw = False
+        separator.set_expand(True)
+        toolbar_box.toolbar.insert(separator, -1)
+        separator.show()
+
+        stop_button = StopButton(self)
+        stop_button.props.accelerator = '<ctrl><shift>Q'
+        toolbar_box.toolbar.insert(stop_button, -1)
+        stop_button.show()
+
+        self.set_toolbar_box(toolbar_box)
+        toolbar_box.show()
+
+    def __new_num_page_entry_insert_text_cb(self, entry, text, length, position):
+        if not re.match('[0-9]', text):
+            entry.emit_stop_by_name('insert-text')
+            return True
+        return False
+
+    def __new_num_page_entry_activate_cb(self, entry):
+        global page
+        if entry.props.text:
+            new_page = int(entry.props.text) - 1
+        else:
+            new_page = 0
+
+        if new_page >= self.total_pages:
+            new_page = self.total_pages - 1
+        elif new_page < 0:
+            new_page = 0
+
+        self.current_page = new_page
+        self.set_current_page(new_page)
+        self.show_page(new_page)
+        entry.props.text = str(new_page + 1)
+        self.update_nav_buttons()
+        page = new_page
+
+    def update_nav_buttons(self):
+        current_page = self.current_page
+        self.back.props.sensitive = current_page > 0
+        self.forward.props.sensitive = \
+            current_page < self.total_pages - 1
+
+        self.num_page_entry.props.text = str(current_page + 1)
+        self.total_page_label.props.label = \
+            ' / ' + str(self.total_pages)
+
+    def set_total_pages(self, pages):
+        self.total_pages = pages
+
+    def set_current_page(self, page):
+        self.current_page = page
+        self.update_nav_buttons()
+</shift></ctrl></pre>
+<p>Mucho del código en los dos métodos es igual.  Particularmente, la barra de herramientas de la <strong>visión</strong> y la barra de herramientas del <strong>corregir</strong> están exactamente igual en ambos.  En vez de convertirse en la barra de herramientas activa caen abajo de la barra de herramientas para convertirse en barras de herramientas secundarias.  Si habíamos hecho la barra de herramientas leída la misma manera habríamos podido ejecutar viejo y las nuevas barras de herramientas con muy pequeño cifran.  Sin embargo, la barra de herramientas <strong>leída</strong> contiene los controles que son bastante importantes para la actividad que deben estar disponibles siempre, así que los ponemos en la barra de herramientas principal en lugar de otro.  Debido a este cada lugar en donde el código refiere a la barra de herramientas <strong>leída</strong> tiene que tener dos maneras que puede ser realizada, como esto:
+</p>
+<pre>        if _NEW_TOOLBAR_SUPPORT:
+            self.set_total_pages(pagecount + 1)
+            self.set_current_page(page)
+        else:
+            self.read_toolbar.set_total_pages(pagecount + 1)
+            self.read_toolbar.set_current_page(page)
+</pre>
+<p>Hay un más punto del interés cuando viene a la barra de herramientas principal.  Cuando usted tiene una barra de herramientas del viejo estilo usted consigue el botón de paro como parte de la barra de herramientas de la <strong>actividad</strong>.  Con la nueva barra de herramientas del estilo usted necesita agregarla al extremo de la barra de herramientas principal usted mismo:
+</p>
+<pre>        separator = gtk.SeparatorToolItem()
+        separator.props.draw = False
+        separator.set_expand(True)
+        toolbar_box.toolbar.insert(separator, -1)
+        separator.show()
+
+        stop_button = StopButton(self)
+        stop_button.props.accelerator = '<ctrl><shift>Q'
+        toolbar_box.toolbar.insert(stop_button, -1)
+        stop_button.show()
+</shift></ctrl></pre>
+<p>Observe que usted debe poner un <strong>gtk.SeparatorToolItem</strong> con el igual del <em>set_expand ()</em> para verdad antes del <strong>StopButton</strong>.  Esto empujará el botón hasta el final a la derecha de la barra de herramientas, donde pertenece.
+  <br />
+</p>
+<p>Eso apenas sale de la barra de herramientas de la <strong>actividad</strong> para discutir:
+</p>
+<pre>        toolbar_box = ToolbarBox()
+
+        activity_button = MyActivityToolbarButton(self)
+        toolbar_box.toolbar.insert(activity_button, 0)
+        activity_button.show()
+</pre>
+<p>Usted utilizaría normalmente la clase <strong>ActivityToolbarButton</strong> para crear el defecto cae abajo la barra de herramientas de la actividad.  El problema que tengo con ése es si hago que no hay manera de ocultar el botón de la <strong>subsistencia</strong> o el control de la <strong>parte</strong>.  Esta versión de la actividad necesita el control de la <strong>parte</strong>, pero no tiene ninguÌn uso en absoluto para el botón de la <strong>subsistencia</strong>.
+</p>
+<p>Ha habido algunas discusiones enérgicas sobre el botón de la <strong>subsistencia</strong> en las listas de personas a quienes se mandan propaganda.  Los nuevos usuarios de la computadora no saben para cuáles es, y los usuarios experimentados de la computadora esperan que sea como un botón <strong>de ahorro del juego</strong> o una <strong>reserva como…</strong> opción del menú en un uso regular.  No es absolutamente como tampoco uno, y ése puede llevar a la confusión.  Por estas razones he decidido que ninguna actividad la mía saldrá del botón de la <strong>subsistencia</strong> unhidden.  Para ocultar el botón copié un pedacito del código para el <strong>ActivityToolbarButton</strong> original en un archivo nombrado <strong>mybutton.py</strong>:
+</p>
+<pre>import gtk
+import gconf
+
+from sugar.graphics.toolbarbox import ToolbarButton
+from sugar.activity.widgets import ActivityToolbar
+from sugar.graphics.xocolor import XoColor
+from sugar.graphics.icon import Icon
+from sugar.bundle.activitybundle import ActivityBundle
+
+def _create_activity_icon(metadata):
+    if metadata.get('icon-color', ''):
+        color = XoColor(metadata['icon-color'])
+    else:
+        client = gconf.client_get_default()
+        color = XoColor(client.get_string('/desktop/sugar/user/color'))
+
+    from sugar.activity.activity import get_bundle_path
+    bundle = ActivityBundle(get_bundle_path())
+    icon = Icon(file=bundle.get_icon(), xo_color=color)
+
+    return icon
+
+class MyActivityToolbarButton(ToolbarButton):
+
+    def __init__(self, activity, **kwargs):
+        toolbar = ActivityToolbar(activity, orientation_left=True)
+        toolbar.stop.hide()
+        <strong>toolbar.keep.hide()</strong>
+
+        ToolbarButton.__init__(self, page=toolbar, **kwargs)
+
+        icon = _create_activity_icon(activity.metadata)
+        self.set_icon_widget(icon)
+        icon.show()
+</pre>
+<p>La línea en <strong>en negrilla</strong> es la una diferencia entre los míos y la original.  Si la <strong>barra de herramientas</strong> había sido hecha una variable de caso (<strong>self.toolbar</strong>) habría podido utilizar el original clasifico. 
+</p>
+<p />
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

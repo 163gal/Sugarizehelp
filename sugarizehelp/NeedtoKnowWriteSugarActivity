@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/NeedtoKnowWriteSugarActivity' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>¿Qué necesito saber para escribir una Actividad de Sugar? 
+</h1>
+<p class="western" align="justify">Si usted va a escribir Actividades de Sugar debe aprender algo sobre los temas descritos en este capítulo. No es necesario que se convierta en un experto en ninguno de ellos, pero debe guardar sus sitios web y revisar sus tutoriales. Esto le ayudará a entender las muestras del código que veremos.
+</p>
+<h2 class="western">Python
+</h2>
+<p class="western" align="justify">Python es el lenguaje más usado para escribir Actividades. Aunque puede utilizar otros lenguajes, la mayoría de las Actividades tienen por lo menos algún Python en ellas.  Sugar proporciona un API de Python que simplifica la creación de Actividades.  Aunque es posible escribir Actividades sin usar Python (como <strong>Etoys</strong>), es inusual. 
+  <br />
+</p>
+<p class="western">Todos los ejemplos en este libro están enteramente escritos en Python.
+  <br />
+</p>
+<p class="western" align="justify">Hay lenguajes compilados y lenguajes interpretados. En un lenguaje compilado el código que usted escribe se traduce al lenguaje de los chips <span id="result_box" class="long_text"><span style="background-color: rgb(230, 236, 249); color: rgb(0, 0, 0);"> que se ejecutará en y es esta traducción que realmente se ejecute el sistema operativo?.</span></span> En un lenguaje interpretado hay un programa llamado intérprete que lee el código que usted escribe y hace lo que el código dice que debe hacer. (Esto está sobre simplificado, pero es bastante cercano a la verdad para este capítulo).
+</p>
+<p class="western">Python es un lenguaje interpretado. Hay ventajas a tener un lenguaje compilado y hay ventajas a tener un lenguaje interpretado. Las ventajas que tiene Python para desarrollar Actividades son:
+</p>
+<ul>
+  <li>
+  <div align="justify">
+  </div>
+  <p class="western" align="justify">Es portable. En otras palabras, usted puede hacer que su programa funcione en cualquier procesador? y cualquier SO sin hacer una versión específica para cada uno. Los programas compilados funcionan solamente en el SO y en los procesadores para los que fueron compilados.
+  </p> </li>
+  <li>
+  <div align="justify">
+  </div>
+  <p class="western" align="justify">Puesto que el código fuente es lo que se ejecuta, usted no puede dar a alguien un programa en Python sin darle el código fuente. Usted puede aprender mucho sobre la programación de la Actividad estudiando el código de otras personas y hay mucho en él para estudiar.
+  </p> </li>
+  <li>
+  <div align="justify">
+  </div>
+  <p class="western" align="justify">Es un lenguaje fácil para que los nuevos programadores aprendan, pero también tiene características que los programadores experimentados necesitan.
+  </p> </li>
+  <li>
+  <div align="justify">
+  </div>
+  <p class="western" align="justify">Es ampliamente utilizado. Uno de los usuarios más conocidos de Python es Google. Lo utilizan bastante que han comenzado un proyecto nombrado “<del>Unladen Swallow</del>”? para hacer que los programas de Python funcionen más rápidamente.
+  </p> </li>
+</ul>
+<p class="western" align="justify">La mayor ventaja de un lenguaje compilado es que puede funcionar mucho más rápido que uno interpretado. Sin embargo, en práctica un programa del Python puede realizarse tan bien como un programa compilado. Para entender porqué esto es así usted necesita entender cómo se hace un programa de Python.
+</p>
+<p class="western" align="justify">Python es conocido como un lenguaje “pegamento”. La idea es que usted tiene componentes escritos en varios lenguajes (generalmente C y C++) y tienen vinculaciones con Python. Python se utiliza para "pegar” estos componentes al crear aplicaciones. En la mayoría de las aplicaciones la mayor parte de las funciones de la aplicación es realizada por estos componentes compilados, y se emplea relativamente poco tiempo ejecutando el código Python que pega los componentes.
+</p>
+<p class="western" align="justify">Además de Actividades que usan Python la mayor parte del propio ambiente Sugar está escrito en Python.
+</p>
+<p class="western" align="justify">Si usted ha programado en otros lenguajes hay buenos tutoriales para aprender Python en el sitio web de Python: <a href="http://docs.python.org/tutorial/">http://docs.python.org/tutorial/</a>.  Si usted está comenzando en la programación usted puede ser que compruebe hacia fuera <em>inventa sus propios juegos de ordenador con Python</em>, que usted puede leer en <a href="http://inventwithpython.com/" target="_top">http://inventwithpython.com/</a>.
+  <br />
+</p>
+<h2 class="western">PyGTK
+</h2>
+<p class="western" align="justify">GTK+ es un sistema de los componentes para crear interfaces de usuario. Estos componentes incluyen cosas como botones, barras de desplazamiento, cajas de lista, y así sucesivamente. Es utilizado por el ambiente de escritorio de GNOME y las aplicaciones que funcionan en él. Las Actividades de Sugar utilizan un tema especial del GNOME que dan a controles de GTK+ un aspecto único.
+</p>
+<p class="western" align="justify">PyGTK es un sistema de enlaces de Python que le permiten utilizar componentes de GTK+ en programas de Python. Hay un tutorial que muestra cómo utilizarlo en el sitio web de PyGTK: <a href="http://www.pygtk.org/tutorial.html">http://www.pygtk.org/tutorial.html</a>.
+</p>
+<h2 class="western">PyGame
+</h2>
+<p class="western">La alternativa a usar PyGTK para su actividad es PyGame. PyGame puede crear imágenes llamadas sprites y moverlas alrededor en la pantalla. Pues usted puede ser que espere, PyGame se utiliza sobre todo para los juegos de la escritura. Es menos de uso general en actividades que PyGTK.
+</p>
+<p class="western">La clase particular a aprender sobre PyGame está en el Web site de PyGame: <a href="http://www.pygame.org/wiki/tutorials">http://www.pygame.org/wiki/tutorials</a>. El Web site también tiene un manojo de proyectos del pygame que usted puede transferir y probar.
+</p>
+<p />
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/SetUpDevEnvironment' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Determinación de un ambiante de desarrollo de Sugar
+</h1>
+<p class="western" align="justify">Actualmente no es práctico desarrollar las Actividades para XO en la XO. No es tanto que usted no pueda hacerlo, pero es más fácil y más productivo hacer su desarrollo y la prueba en otra máquina que funciona con un Sistema Operativo más convencional. Esto le da el acceso a mejores herramientas y también le permite simular la colaboración entre dos computadoras que funcionan con Sugar usando solamente una computadora.
+</p>
+<h2 class="western">¿Instale el Linux o utilice una máquina virtual?
+</h2>
+<p class="western">Aunque Sugar funciona en Linux, es posible hacerlo funcionar completamente en una máquina virtual que funcione en Windows.&nbsp; Una máquina virtual es una manera en que puede usar un sistema operativo encima otro. El sistema operativo que es funcionado se engaña en el pensamiento de ella tiene la computadora entera a sí mismo. (Los pandit de la industria del ordenador le dirán que ésa usando las máquinas virtuales es la más nueva nueva cosa hacia fuera allí. Los viejos como mí saben que IBM la hacía en sus ordenadores centrales detrás en los años 70).
+</p>
+<p class="western">Para esto estaba un rato realmente la manera recomendada de desarrollar Actividades. La versión de Linux que Sugar utilizó era bastante diferente de distribuciones regulares del Linux que incluso los usuarios del Linux funcionaban con Sugar en una máquina virtual encima de Linux.
+</p>
+<p class="western">La situación ha mejorado, y la mayoría de las distribuciones actuales del Linux tienen un ambiente usable del Sugar.
+</p>
+<p class="western">Si le utilizan a Windows usted puede piensar que Sugar de funcionamiento en una VM de Windows en vez de instalar Linux puede ser la opción más fácil. No está en la práctica. El Linux que funciona en una VM sigue siendo Linux, así que usted todavía va a tener que aprender algunas cosas sobre Linux para hacer el desarrollo de la Actividad. También, funcionar con un segundo OS en una VM requiere una máquina múy poderoso con gigabytes de la memoria. Por una parte, hago mi desarrollo de Sugar usando Linux en un Pentium IV que compré usado de IBM para un poco sobre cientos dólares, incluyendo envío y NetVista incluido. Es más que adecuado.
+</p>
+<p class="western">La instalación de Linux no es la prueba de machismo que estaba una vez. Cualquier persona puede hacerla. La mesa del GNOME qúe viene con Linux es múy similar al Windows y por eso usted sentirá muy comodo usando él.
+</p>
+<p class="western">Cuando usted instala Linux, usted tiene la opción para hacer un cargador dual, un Linux corriente y Windows en la misma computadora (pero no al mismo tiempo). Esto significa que usted pone una partición de disco a un lado para uso de Linux y cuando usted enciende la computadora un menú aparece que pregunta qué OS usted quiere comenzar para arriba. El Linux instala incluso creará la partición para usted, y un par de gigabytes son más que bastante espacio de disco. La distribución de una computadora con una instalación del Linux no afectará a su instalación de Windows en ninguna manera.
+  <br />
+</p>
+<p class="western">Sugar Labs han estado trabajando para conseguir sugar incluido con todas las distribuciones del Linux. Si usted tiene ya una distribución preferida, las ocasiones son la última versión de ella incluyen Sugar. Fedora, openSuse, Debian, y Ubuntu todo incluyen Sugar. Si usted ya utiliza Linux, vea si el Sugar se incluye en su distribución. Si no, Fedora es qué es utilizada por la computadora de XO así que Fedora 10 o más adelante pudo ser su lo mejor que se puede hacer. Usted puede transferir Fedora instala el CD o DVD aquí: <a href="https://fedoraproject.org/get-fedora">https://fedoraproject.org/get-fedora</a>.
+</p>
+<p class="western">Vale a notar que todas las otras herramientas que estoy recomendando están incluidas en cada distribución del Linux, y pueden ser instaladas sin más esfuerzo que comprobando una caja de cheque. Las mismas herramientas funcionarán a menudo en Windows, pero la instalación de ellas allí es más trabajo que usted esperaría para los programas de Windows.
+</p>
+<p>Si usted no desea instalar y aprender sobre Linux pero todavía querer desarrollar Actividades, una opción usted tiene debe desarrollar un programa independiente del Python que utilice PyGame de PyGTK y hace lo que usted quisiera que su Actividad hiciera.&nbsp; Usted podría entonces volcar su programa a alguín otro que podría convertirlo en una Actividad de Sugar.&nbsp; Usted podría desarrollar tal programa de Python sobre Windows o sobre Macintosh.
+  <br />
+</p>
+<p class="western">Si usted quiere hacer el desarrollo en Macintosh con Sugar corriente en una máquina virtual puede ser una opción más atractiva. Si usted quiere tratarlo los detalles serán encontrados aquí: <a href="http://wiki.laptop.org/go/Developers/Setup">http://wiki.laptop.org/go/Developers/Setup.</a>&nbsp; También, puede ser posible instalar Linux de Fedora en Intel o Power PC Macintosh como cargador dual, apenas como usted puede hacer con Windows.&nbsp; Compruebe el Web site de Fedora para saber si hay detalles.
+  <br />
+</p>
+<p class="western">Otra opción para los usuarios del Mac es utilizar el <em>Sugar en un palillo</em> como ambiente de prueba.&nbsp; Usted puede aprender sobre eso aquí: <a href="http://wiki.sugarlabs.org/go/Sugar_on_a_Stick">http://wiki.sugarlabs.org/go/Sugar_on_a_Stick</a>.
+  <br />
+</p>
+<h2 class="western">¿Qué acerca del uso del sugar-jhbuild?
+</h2>
+<p class="western"><strong>El sugar-jhbuild</strong> es una escritura que transfiere el código fuente para la última versión de todos los módulos de Sugar y lo compila en un sub-directório de su directorio casero.&nbsp; No instala realmente el Sugar en su sistema.&nbsp; En lugar, usted lo usa del directorio que usted lo instaló adentro.&nbsp; Debido a la manera se construye y funcionamiento que no interfiere con los módulos que componen su mesa normal. Si usted está desarrollando el Sugar sí mismo, o si usted se está convirtiendo las Actividades que dependen de las características muy últimas de Sugar usted necesitarán funcionar con el sugar-jhbuild.
+</p>
+<p class="western">Funcionar con esta escritura es un poco más difícil que apenas instalando los paquetes de Sugar que vienen con la distribución.&nbsp; Usted necesitará instalar Git y Subversión, funciona con un comando de Git del terminal de transferir la escritura de sugar-jhbuild, después funciona con la escritura con varias diversas opciones que transfieran más código, pide que usted instale más paquetes, y compila en última instancia todo.&nbsp; Puede tardarle unas par de horas para hacer todos los pasos.&nbsp; Cuando le hacen usted tendrá un ambiente de prueba hasta la fecha que usted pueda funcionar como alternativa al <strong>sugar-emulator</strong>.&nbsp; No hay necesidad de desinstalar Sugar-emulador; ambos pueden coexistir.
+</p>
+<p>Usted puede hacerlo con éstos comandos:
+</p>
+<pre>cd sugar-jhbuild
+./sugar-jhbuild run sugar-emulator
+</pre>
+<p class="western">¿Debe usted considerar usarlo? La respuesta corta es No. Una respuesta más larga está <em>probablemente no todavía</em>.
+</p>
+<p class="western">Si usted quisiera que sus Actividades alcanzaran a la audiencia posible más ancha usted no quiere el más último Sugar. De hecho, si usted quiere un ambiente de prueba que mímico cuál es en la mayoría de las computadoras de XO ahora usted necesidad de utilizar Fedora 10. Porque la puesta al día de sistemas operativos en el campo puede ser una empresa importante para una escuela la mayoría de los XO serán usando Sugar .82 o más viejos por mucho tiempo.
+</p>
+<p class="western">Por supuesto es también importante tener programadores que quieran empujar los límites de lo que Sugar puede hacer. Si, después de desarrollar algunas Actividades, usted decider desea ser una de ellas, usted puede aprender sobre el azúcar-jhbuild corriente aquí: <a href="http://wiki.sugarlabs.org/go/DevelopmentTeam/Jhbuild">http://wiki.sugarlabs.org/go/DevelopmentTeam/Jhbuild.</a>
+</p>
+<p>En realidad Sugar-jhbuild es solamente la escritura que transfiere y compila Sugar.&nbsp; Si usted quisiera estar correcto usted diría “funcionamiento la copia del <strong>sugar-emulator</strong> que usted hizo con el azúcar-jhbuild”.&nbsp; La mayoría de los programadores del Sugar decen solamente que el “Sugar-jhbuild del funcionamiento” y ése es lo que diré en este libro.
+  <br />
+</p>
+<h2>Python
+</h2>
+<p>Haremos todas las muestras del código en Python así que usted necesitará hacer el Python instalar.&nbsp;Python viene con cada distribución de Llinux.&nbsp; Usted puede transferir los instaladores para Windows y Macintosh en <a href="http://www.python.org/">http://www.python.org/</a>.
+  <br />
+</p>
+<h2 class="western">Eric
+</h2>Hoy en dia los programadores esperan que sus idiomas que se apoyarán por un <strong>entorno de desarrollo integrado (IDE)</strong> y no hay excepción con Python. Un <strong>IDE</strong> ayuda a organizar su trabajo y proporciona la edición y de textos construidos en el sistema de programación y de herramientas de puesta a punto.
+<p>
+</p>
+<p><img alt="eric_en.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SetUpDevEnvironment/eric_en.jpg" height="491" width="640" />&nbsp;
+</p>
+<p class="western">Hay dos IDEs para Python que yo ha intentado: Eric y Idle. Eric es el más elaborado de los dos y lo recomiendo. Cada distribución del linux debe incluirlo. Parece ella puede ser que va a funcionar en Windows también. Usted puede aprender más sobre ella en el Web site de Eric: <a href="http://eric-ide.python-projects.org/">http://eric-ide.python-projects.org/</a>.
+</p>
+<h2>SPE (redactor del Python de Stani)
+</h2>
+<p> Esto es un IDE que descubrí mientras que escribía este libro.&nbsp; Viene con Fedora y además de ser un redactor de Python él hará diagramas de <strong>UML de</strong> su código y demostrará <strong>PyDoc</strong> para él.&nbsp; Aquí está el SPE que demuestra un diagrama de UML para una de las Actividades en este libro:
+</p>
+<p><img alt="spe_en.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SetUpDevEnvironment/spe_en.jpg" height="354" width="600" />
+</p>
+<p>Si usted es programador experimentado usted puede preferir esto una alternativa útil a Eric.&nbsp; Si usted apenas está comenzando Eric debe cubrir sus necesidades bastante bien.
+  <br />
+</p>
+<h2>Otros IDEs
+  <br />
+</h2>
+<p>También hay un comercial IDE para Python llamado Wingware, que tiene una versión que usted puede utilizar para libre.&nbsp; Usted puede aprender más sobre él en <a href="http://www.wingware.com/">http://www.wingware.com/</a>.
+  <br />
+</p>
+<h2 class="western">Inkscape
+</h2>
+<p class="western">Inkscape es una herramienta para crear imágenes en formato de SVG. Sugar utiliza SVG para los iconos de la actividad y otras clases de ilustraciones. El icono de “XO” que representa cada niño en la vista de la vecindad es un archivo de SVG que puede ser modificado.
+</p>
+<p><img alt="inkscape_en.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SetUpDevEnvironment/inkscape_en.jpg" height="550" width="640" />&nbsp;
+</p>
+<p class="western">Inkscape viene con cada distribución del linux, y se puede instalar en Windows también. Usted puede aprender más sobre él aquí: <a href="http://www.inkscape.org/">http://www.inkscape.org/</a>.
+</p>
+<h2 class="western">Git
+</h2>
+<p class="western">Git es un sistema de control de versión. Guarda versiones de su código del programa en una manera que las haga fáciles volver. Siempre que usted realice cambios a su código usted pide Git para almacenar su código en su depósito. Si usted necesita mirar una vieja versión de ese código más adelante usted puede. Incluso mejore, si un cierto problema aparece en su código que usted puede comparar su último código a un viejo versión de su trabajo y considerar exactamente qué líneas usted cambió.
+</p>
+<p><img alt="git11_1_en.jpg" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SetUpDevEnvironment/git11_1_en.jpg" height="530" width="581" />&nbsp;
+</p>
+<p class="western">Si hay dos personas que trabajan en el mismo programa independientemente un sistema de control de versión combinará sus cambios juntos automáticamente.
+</p>
+<p class="western">Suponga que usted está trabajando en una nueva versión importante de su actividad cuando alguien encuentra un bug realmente embarazoso en la versión que usted acaba de lanzar. Si usted utiliza Git usted no necesita decir a gente que nesesita vivir con él hasta el lanzamiento siguiente, que podría ser meses lejos. En lugar usted puede crear una rama de la versión previa y del trabajo sobre él junto a la versión que usted está realzando. En efecto Git trata la vieja versión que usted está corrigiendo y la versión usted está mejorando como dos proyectos separados.
+</p>
+<p class="western">Usted puede aprender más sobre Git en el Web site de Git: <a href="http://git-scm.com/">http://git-scm.com/</a>.
+</p>
+<p class="western">Cuando usted está listo para un depósito de Git para su proyecto usted puede instalar uno aquí: <a href="http://git.sugarlabs.org/">http://git.sugarlabs.org/</a>.&nbsp; Diré más sobre la creación y usar un depósito de Git más adelante en este libro.
+  <br />
+</p>
+<p>Hay un depósito de Git que contiene todos los ejemplos del código de este libro.&nbsp; Cuando usted tiene Git instalado, usted puede copiar el depósito a su computadora con este comando:
+</p>
+<pre> <code>git clone git://git.sugarlabs.org/myo-sugar-activities-examples/mainline.git</code></pre>
+<h2 class="western">El GIMP
+</h2>
+<p class="western">El GIMP es uno de los programas más útiles y mal nombrados que fue hecho nunca. Usted puede pensar en él como versión libre de Adobe Photoshop. Si usted necesita trabajar con los archivos de imagen (con excepción de SVG) usted necesita este programa.
+</p>
+<p><img alt="Usando El GIMP para hacer una captura de pantalla" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SetUpDevEnvironment/thegimp_en.jpg" height="390" width="640" />&nbsp;
+</p>
+<p class="western">Usted puede nunca necesitar este programa desarrollar su Activad, pero cuando es hora de distribuir la Actividad usted la utilizará para crear tiros de pantalla de su Actividad en la acción. Nada vende una Actividad a un usuario potencial como buenos tiros de pantalla.
+</p>
+<h2 class="western">Emulación de Sugar
+</h2>
+<p class="western">La mayoría de las distribuciones de Linux deben incluir Sugar. En Fedora usted puede funcionar con Sugar como ambiente de escritorio alternativo. Cuando usted abre una sesión a GDM Sugar aparece como selección de escritorio junto a GNOME, a KDE, a Window Maker, y a cualquier otro encargado de ventana que usted haya instalado.
+</p>
+<p class="western">Ésta no es la manera normal de utilizar Sugar para la prueba. La manera normal utiliza una herramienta llamada Xephyr para funcionar un ambiente de Sugar en una ventana en su mesa. En efecto, Xephyr funciona con una sesión de X dentro de una ventana y Sugar funciona en ése. Usted puede tomar fácilmente capturas de pantalla de Sugar en sesiones de Sugar de la acción, de la parada y del recomenzar sin el recomienzo de la computadora, y funciona con copias múltiples de sugar para probar la colaboración.
+</p>
+<p><img alt="azúcar-emulador en la acción" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/ActivitiesGuideSugar_es/SetUpDevEnvironment/ReadEtexts_02_en.jpg" height="480" width="640" />&nbsp;
+</p>
+<p class="western">Tendré más a decir sobre esto cuando es hora de probar su primera actividad.
+</p>
+<p>
+</p>
+<p>
+</p>
+<br />
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>

@@ -1,0 +1,7 @@
+[Activity]
+name = SugarizeHelp
+activity_version = 1
+service_name = org.ceibaljam.SugarizeHelp
+icon = icon
+class = sugarizehelp.SugarizeHelp
+license = GPLv3

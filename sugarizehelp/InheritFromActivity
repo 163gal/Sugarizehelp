@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>ActivitiesGuideSugar_es (en)</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="WebRss.html" />
+		-->
+		<link rel="icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" /> <link rel="shortcut icon" href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/fl2.ico" type="image/x-icon" />
+		<link rel=StyleSheet href="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/typography.css" type="text/css" media="screen">
+<style>
+#index {
+	 color:  #ff7f00;
+	 font-family: trebuchet,sans-serif;
+	 font-size: 10px;
+	 line-height:11px;
+}
+#index UL {
+	 width: 159px;
+	 list-style-type: None;
+	 padding-left: 0px;
+	 border: 14px solid #ff7f00;
+	 background-color: #ff7f00;
+	 margin: 0px 0px 0px 0px;
+  }
+#index  LI {
+	 padding-left: 0px;
+	 padding-right: 10px;
+	 padding-top: 4px;
+	 padding-bottom: 4px;
+	 color: #ffffff;
+	 margin: 0px 0px 0px 0px;
+	 background-color: #ff7f00;
+	 border-top: 1px solid #ff7f00;
+  }
+#index LI:hover {
+  background-color: #F99B1C;
+}
+#index  LI.heading {
+	 background-color: #ff7f00;
+	 color: #000000;
+	 border-top:1px solid #FFE5CC;
+	 padding-top: 7px;
+	 font-weight: bold;
+}
+#index  LI.title {
+	 border-bottom: 2px solid #FFE5CC;
+	 background-color: #ff7f00;
+	 color: #FBF4E9;
+	 font-weight: bolder;
+	 font-size:16px;
+	 line-height:18px;
+	 padding-bottom: 40px;
+  }
+#index A {
+	 text-decoration: none;
+	 color:  #FBF4E9;
+	 font-weight: bold;
+}
+#ds-layout .imgcontainer {
+	position:relative;
+	}
+#ds-layout .caption {
+	position:relative;
+	bottom:1;
+	left:0;
+	text-align:center;
+	background:#ffe7cb;
+	width:100%;
+	opacity:.75;
+	filter:alpha(opacity=85);
+	color:#000;
+	font-style: italic;
+	 	font-size: 9px;
+	line-height:11px;
+	}
+</style>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+	 window.onload = func;
+  } else {
+	 window.onload = function() {
+		oldonload();
+		func();
+	 }
+  }
+}
+
+function insertAfter(newElement,targetElement) {
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+	 parent.appendChild(newElement);
+  } else {
+	 parent.insertBefore(newElement,targetElement.nextSibling);
+  }
+}
+
+function captionizeImages() {
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var images = document.getElementsByTagName("img");
+  if (images.length < 1) return false; 
+  for (var i=0; i<images.length; i++) {
+	 if (images[i].className != "non") {
+		var title = images[i].getAttribute("title");
+		var width = images[i].width;
+		var divCaption = document.createElement("div");
+		divCaption.className="caption";
+		divCaption.style.width=width+'px';
+		if (title) divCaption.style.padding='2px 0px 3px 0px';
+		divCaption.style.display='block';
+		var divCaption_text = document.createTextNode(title);
+		divCaption.appendChild(divCaption_text);
+		var divContainer = document.createElement("div");
+		divContainer.className="imgcontainer";
+		if (title) divContainer.style.padding='0px 0px 10px 0px';
+		images[i].parentNode.insertBefore(divContainer,images[i]);
+		divContainer.appendChild(images[i]);
+		insertAfter(divCaption,images[i]);
+	 }
+  }
+}
+//addLoadEvent(captionizeImages);
+</script>
+	</head>
+	<body  background="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/background.gif" style="margin:0;color:#000000;">
+<div id="home" style="position:absolute;left:0px;top:10px;">
+<a href="/"><img src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/top_read_back.gif" border="0"></a>
+</div>
+<div id="index" style="position:absolute;left:0px;top:150px;">
+<ul>
+<li class="title">HAGA LAS ACTIVIDADES</li><li class="heading">ACTIVIDADES DE SUGAR</li><li><a href="Introduction">INTRODUCCI�N</a></li><li><a href="WhatIsSugar">�QU� ES SUGAR?</a></li><li><a href="WhatisanActivity">�QU� ES UNA ACTIVIDAD DE SUGAR?</a></li><li><a href="NeedtoKnowWriteSugarActivity">�QU� NECESITO SABER PARA ESCRIBIR UNA ACTIVIDAD DE SUGAR?</a></li><li class="heading">PROGRAMACI�N</li><li><a href="SetUpDevEnvironment">PUESTA EN FUNCIONAMIENTO DE UN AMBIENTE DE DESARROLLO</a></li><li><a href="CreateFirstActivity">CREACI�N DE SU PRIMERA ACTIVIDAD</a></li><li><a href="StandalonePythonReadEtexts">UN PROGRAMA INDEPENDIENTE DE PYTHON PARA LEER ETEXTS</a></li><li><a href="InheritFromActivity">HEREDE DE SUGAR.ACTIVITY.ACTIVITY</a></li><li><a href="PackageTheActivity">PAQUETE DE LA ACTIVIDAD</a></li><li><a href="AddRefinements">AGREGUE LOS REFINAMIENTOS</a></li><li><a href="UsingVersionControl">AGREGUE SU C�DIGO DE LA ACTIVIDAD AL CONTROL DE VERSI�N</a></li><li><a href="GoingInternationalWithPootle">INTERNACIONALIZACI�N CON POOTLE</a></li><li><a href="DistributeYourActivity">DISTRIBUIR SU ACTIVIDAD</a></li><li><a href="SugarDebugging">DEPURACI�N DE ACTIVIDADES DE SUGAR</a></li><li class="heading">ASUNTOS AVANZADOS</li><li><a href="SugarCollaboration">CREANDO ACTIVIDADES COMPARTIDAS</a></li><li><a href="TextToSpeech">AGREGANDO TEXTO A VOZ</a></li><li><a href="FunWithTheJournal">DIVERSI�N CON EL DIARIO</a></li><li><a href="ActivitiesUsingPyGame">CREACI�N DE ACTIVIDADES USANDO PYGAME</a></li><li><a href="NewStyleToolbars">CREACI�N DE NUEVAS BARRAS DE HERRAMIENTAS DE ESTILO</a></li>
+<li class="heading">TUTORIALES</li><li><a href="QueSeNecesita">�QU� SE NECESITA SABER?</a></li><li><a href="Tuto1">CREACI�N DE UNA ACTIVIDAD</a></li>
+<li class="heading">AP�NDICE</li><li><a href="MoreReading">�AD�NDE IR DESDE AQU�?</a></li><li><a href="Glossary">GLOSSARIO</a></li><li><a href="AboutTheAuthors">ACERCA DE LOS AUTORES</a></li></ul>
+</div>
+<div id="pdf" style="position:absolute;left:13px;top:190px;">
+<a href="/ActivitiesGuideSugar_es/FM_ActivitiesGuideSugar_es_03Nov10.pdf"><img class ="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/makepdf.gif" border=0></a>
+<a href="/ActivitiesGuideSugar_es/print"><img class="non" src="/floss_translate/publish/ActivitiesGuideSugar_es/rsrc/TWiki/FlossSkin2/viewprint.gif" border=0></a>
+</div>
+		<div style="position:absolute;left:240px;top:11px;">
+		<table id="ds-layout" cellpadding="0" cellspacing="0" summary="" style="table-layout:fixed;width:670px;border: 5px solid #666666;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;padding-top: 0px;margin-left : 10px;margin-top:10;background:#FFF7F0;">
+			<tr>
+			<td width=100%>
+			<div class="ds-contentcontainer">
+			<div style="margin-left:1.2em;">
+			<br>
+			<div class="huh" style='decoration:none;color:black;border:1;position:absolute;top:30px;left:500px;'>
+			<a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/InheritFromActivity' onClick="alert('You will now be forwarded to the FLOSS Manuals editing interface')"><b><font color=#ff7f00><small>Edit this page</small></font></b></a> :: <a href='http://www.flossmanuals.net/bin/view/ActivitiesGuideSugar_es/FMComments?skin=floss2'><b><font color=#ff7f00><small>Discussion</small></font></b></a>
+			</div>
+			<h1>Herede de sugar.activity.Activity
+</h1>
+<h2>Python orientado al objeto
+  <br />
+</h2>
+<p class="western">El Python apoya dos estilos de la programación: <strong>procesal</strong> y <strong>orientado al objeto</strong>. La programación procesal es cuando usted tiene ciertos datos de entrada, hace alguno que procesa en ella, y produce una salida. Si usted quiere calcular todos los números primeros debajo de ciento o convertir un documento de la palabra en un archivo de texto llano usted utilizará probablemente el estilo procesal para hacer eso.
+</p>
+<p class="western">Los programas orientados al objeto se aumentan de las unidades llamadas los <strong>objetos</strong>. Un objeto se describe como colección de campos o de cualidades que contienen datos junto con los métodos para hacer cosas con eso los datos. Además de hacer el trabajo y de almacenar objetos de datos puede enviar los mensajes a uno otros.
+</p>
+<p class="western">Considere un programa de procesamiento de textos. No hace apenas uno entrado, un cierto proceso, y uno hacer salir. Puede recibir la entrada del teclado, de los botones de ratón, del ratón que viaja sobre algo, del sujetapapeles, del etc. Puede enviar salida a la pantalla, a un archivo, a una impresora, al sujetapapeles, al etc. Un procesador de textos puede corregir varios documentos al mismo tiempo también. Cualquier programa con un GUI es un ajuste natural para el estilo orientado al objeto de la programación.
+</p>
+<p class="western">Los objetos son descritos por las <em>clases</em>. Cuando usted crea un objeto usted está creando un <em>caso de una</em> clase.
+</p>
+<p class="western">Hay una otra cosa que una clase puede hacer, que es <strong>heredar</strong> métodos y cualidades de otra clase. Cuando usted define una clase usted puede decir que <strong>extiende una</strong> cierta clase, y haciendo que en efecto su clase tiene la funcionalidad de la otra clase más su propia funcionalidad. La clase extendida se convierte en su padre.
+  <br />
+</p>
+<p class="western">Todas las Actividades de Sugar extienden una clase del Python llamada <strong>sugar.activity.Activity</strong>. Esta clase proporciona los métodos que todas las Actividades necesitan. Además de eso, hay los métodos que usted puede eliminar en su propia clase que la clase de padre llame cuando necesita. Para el escritor tres de la Actividad del principio los métodos son importantes:
+</p>
+<p class="western"><em>__init()</em>
+</p>
+<p class="western">Se llama esto cuando su Actividad se comienza para arriba. Aquí es donde usted fijará el interfaz utilizador para su Actividad, incluyendo barras de herramientas.
+</p>
+<p class="western"><em>read_file(uno mismo, file_path)</em>
+</p>
+<p class="western">Se llama esto cuando usted reasume una Actividad de una entrada de diario. Se llama después de que se llame el método del <em>__init ()</em>. El parámetro del file_path contiene el nombre de un fichero temporal que sea una copia del archivo en la entrada de diario. Se suprime el archivo tan pronto como este método acabe, pero porque el Sugar funciona en Linux si usted abre el archivo para leer su programa puede continuar leyéndola incluso después se suprime y el archivo no saldrá realmente hasta que usted lo cierre.
+</p>
+<p class="western"><em>write_file(uno mismo, file_path)</em>
+</p>
+<p class="western">Se llama esto cuando la Actividad pone al día la entrada de diario. Apenas como con <em>read_file()</em> su actividad no trabaja con el diario directamente. En lugar abre el archivo nombrado en el file_path para la salida y le escribe. Ese archivo alternadamente se copia a la entrada de diario.
+</p>
+<p class="western">Hay tres cosas que pueden hacer <em>write_file()</em> ser ejecutado:
+</p>
+<ul>
+  <li>
+  <p class="western">Su Actividad se cierra.
+  </p> </li>
+  <li>
+  <p class="western">Alguien presiona el botón de la <strong>subsistencia</strong> en la barra de herramientas de la Actividad.
+  </p> </li>
+  <li>
+  <p class="western">Su actividad deja de ser la actividad activa, o alguien se mueve desde la opinión de la actividad a una cierta otra visión.
+  </p> </li>
+</ul>
+<p class="western">Además de poner al día el archivo en la entrada de diario <em>() los</em> métodos <em>read_file ()</em> y <em>write_file</em> se utilizan para leer y para poner al día los meta datos en la entrada de diario.
+</p>
+<p> Cuando convertimos nuestro programa independiente de Python a una Actividad sacaremos mucho del código que escribimos y lo substituimos por el código heredado del sugar.activity. clase de Actividad.
+</p>
+<h2>Extender la clase de la Activity
+</h2>
+<p>Aquí está una versión de nuestro programa que amplíe Actividad. Usted la encontrará en el depósito de Git en el directorio <strong>Inherit_From_sugar.activity.Activity</strong> bajo el nombre <strong>ReadEtextsActivity.py</strong>:
+</p>
+<pre>import sys
+import os
+import zipfile
+import pygtk
+import gtk
+import pango
+from sugar.activity import activity
+from sugar.graphics import style
+
+page=0
+PAGE_SIZE = 45
+
+class ReadEtextsActivity(activity.Activity):
+    def __init__(self, handle):
+        "The entry point to the Activity"
+        global page
+        activity.Activity.__init__(self, handle)
+
+        toolbox = activity.ActivityToolbox(self)
+        activity_toolbar = toolbox.get_activity_toolbar()
+        activity_toolbar.keep.props.visible = False
+        activity_toolbar.share.props.visible = False
+        self.set_toolbox(toolbox)
+
+        toolbox.show()
+        self.scrolled_window = gtk.ScrolledWindow()
+        self.scrolled_window.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
+        self.scrolled_window.props.shadow_type = gtk.SHADOW_NONE
+
+        self.textview = gtk.TextView()
+        self.textview.set_editable(False)
+        self.textview.set_cursor_visible(False)
+        self.textview.set_left_margin(50)
+        self.textview.connect("key_press_event", self.keypress_cb)
+
+        self.scrolled_window.add(self.textview)
+        self.set_canvas(self.scrolled_window)
+        self.textview.show()
+        self.scrolled_window.show()
+        page = 0
+        self.textview.grab_focus()
+        self.font_desc = pango.FontDescription("sans %d" % style.zoom(10))
+        self.textview.modify_font(self.font_desc)
+
+    def keypress_cb(self, widget, event):
+        "Respond when the user presses one of the arrow keys"
+        keyname = gtk.gdk.keyval_name(event.keyval)
+        print keyname
+        if keyname == 'plus':
+            self.font_increase()
+            return True
+        if keyname == 'minus':
+            self.font_decrease()
+            return True
+        if keyname == 'Page_Up' :
+            self.page_previous()
+            return True
+        if keyname == 'Page_Down':
+            self.page_next()
+            return True
+        if keyname == 'Up' or keyname == 'KP_Up' \
+                or keyname == 'KP_Left':
+            self.scroll_up()
+            return True
+        if keyname == 'Down' or keyname == 'KP_Down' \
+                or keyname == 'KP_Right':
+            self.scroll_down()
+            return True
+        return False
+
+    def page_previous(self):
+        global page
+        page=page-1
+        if page &lt; 0: page=0
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.upper - v_adjustment.page_size
+
+    def page_next(self):
+        global page
+        page=page+1
+        if page &gt;= len(self.page_index): page=0
+        self.show_page(page)
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        v_adjustment.value = v_adjustment.lower
+
+    def font_decrease(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size - 1
+        if font_size &lt; 1:
+            font_size = 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def font_increase(self):
+        font_size = self.font_desc.get_size() / 1024
+        font_size = font_size + 1
+        self.font_desc.set_size(font_size * 1024)
+        self.textview.modify_font(self.font_desc)
+
+    def scroll_down(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.upper - \
+                v_adjustment.page_size:
+            self.page_next()
+            return
+        if v_adjustment.value &lt; v_adjustment.upper - v_adjustment.page_size:
+            new_value = v_adjustment.value + v_adjustment.step_increment
+            if new_value &gt; v_adjustment.upper - v_adjustment.page_size:
+                new_value = v_adjustment.upper - v_adjustment.page_size
+            v_adjustment.value = new_value
+
+    def scroll_up(self):
+        v_adjustment = self.scrolled_window.get_vadjustment()
+        if v_adjustment.value == v_adjustment.lower:
+            self.page_previous()
+            return
+        if v_adjustment.value &gt; v_adjustment.lower:
+            new_value = v_adjustment.value - \
+                v_adjustment.step_increment
+            if new_value &lt; v_adjustment.lower:
+                new_value = v_adjustment.lower
+            v_adjustment.value = new_value
+
+    def show_page(self, page_number):
+        global PAGE_SIZE, current_word
+        position = self.page_index[page_number]
+        self.etext_file.seek(position)
+        linecount = 0
+        label_text = '\n\n\n'
+        textbuffer = self.textview.get_buffer()
+        while linecount &lt; PAGE_SIZE:
+            line = self.etext_file.readline()
+            label_text = label_text + unicode(line, 'iso-8859-1')
+            linecount = linecount + 1
+        label_text = label_text + '\n\n\n'
+        textbuffer.set_text(label_text)
+        self.textview.set_buffer(textbuffer)
+
+    def save_extracted_file(self, zipfile, filename):
+        "Extract the file to a temp directory for viewing"
+        filebytes = zipfile.read(filename)
+        outfn = self.make_new_filename(filename)
+        if (outfn == ''):
+            return False
+        f = open(os.path.join(self.get_activity_root(), 'instance',  outfn),  'w')
+        try:
+            f.write(filebytes)
+        finally:
+            f.close
+
+    def read_file(self, filename):
+        "Read the Etext file"
+        global PAGE_SIZE
+
+        if zipfile.is_zipfile(filename):
+            self.zf = zipfile.ZipFile(filename, 'r')
+            self.book_files = self.zf.namelist()
+            self.save_extracted_file(self.zf, self.book_files[0])
+            currentFileName = os.path.join(self.get_activity_root(),\
+                'instance',  self.book_files[0])
+        else:
+            currentFileName = filename
+
+        self.etext_file = open(currentFileName,"r")
+        self.page_index = [ 0 ]
+        linecount = 0
+        while self.etext_file:
+            line = self.etext_file.readline()
+            if not line:
+                break
+            linecount = linecount + 1
+            if linecount &gt;= PAGE_SIZE:
+                position = self.etext_file.tell()
+                self.page_index.append(position)
+                linecount = 0
+        if filename.endswith(".zip"):
+            os.remove(currentFileName)
+        self.show_page(0)
+
+    def make_new_filename(self, filename):
+        partition_tuple = filename.rpartition('/')
+        return partition_tuple[2]
+</pre>
+<p>Este programa tiene algunas diferencias significativas de la versión independiente.; Primero, observe que esta línea:
+</p>
+<pre>#! /usr/bin/env python
+</pre>
+<p>se ha quitado. Estamos funcionando con no más el programa directamente del intérprete de Python. Ahora Sugar lo está usandolo como Actividad. Note que se ha quitado mucho (pero no todo) de cuál estaba en () el método principal se ha movido al método del <em>__init ()</em> y <em>() al</em> método <em>principal</em>.
+</p>
+<p>Note también que la declaración de la <em>clase</em> ha cambiado:
+</p>
+<p>
+</p>
+<pre>class ReadEtextsActivity(activity.Activity)
+</pre>
+<p>Esta declaración ahora nos dice que la clase ReadEtextsActivity extiende la clase <strong>sugar.activity.Activity</strong>. Consecuentemente hereda el código que está en esa clase. Por lo tanto necesitamos no más un lazo principal de GTK, o definir una ventana. El código en esta clase que extendemos hará eso para nosotros.
+</p>
+<p> Mientras que ganamos mucho de esta herencia, perdemos algo también: una barra de título para la ventana principal. En condiciones gráficas al pedazo de software llamado un <em>encargado de ventana</em> es responsable de poner las fronteras en ventanas, haciéndolas resizeable, reduciéndolas a los iconos, la maximización de ellos, el azúcar del etc. utiliza a un encargado de ventana nombrado Matchbox que haga que cada ventana llena la pantalla entera y no ponga ninguna frontera, la barra de título, o ningunas otras decoraciones de la ventana en las ventanas. Como resultado de eso no podemos cerrar nuestro uso chascando en el “X” en la barra de título como antes. Para compensar esto que necesitamos tener una barra de herramientas que contenga un botón cercano. Así cada Actividad tiene una barra de herramientas de la Actividad que contenga algunos controles y botones estándar. Si usted mira el código usted verá que estoy ocultando un par de controles que no tengamos ninguÌn uso para todavía.
+</p>
+<p><em>El</em> método <em>read_file()</em> se llama no más () del método principal y no parece ser llamado dondequiera adentro del programa. Por supuesto consigue llamado, por algo del código de la Actividad que heredamos de nuestra nueva clase de padre. Semejantemente el <em>__init ()</em> y <em>() los</em> métodos <em>write_file</em> (si teníamos <em>un</em> método <em>write_file</em>() consiguen llamados por la clase de Actividad del padre.
+</p>
+<p>Si usted es especialmente observador usted puede ser que haya notado otro cambio. Nuestro programa independiente original creó un fichero temporal cuando necesitó extraer algo de un archivo de cierre relámpago. Puso que el archivo en un directorio llamó /tmp. Nuestra nueva Actividad todavía crea el archivo pero lo pone en un diverso directorio, un específico a la Actividad.
+</p>
+<p>
+</p>Toda la escritura al sistema de ficheros se restringe a los sub-directórios de la trayectoria dada por <em>self.get_activity_root ()</em>. Este método le dará un directorio que pertenezca a su Actividad solamente. Contendrá tres sub-directórios con diversas políticas: <dl><dt><strong>data</strong></dt><dd> Este directorio se utiliza para los datos tales como archivos de configuración. Los archivos almacenados aquí sobrevivirán reinicializaciones y mejoras del OS. </dd></dl> <dl><dt><strong>tmp</strong></dt><dd> Este directorio es similar usado al directorio de /tmp, siendo movido hacia atrás por RAM. Puede ser tan pequeño como 1 MB. Se suprime este directorio cuando la Actividad sale.</dd></dl> <dl><dt><strong>instance</strong></dt><dd> Este directorio es similar al directorio del <strong>tmp</strong>, siendo movido hacia atrás por la impulsión de la computadora algo que por RAM. Es único por caso. Se utiliza para la transferencia a y desde el diario. Se suprime este directorio cuando la Actividad sale.</dd></dl>
+<p>
+</p> Realizar estos cambios al código no es bastante para hacer nuestro programa una Actividad.; Tenemos que hacer un cierto trabajo de empaquetado y conseguirlo fijado para funcionar del emulador de Sugar. También necesitamos aprender cómo funcionar el emulador de Sugar. ¡Eso viene después!
+<p />
+			</p></div>
+			</div> 
+			</td>
+			</tr>
+		</table>
+		</div>
+<!-- Piwik -->
+<a href="http://piwik.org" title="Web analytics" onclick="window.open(this.href);return(false);">
+<script language="javascript" src="http://adam.engagetv.com/piwik/piwik.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = 'http://adam.engagetv.com/piwik/piwik.php';
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+//-->
+</script>
+<!-- /Piwik --> 
+</body>
+</html>
